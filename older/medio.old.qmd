@@ -1,0 +1,17 @@
+---
+title: "Ensino Médio"
+---
+
+## ...em preparação..
+
+### [Fenômenos naturais e processos tecnológicos](fenomenos.html)
+
+<!---transfomações químicas, leis ponderais, cálculo estequiométrico, princípios de conservação de energia e movimento, ciclo da água, leis da termodinâmica; cinética e equilíbrio químicos; fusão e fissão nucleares; espectro eletromagnético; efeitos biológicos das radiações ionizantes; mutação; poluição; ciclos biogeoquímicos; desmatamento; camada de ozônio e efeito estufa--->
+
+### [Dinâmica da Vida, da Terra e do Cosmos](dinamica.html)
+
+<!---origem da Vida; evolução biológica; registro fóssil; exobiologia; biodiversidade; origem e extinção de espécies; políticas ambientais; biomoléculas; organização celular; órgãos e sistemas; organismos; populações; ecossistemas; cadeias alimentares; respiração celular; fotossíntese; reprodução e hereditariedade; genética mendeliana; processos epidemiológicos; espectro eletromagnético; modelos cosmológicos; astronomia; gravitação; mecânica newtoniana; previsão do tempo--->
+
+### [Conhecimento científico e tecnológico](conhecimento)
+
+<!---aplicação da tecnologia do DNA recombinante; identificação por DNA; emprego de células-tronco; produção de armamentos nucleares; desenvolvimento e aprimoramento de tecnologias de obtenção de energia elétrica; estrutura e propriedades de compostos orgânicos; agroquímicos; controle biológico de pragas; conservantes alimentícios; mineração; herança biológica; darwinismo social, eugenia e racismo; mecânica newtoniana; equipamentos de segurança--->
