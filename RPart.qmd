@@ -1,6 +1,5 @@
 ---
-title: "PARTE 2 - R & RStudio"
+title: "PARTE 2 - R & RStudio - Visualização e Animação Interativa de Gráficos e Mapas"
 ---
 
-
-![](RPart.png){width=200%}
+![](RPart.png){width="200%"}
