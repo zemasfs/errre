@@ -1,5 +1,5 @@
 ---
-title: "PARTE 2 - R & RStudio - Visualização e Animação Interativa de Gráficos e Mapas"
+title: "PARTE 2 - R & RStudio - VISUALIZAÇÃO E ANIMAÇÃO INTERATIVA DE GRÁFICOS E MAPAS"
 ---
 
 ![](RPart.png){width="200%"}

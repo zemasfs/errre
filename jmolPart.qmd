@@ -1,5 +1,5 @@
 ---
-title: "PARTE 1 - JMOL - Visualização e Animação Interativa de Moléculas"
+title: "PARTE 1 - JMOL - VISUALIZAÇÃO E ANIMAÇÃO INTERATIVA DE MOLÉCULAS"
 ---
 
 ![](jmolPart.png){size="200%"}
