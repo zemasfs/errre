@@ -23,7 +23,16 @@ website:
         text: Home
       - text: "Ensino Médio"
         menu:
+          - inicio.qmd
+          - questoes.qmd
+          - ferramentas.qmd
+          - jmolPart.qmd
           - jmol.qmd
+          - textoXmouse.qmd
+          - comandos.qmd
+          - selecao.qmd
+          - animacao.qmd
+          - RPart.qmd
           - anim.plots.qmd
           - cinetica.qmd
       - superior.qmd
