@@ -35,7 +35,9 @@ website:
           - RPart.qmd
           - anim.plots.qmd
           - cinetica.qmd
-      - superior.qmd
+      - text: "Ensino Superior"
+        menu:
+          - bioquanti.qmd
       - contato.qmd
       
 format:
