@@ -284,21 +284,21 @@
     "href": "animacao.html",
     "title": "Animando a molécula",
     "section": "",
-    "text": "| Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o Jmol conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:\n\nspin\nrotate\ntranslate\n\n\nspin 10 # rotacional, com velocidade de 10 graus por quadro\nspin z -15 # (eixo z)\nrotate 20 # 20 graus\nrotate x 90 # eixo x\ntranslate 50 # valor representa o percentual da janela (100 - fora; 0 - centro)\n\n\nzoom\nzooTo"
+    "text": "Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o Jmol conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:"
   },
   {
     "objectID": "animacao.html#alguns-comandos-de-animação-para-os-modelos",
     "href": "animacao.html#alguns-comandos-de-animação-para-os-modelos",
     "title": "Animando a molécula",
     "section": "",
-    "text": "| Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o Jmol conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:\n\nspin\nrotate\ntranslate\n\n\nspin 10 # rotacional, com velocidade de 10 graus por quadro\nspin z -15 # (eixo z)\nrotate 20 # 20 graus\nrotate x 90 # eixo x\ntranslate 50 # valor representa o percentual da janela (100 - fora; 0 - centro)\n\n\nzoom\nzooTo"
+    "text": "Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o Jmol conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:"
   },
   {
     "objectID": "animacao.html#ampliação-dos-modelos-zoom",
     "href": "animacao.html#ampliação-dos-modelos-zoom",
     "title": "Animando a molécula",
     "section": "Ampliação dos modelos (zoom)",
-    "text": "Ampliação dos modelos (zoom)\n\nAmpliação 2x: zoom in\nAmpliação em 3x: zoom \\*3 \nRedução em 2x: zoom out \nRedução em 3x: zoom /3 \nEliminar ampliação: zoom off \nRestrição a ligante e ampliação: restrict ligand; zoom 0\n\n\nAmpliação animada (zoomto)\n      Esse recurso permite visualizar de forma ampliada temporalmente algumas partes de interesse do modelo, tais como sítios de interação de ligantes ou grupos prostéticos. A sintaxe da expressão é:\n\nzoomto ou zoomTo (expressão do átomo/grupo) tamanho ou... \nzoomto tempo (expressão do átomo/grupo) tamanho\n\nExemplos:\n\nAumentar em 3x, meio segundo por vez: zoomto 0.5 *3 \nAumentar em 4x, meio segundo por vez: zoomto 0.5 400 \nFocar num ligante com ampliação de 2x: zoomto 2(ligand) 0\nFocar num ligante com ampliação de 4x, a meio segundo por vez: zoomto 0.5(ligand)* 4\n\n\nmoveTo\ncenter\ndelay\nnavigate"
+    "text": "Ampliação dos modelos (zoom)\n      É possível também ampliar ou reduzir o tamanho de uma molécula no ecrã combinando-se o comando zoom à quantidades, tal como segue:\n\nAmpliação 2x: zoom in\nAmpliação em 3x: zoom \\*3 \nRedução em 2x: zoom out \nRedução em 3x: zoom /3 \nEliminar ampliação: zoom off \nRestrição a ligante e ampliação: restrict ligand; zoom 0\n\n\nAmpliação animada (zoomTo)\n      Esse recurso é bem mais “chique”, já que permite visualizar de forma ampliada temporalmente algumas partes de interesse do modelo. Isso é particularmente bacana com biomacromoléculas, como para sítios de interação de ligantes ou grupos prostéticos, ou sítios de reação em catálise enzimática. Mas também impacta a visualização de pequenas moléculas, posto que os modelos crescem ou reduzem de forma animada no ecrã; pode-se também focar num átomo específico para chamar a atenção na molécula. A sintaxe da expressão é:\n\nzoomto ou zoomTo (expressão do átomo/grupo) tamanho ou... \nzoomto tempo (expressão do átomo/grupo) tamanho\n\n      Experimente carregar moléculas pequenas e proteínas, ilustrando o cmando zoomTo como segue:\n\nAumentar em 3x, meio segundo por vez: zoomto 0.5 *3 \nAumentar em 4x, meio segundo por vez: zoomto 0.5 400 \nFocar num ligante com ampliação de 2x: zoomto 2(ligand) 0\nFocar num ligante com ampliação de 4x, a meio segundo por vez: zoomto 0.5(ligand)* 4"
   },
   {
     "objectID": "animacao.html#exemplos-de-animção-para-moléculas",
@@ -432,5 +432,89 @@
     "title": "Cinética de reações e o pacote plotly",
     "section": "",
     "text": "O Ambiente do R também permite a construção de objetos didáticos que possam “vivificar” o conteúdo de livros-texto. Como um exemplo, segue um script para a criação de um objeto que pode auxiliar no aprendizado de cinética de reações químicas, tais como o exemplificado à página 34 do volume 2 do livro-texto que segue.\n\n\n\nCinética de Reações, tal como apresentado no livro-texto\n\n\n      Ampliando um pouco a figura de cinética….\n\n\n\nAmpliação da imgem de cinética\n\n\n      Assim sendo, uma sugestão para um objeto que ajude na compreensão do tema poderia envolver a reação de formação de produtos com variação da constante de desligamento do reagente, como segue:\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\n\n\nUma representação dinâmica da cinética de formação de produto variando a taxa de dissociação.\n\n\n      Se desejar observar como o código foi desenvolvido, e aplicá-lo diretamente no **RStudio Cloud* já visto, segue trecho:\n\n# Instale os pacotes necessários, caso ainda não os tenha\n# install.packages(\"ggplot2\")\n# install.packages(\"plotly\")\n\nlibrary(ggplot2)\nlibrary(plotly)\n\n# Função para gerar os dados e o gráfico com base em taxa.dissociação.produto\ngenerate_plot_data &lt;- function(taxa.dissociação.produto) {\n  y.max &lt;- 1\n  x &lt;- seq(0.1, 10, length.out = 100)\n  y &lt;- y.max * x / (taxa.dissociação.produto + x)\n  data.frame(x, y)\n}\n\n# Inicialize o gráfico com taxa.dissociação.produto = 1\ninitial_taxa.dissociação.produto &lt;- 1\nplot_data &lt;- generate_plot_data(initial_taxa.dissociação.produto)\n\n# Crie o gráfico inicial usando ggplot2\np &lt;- ggplot(plot_data, aes(x = x, y = y)) +\n  geom_line() +\n  labs(title = paste(\"Formação de Produtos com Alteração da Taxa de Desligamento do Reagente:: y = y.max * x / (\", initial_taxa.dissociação.produto, \" + x)\"),\n       x = \"Tempo\",\n       y = \"Produto\") +\n  theme_minimal() +\n  ylim(0, 1)\n\n# Converta para um objeto plotly\nfig &lt;- ggplotly(p)\n\n# Adicione um slider para taxa.dissociação.produto utilizando plotly\nsteps &lt;- lapply(seq(0.1, 10, by = 0.1), function(taxa.dissociação.produto) {\n  list(\n    label = as.character(taxa.dissociação.produto),\n    method = \"restyle\",\n    args = list(\n      list(\n        x = list(generate_plot_data(taxa.dissociação.produto)$x),\n        y = list(generate_plot_data(taxa.dissociação.produto)$y)\n      ),\n      list(title = paste(\"Formação de Produtos com Alteração da Taxa de Desligamento do Reagente: y = y.max * x / (\", taxa.dissociação.produto, \" + x)\"))\n    )\n  )\n})\n\nfig &lt;- fig %&gt;%\n  layout(\n    sliders = list(\n      list(\n        active = 0,\n        currentvalue = list(prefix = \"taxa.dissociação.produto: \"),\n        steps = steps\n      )\n    )\n  )\n\n# Visualize o gráfico\nfig"
+  },
+  {
+    "objectID": "animacao.html#rotacionar-e-transladar",
+    "href": "animacao.html#rotacionar-e-transladar",
+    "title": "Animando a molécula",
+    "section": "Rotacionar e transladar",
+    "text": "Rotacionar e transladar\n      Essas ações constituem uma forma simples de reposicionar o modelo no espaço. Basta inserir o eixo e o ângulo em que se deseja o movimento (x,y,z). Ou apenas o ângulo, com o movimento padrão no eixo das abscissas (X). Seguem exemplos:\n\nrotate 20 # 20 graus\nrotate x 90 # eixo x\ntranslate 50 # valor representa o percentual da janela (100 - fora; 0 - centro)"
+  },
+  {
+    "objectID": "animacao.html#girar",
+    "href": "animacao.html#girar",
+    "title": "Animando a molécula",
+    "section": "Girar",
+    "text": "Girar\n      Essa ação, por sua vez, é mais “impactante”, já que permite a rotação do modelo a uma certa velocidade indefinidamente, até um comando de parada. Como na anterior, pode-se digitar somente o comando para a rotação padrão no eixo das abcissas, ou fornecer o eixo (x,y.z):\n\nspin 10 # rotacional, com velocidade de 10 graus por quadro\nspin z -15 # (eixo z)\nspin off # interrompe a rotação"
+  },
+  {
+    "objectID": "animacao.html#pausa",
+    "href": "animacao.html#pausa",
+    "title": "Animando a molécula",
+    "section": "Pausa",
+    "text": "Pausa\n      Um comando muito interessante para o Jmol, bem como para outras linguagens de programação, é delay. Essa ação permite que o script interrompa uma ação por algum tempo, medido em segundos, e limitado ao mínimo de um segundo. Experimente:\n\nload $ribose # carrega uma ribose\nspin 50 # rotaciona no eixo X\ndelay 5 # aguarda 5s\nspin off # interrompe a rotação\nwireframe only # represeta em arame, somente\nwireframe 130 # espesssura do arame\ncolor translucent # cor translúcida"
+  },
+  {
+    "objectID": "animacao.html#laço",
+    "href": "animacao.html#laço",
+    "title": "Animando a molécula",
+    "section": "Laço",
+    "text": "Laço\n      O Jmol possui alguns comandos normalmente utilizados em linguagens de programação, embora não seja esse o escopo do presente trabalho. Se quiser “ir fundo”, consulte o manual de referência de comandos do Jmol para os comandos de programação: if, ifelse, for, while, step, break, wait, pause, case, continue, quit, loop.\n      Mas entre esses comandos variados, o de laço iterativo (loop) pode ser de valia ao ensino, por exemplo, para quando se desejar chamar à atenção para uma ligação, um átomo ou grupo de átomos. Exemplificando:\n\nload $acetate # carrega um modelo de acetato\ncolor bonds red # coloração vermelha às ligações\ndelay 1 # aguarda 1 segundo\ncolor bonds green # troca a coloração para verde\nloop 1 # realiza o laço (efeito \"piscante\")\n\n      Para deixar o laço, ou seja, interromper a sequência em loop, digita-se quit."
+  },
+  {
+    "objectID": "animacao.html#combinando-rotações-translações-e-ampliações-no-tempo",
+    "href": "animacao.html#combinando-rotações-translações-e-ampliações-no-tempo",
+    "title": "Animando a molécula",
+    "section": "Combinando rotações, translações, e ampliações no tempo",
+    "text": "Combinando rotações, translações, e ampliações no tempo\n      O Jmol oferece dois comandos básicos para isso: move e moveTo. A diferença é que move reorienta o modelo em relação à sua posição atual (movimento relativo), e moveTo o faz em relação à posição original do modelo (movimento absoluto).\n      Na prática, contudo, o comando move é mais simples de executar, dependendo somente de parâmetros de rotação e translação, ao passo que moveTo é bem mais complexo. Esse depende de parâmetros de orientação manualmente obtidos pelo Jmol.\n\nMove\n      Para o comando move bastam os parâmetros que se deseja modificar (nove no total). Dependendo do que se deseja não há necessidade de usar todos os parâmetros, e que são fornecidos abaixo:\n\nmove rotX rotY rotZ zoom dx dy dz slab time\n\nOnde:\n  rotX, Y ou Z = rotação no eixo X, Y, ou Z\n  zoom = ampliação ou redução\n  dX, Y ou Z = translação no eixo X, Y ou Z\n  slab = plano de fatiamento da molécula\n  time = tempo total envolvido no movimento\n\n      Seguem alguns exemplos:\n\nmove 90 180 0 0 0 0 0 0 21 # rotaciona o modelo por 45 graus em torno do eixo X e por 180 graus no eixo Y, e empregando um movimento gradual de 2 segundos\nmove 0 0 0 0 0 35 0 0 0.5 # reduz o modelo em 35% de seu tamanho, e com movimento gradual de 0,5 segundos\nmove 45 0 90 150 0 30 0 0 5 # rotaciona 45 graus no eixo X e 90 graus no eixo Z, ampliando o modelo em 150% e transladando-o por 30%, tudo ao longo de 5 segundos.\n\n\n\nMoveTo\n      Resulta em orientação absoluta do modelo, não dependendo de suas coordenadas anteriores. Sua inserção não é simples, pois depende dos dados da orientação do modelo quando carregado pela 1a. vez, e que pode ser obtida por:\n\nshow orientation\n\n      Um exemplo de resultado pelo comando é:\n\nmoveto /* time, axisAngle */ 1.0 { 616 -708 -346 47.68} /* zoom, translation */  400.0 0.0 0.0  /* center, rotationRadius */ {15.174467 28.719118 4.726837} 35.148052 /* navigation center, translation, depth */ {0 0 0} 0 0 0 /* cameraDepth, cameraX, cameraY */  3.0 0.0 0.0;\n#OR\n#Follows Z-Y-Z convention for Euler angles\nreset;center {15.174467 28.719118 4.726837}; rotate z 130.27; rotate y 44.57; rotate z -147.67; zoom 400.0;\n\n      Perceba que há dois conjuntos de comandos um pelo moveTo e outro por reset, center, rotate e translate. Para obter o modelo nas coordenadas originais, basta copiar um ou outro conjunto de dados.\n      Usando-se o 1o. conjunto (moveTo), copia-se a linha e altera-se o tempo de animação, no caso o valor 1.0 em “axisAngle */ 1.0”."
+  },
+  {
+    "objectID": "animacao.html#comparando-dois-modelos-no-ecrã",
+    "href": "animacao.html#comparando-dois-modelos-no-ecrã",
+    "title": "Animando a molécula",
+    "section": "Comparando dois modelos no ecrã",
+    "text": "Comparando dois modelos no ecrã\n      Compara 2 modelos e reorienta as coordenadas do segundo para justapor-se ao primeiro, por um algoritmo de correlação.\n\nload files \"$tyrosine\" \"$epinephrine\";\nframe *;\ncompare {2.1} {1.1} rotate translate 5.0"
+  },
+  {
+    "objectID": "animacao.html#navigate",
+    "href": "animacao.html#navigate",
+    "title": "Animando a molécula",
+    "section": "Navigate",
+    "text": "Navigate\n      O comando permite explorar o modelo simulando um passeio panorâmico ao interior da estrutura. Os parâmetros envolvem o tempo de percuro (ou 2s quando omitido). Exemplificando:\n\nnavigate depth 50 # imersão no modelo em 2s\nnavigate 3 rotate y 20 # rotaciona 20o no eixo y\nnavigate 4 trace # passeia pelo modelo em 4s\nnavigate 3 translate {30 50 70} modelo translada levemente por 3s\nnavigate 5 center {10 20 30} # sonda ao lado do modelo, e nas coordenadas x, y, z\nnavigate 2 depth 30 / 5 rotate 180 / depth 20 / translate X 10"
+  },
+  {
+    "objectID": "animacao.html#exemplos-de-animações-para-moléculas-no-jmol",
+    "href": "animacao.html#exemplos-de-animações-para-moléculas-no-jmol",
+    "title": "Animando a molécula",
+    "section": "Exemplos de animações para moléculas no Jmol",
+    "text": "Exemplos de animações para moléculas no Jmol"
+  },
+  {
+    "objectID": "animacao.old.html",
+    "href": "animacao.old.html",
+    "title": "Animando a molécula",
+    "section": "",
+    "text": "| Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o Jmol conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:\n\nspin\nrotate\ntranslate\n\n\nspin 10 # rotacional, com velocidade de 10 graus por quadro\nspin z -15 # (eixo z)\nrotate 20 # 20 graus\nrotate x 90 # eixo x\ntranslate 50 # valor representa o percentual da janela (100 - fora; 0 - centro)\n\n\nzoom\nzooTo"
+  },
+  {
+    "objectID": "animacao.old.html#alguns-comandos-de-animação-para-os-modelos",
+    "href": "animacao.old.html#alguns-comandos-de-animação-para-os-modelos",
+    "title": "Animando a molécula",
+    "section": "",
+    "text": "| Animações permitem a representação de moléculas de modo mais lúdico e representativo. Para agregar valor ainda maior à visualização tridimensional de estruturas moleculares, o Jmol conta com alguns comandos para o posicionamento espacial do modelo, bem como para a criação de animações, como:\n\nspin\nrotate\ntranslate\n\n\nspin 10 # rotacional, com velocidade de 10 graus por quadro\nspin z -15 # (eixo z)\nrotate 20 # 20 graus\nrotate x 90 # eixo x\ntranslate 50 # valor representa o percentual da janela (100 - fora; 0 - centro)\n\n\nzoom\nzooTo"
+  },
+  {
+    "objectID": "animacao.old.html#ampliação-dos-modelos-zoom",
+    "href": "animacao.old.html#ampliação-dos-modelos-zoom",
+    "title": "Animando a molécula",
+    "section": "Ampliação dos modelos (zoom)",
+    "text": "Ampliação dos modelos (zoom)\n\nAmpliação 2x: zoom in\nAmpliação em 3x: zoom \\*3 \nRedução em 2x: zoom out \nRedução em 3x: zoom /3 \nEliminar ampliação: zoom off \nRestrição a ligante e ampliação: restrict ligand; zoom 0\n\n\nAmpliação animada (zoomto)\n      Esse recurso permite visualizar de forma ampliada temporalmente algumas partes de interesse do modelo, tais como sítios de interação de ligantes ou grupos prostéticos. A sintaxe da expressão é:\n\nzoomto ou zoomTo (expressão do átomo/grupo) tamanho ou... \nzoomto tempo (expressão do átomo/grupo) tamanho\n\nExemplos:\n\nAumentar em 3x, meio segundo por vez: zoomto 0.5 *3 \nAumentar em 4x, meio segundo por vez: zoomto 0.5 400 \nFocar num ligante com ampliação de 2x: zoomto 2(ligand) 0\nFocar num ligante com ampliação de 4x, a meio segundo por vez: zoomto 0.5(ligand)* 4\n\n\nmoveTo\ncenter\ndelay\nnavigate"
+  },
+  {
+    "objectID": "animacao.old.html#exemplos-de-animção-para-moléculas",
+    "href": "animacao.old.html#exemplos-de-animção-para-moléculas",
+    "title": "Animando a molécula",
+    "section": "Exemplos de animção para moléculas",
+    "text": "Exemplos de animção para moléculas"
   }
 ]
