@@ -148,7 +148,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino-médio">    
         <li>
     <a class="dropdown-item" href="./inicio.html">
- <span class="dropdown-text">Início</span></a>
+ <span class="dropdown-text">Como diriam no telemarketing … !</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./questoes.html">
@@ -160,7 +160,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="./jmolPart.html">
- <span class="dropdown-text">PARTE 1 - JMOL - VISUALIZAÇÃO E ANIMAÇÃO INTERATIVA DE MOLÉCULAS</span></a>
+ <span class="dropdown-text">PARTE 1 - Jmol</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./jmol.html">
@@ -171,7 +171,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
  <span class="dropdown-text">Cliques de mouse <em>versus</em> linhas de comando</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./comandos.html">
+    <a class="dropdown-item" href="./comandosJmol.html">
  <span class="dropdown-text">Alguns comandos pra se aventurar nas moléculas voadoras</span></a>
   </li>  
         <li>
@@ -184,15 +184,59 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="./RPart.html">
- <span class="dropdown-text">PARTE 2 - R &amp; RStudio - VISUALIZAÇÃO E ANIMAÇÃO INTERATIVA DE GRÁFICOS E MAPAS</span></a>
+ <span class="dropdown-text">PARTE 2 - R &amp; RStudio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rstudioCloud.html">
+ <span class="dropdown-text">Como usar o R &amp; Rstudio - instalação e nuvem</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./basicaoR.html">
+ <span class="dropdown-text">Comandos básicos &amp; Scripts no R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./basico.html">
+ <span class="dropdown-text">Gráficos básicos e simulações</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./animationPlots.html">
+ <span class="dropdown-text">Animando um gráfico básico - o pacote <code>animation.plots</code></span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./anim.plots.html">
  <span class="dropdown-text">A Lei dos Gases Ideais e o pacote <code>anim.plots</code></span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./manipulate.html">
+ <span class="dropdown-text">Simulando equações de forma animada - o pacote <code>manipulate</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./iplots.html">
+ <span class="dropdown-text">Comparação de gráficos em Java - o pacote <code>iplots</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ggplot2.html">
+ <span class="dropdown-text">Gráficos mais elaborados - pacote `ggplot2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gganimate.html">
+ <span class="dropdown-text">Animando gráficos do ggplot2 - o pacote <code>gganimate</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./plotly.html">
+ <span class="dropdown-text">Gráficos interativos - o pacote <code>plotly</code></span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./cinetica.html">
  <span class="dropdown-text">Cinética de reações e o pacote <code>plotly</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./leaflet.html">
+ <span class="dropdown-text">Mapas interativos - o pacote <code>leaflet</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./references.html">
+ <span class="dropdown-text">References</span></a>
   </li>  
     </ul>
   </li>
@@ -288,7 +332,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=water"><img src="telaInicio.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-telaInicio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Tela (clicável) referente ao modelo da molécula de água renderizado em navegador pelo <em>site</em> do St.&nbsp;Olaff College.
+Figure&nbsp;1: Tela (clicável) referente ao modelo da molécula de água renderizado em navegador pelo site do St.&nbsp;Olaff College.
 </figcaption>
 </figure>
 </div>
@@ -342,12 +386,23 @@ Figure&nbsp;1: Tela (clicável) referente ao modelo da molécula de água render
 <li><a href="https://pubchem.ncbi.nlm.nih.gov//edit3/index.html">PubChem Sketcher</a></li>
 <li><a href="https://www.chemdoodle.com/">ChemDoodle</a></li>
 </ul>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Também é possível <em>unir o útil ao (quase)agradável</em>, carregando uma molécula, adaptando-a ou construindo-a do zero, e visualizá-la diretamente no <em>JSmol</em> ! Para isso recomendamos o site <a href="https://edumol.fi/">Edumol</a>.</div>
-<p><br></p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Também é possível <em>unir o útil ao (quase)agradável</em>, carregando uma molécula, adaptando-a ou construindo-a do zero, e visualizá-la diretamente no <em>JSmol</em> ! Para isso recomendamos os sites abaixo (imagem clicável):</div>
+<ul>
+<li><a href="https://edumol.fi/">Edumol</a>.</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://edumol.fi/"><img src="edumol.png" class="img-fluid figure-img" alt="Site do Edumol para carregamento, modificação e criação de moléculas renderizáveis em applet JSmol do próprio website"></a></p>
-<figcaption>Site do <em>Edumol</em> para carregamento, modificação e criação de moléculas renderizáveis em <em>applet</em> <em>JSmol</em> do próprio <em>website</em></figcaption>
+<p><a href="https://edumol.fi/"><img src="edumol.png" class="img-fluid figure-img" alt="Site do Edumol para carregamento, modificação e criação de moléculas renderizáveis em applet JSmol do próprio website."></a></p>
+<figcaption>Site do Edumol para carregamento, modificação e criação de moléculas renderizáveis em applet JSmol do próprio website.</figcaption>
+</figure>
+</div>
+<ul>
+<li><a href="https://chemagic.org/molecules/amini.html">CheMagic Virtual Molecular Model Kit</a></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemagic.org/molecules/amini.html"><img src="chemagic.png" class="img-fluid figure-img" style="width:80.0%" alt="Site do ChemMagic Virtual Molecular Model Kit, que acessa diversas funções do Jmol por clique de mouse."></a></p>
+<figcaption>Site do ChemMagic Virtual Molecular Model Kit, que acessa diversas funções do Jmol por clique de mouse.</figcaption>
 </figure>
 </div>
 

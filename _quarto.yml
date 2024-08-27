@@ -29,12 +29,24 @@ website:
           - jmolPart.qmd
           - jmol.qmd
           - textoXmouse.qmd
-          - comandos.qmd
+          - comandosJmol.qmd
           - selecao.qmd
           - animacao.qmd
           - RPart.qmd
+          - rstudioCloud.qmd
+          - basicaoR.qmd
+          - basico.qmd
+          - animationPlots.qmd
           - anim.plots.qmd
+          - manipulate.qmd
+          - iplots.qmd
+          - ggplot2.qmd
+          - gganimate.qmd
+          - plotly.qmd
           - cinetica.qmd
+          - leaflet.qmd
+          - references.qmd
+          
       - text: "Ensino Superior"
         menu:
           - bioquanti.qmd

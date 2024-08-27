@@ -148,7 +148,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino-médio">    
         <li>
     <a class="dropdown-item" href="./inicio.html">
- <span class="dropdown-text">Início</span></a>
+ <span class="dropdown-text">Como diriam no telemarketing … !</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./questoes.html">
@@ -160,7 +160,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="./jmolPart.html">
- <span class="dropdown-text">PARTE 1 - JMOL - VISUALIZAÇÃO E ANIMAÇÃO INTERATIVA DE MOLÉCULAS</span></a>
+ <span class="dropdown-text">PARTE 1 - Jmol</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./jmol.html">
@@ -171,7 +171,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
  <span class="dropdown-text">Cliques de mouse <em>versus</em> linhas de comando</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./comandos.html">
+    <a class="dropdown-item" href="./comandosJmol.html">
  <span class="dropdown-text">Alguns comandos pra se aventurar nas moléculas voadoras</span></a>
   </li>  
         <li>
@@ -184,15 +184,59 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="./RPart.html">
- <span class="dropdown-text">PARTE 2 - R &amp; RStudio - VISUALIZAÇÃO E ANIMAÇÃO INTERATIVA DE GRÁFICOS E MAPAS</span></a>
+ <span class="dropdown-text">PARTE 2 - R &amp; RStudio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rstudioCloud.html">
+ <span class="dropdown-text">Como usar o R &amp; Rstudio - instalação e nuvem</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./basicaoR.html">
+ <span class="dropdown-text">Comandos básicos &amp; Scripts no R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./basico.html">
+ <span class="dropdown-text">Gráficos básicos e simulações</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./animationPlots.html">
+ <span class="dropdown-text">Animando um gráfico básico - o pacote <code>animation.plots</code></span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./anim.plots.html">
  <span class="dropdown-text">A Lei dos Gases Ideais e o pacote <code>anim.plots</code></span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./manipulate.html">
+ <span class="dropdown-text">Simulando equações de forma animada - o pacote <code>manipulate</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./iplots.html">
+ <span class="dropdown-text">Comparação de gráficos em Java - o pacote <code>iplots</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ggplot2.html">
+ <span class="dropdown-text">Gráficos mais elaborados - pacote `ggplot2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gganimate.html">
+ <span class="dropdown-text">Animando gráficos do ggplot2 - o pacote <code>gganimate</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./plotly.html">
+ <span class="dropdown-text">Gráficos interativos - o pacote <code>plotly</code></span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./cinetica.html">
  <span class="dropdown-text">Cinética de reações e o pacote <code>plotly</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./leaflet.html">
+ <span class="dropdown-text">Mapas interativos - o pacote <code>leaflet</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./references.html">
+ <span class="dropdown-text">References</span></a>
   </li>  
     </ul>
   </li>
@@ -295,7 +339,9 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>rotate <span class="dv">20</span> <span class="co"># 20 graus</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>rotate x <span class="dv">90</span> <span class="co"># eixo x</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>translate <span class="dv">50</span> <span class="co"># valor representa o percentual da janela (100 - fora; 0 - centro)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>translate y <span class="dv">50</span> <span class="co"># valor representa o percentual da janela (100 - fora; 0 - centro)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Obs<span class="sc">:</span> para retornar à posição original<span class="sc">:</span> <span class="st">`</span><span class="at">reset</span><span class="st">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="girar" class="level2">
@@ -312,25 +358,31 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É possível também ampliar ou reduzir o tamanho de uma molécula no ecrã combinando-se o comando <code>zoom</code> à quantidades, tal como segue:</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Ampliação <span class="dv">2</span>x<span class="sc">:</span> zoom <span class="cf">in</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Ampliação em <span class="dv">3</span>x<span class="sc">:</span> zoom \<span class="sc">*</span><span class="dv">3</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Ampliação em <span class="dv">3</span>x<span class="sc">:</span> zoom <span class="sc">*</span><span class="dv">3</span> </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Redução em <span class="dv">2</span>x<span class="sc">:</span> zoom out </span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>Redução em <span class="dv">3</span>x<span class="sc">:</span> zoom <span class="sc">/</span><span class="dv">3</span> </span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Eliminar ampliação<span class="sc">:</span> zoom off </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>Restrição a ligante e ampliação<span class="sc">:</span> restrict ligand; zoom <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>Restrição a um ligante e ampliação<span class="sc">:</span> restrict ligand; zoom <span class="dv">0</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>Obs<span class="sc">:</span> para retornar ao tamanho original<span class="sc">:</span> <span class="st">`</span><span class="at">zoom 0</span><span class="st">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com ampliações, reduções, rotações, translações, é possível que você queira retornar ao modelo na sua configuração de tamanho e coordenadas originais. Para isto:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>center; zoom <span class="dv">0</span> <span class="co"># centraliza e redimensiona o modelo a seu tamanho original</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="ampliação-animada-zoomto" class="level3">
 <h3 class="anchored" data-anchor-id="ampliação-animada-zoomto">Ampliação animada (<em>zoomTo</em>)</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse recurso é bem mais <em>“chique”</em>, já que permite visualizar de forma ampliada temporalmente algumas partes de interesse do modelo. Isso é particularmente bacana com biomacromoléculas, como para sítios de interação de ligantes ou grupos prostéticos, ou sítios de reação em catálise enzimática. Mas também impacta a visualização de pequenas moléculas, posto que os modelos crescem ou reduzem de forma animada no ecrã; pode-se também focar num átomo específico para chamar a atenção na molécula. A sintaxe da expressão é:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>zoomto ou <span class="fu">zoomTo</span> (expressão do átomo<span class="sc">/</span>grupo) tamanho ou... </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>zoomto <span class="fu">tempo</span> (expressão do átomo<span class="sc">/</span>grupo) tamanho</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>zoomto tempo tamanho <span class="co">#...ou, se quiser um grupo de átomos em especial (ligante, por ex)...</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>zoomto <span class="fu">tempo</span> (expressão do átomo<span class="sc">/</span>grupo) tamanho</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente carregar moléculas pequenas e proteínas, ilustrando o cmando <code>zoomTo</code> como segue:</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente carregar moléculas pequenas e proteínas, ilustrando o comando <code>zoomTo</code> como segue:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Aumentar em <span class="dv">3</span>x, meio segundo por vez<span class="sc">:</span> zoomto <span class="fl">0.5</span> <span class="sc">*</span><span class="dv">3</span> </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>Aumentar em <span class="dv">4</span>x, meio segundo por vez<span class="sc">:</span> zoomto <span class="fl">0.5</span> <span class="dv">400</span> </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Focar num ligante com ampliação de <span class="dv">2</span>x<span class="sc">:</span> zoomto <span class="dv">2</span>(ligand) <span class="dv">0</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>Focar num ligante com ampliação de <span class="dv">4</span>x, a meio segundo por vez<span class="sc">:</span> zoomto <span class="fl">0.5</span>(ligand)<span class="sc">*</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Aumentar em <span class="dv">3</span>x, meio segundo por vez<span class="sc">:</span> zoomto <span class="fl">0.5</span> <span class="sc">*</span><span class="dv">3</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Aumentar em <span class="dv">4</span>x, meio segundo por vez<span class="sc">:</span> zoomto <span class="fl">0.5</span> <span class="dv">400</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Focar num ligante com ampliação de <span class="dv">2</span>x<span class="sc">:</span> zoomto <span class="dv">2</span>(ligand) <span class="dv">0</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>Focar num ligante com ampliação de <span class="dv">4</span>x, a meio segundo por vez<span class="sc">:</span> zoomto <span class="fl">0.5</span>(ligand)<span class="sc">*</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -338,13 +390,13 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="pausa">Pausa</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um comando muito interessante para o <em>Jmol</em>, bem como para outras linguagens de programação, é <code>delay</code>. Essa ação permite que o <em>script</em> interrompa uma ação por algum tempo, medido em segundos, e limitado ao mínimo de um segundo. Experimente:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>ribose <span class="co"># carrega uma ribose</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>spin <span class="dv">50</span> <span class="co"># rotaciona no eixo X</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">5</span> <span class="co"># aguarda 5s</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>spin off <span class="co"># interrompe a rotação</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># represeta em arame, somente</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>wireframe <span class="dv">130</span> <span class="co"># espesssura do arame</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>color translucent <span class="co"># cor translúcida</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>ribose <span class="co"># carrega uma ribose</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>spin <span class="dv">50</span> <span class="co"># rotaciona no eixo X</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">5</span> <span class="co"># aguarda 5s</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>spin off <span class="co"># interrompe a rotação</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>wireframe only <span class="co"># represeta em arame, somente</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>wireframe <span class="dv">130</span> <span class="co"># espesssura do arame</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>color translucent <span class="co"># cor translúcida</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="laço" class="level2">
@@ -352,11 +404,11 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <em>Jmol</em> possui alguns comandos normalmente utilizados em linguagens de programação, embora não seja esse o escopo do presente trabalho. Se quiser <em>“ir fundo”</em>, consulte o <a href="https://chemapps.stolaf.edu/jmol/docs/">manual de referência de comandos do <em>Jmol</em></a> para os comandos de programação: <em>if, ifelse, for, while, step, break, wait, pause, case, continue, quit, loop</em>.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mas entre esses comandos variados, o de <em>laço iterativo</em> (<code>loop</code>) pode ser de valia ao ensino, por exemplo, para quando se desejar chamar à atenção para uma ligação, um átomo ou grupo de átomos. Exemplificando:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>acetate <span class="co"># carrega um modelo de acetato</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>color bonds red <span class="co"># coloração vermelha às ligações</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">1</span> <span class="co"># aguarda 1 segundo</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>color bonds green <span class="co"># troca a coloração para verde</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>loop <span class="dv">1</span> <span class="co"># realiza o laço (efeito "piscante")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>load <span class="sc">$</span>acetate <span class="co"># carrega um modelo de acetato</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>color bonds red <span class="co"># coloração vermelha às ligações</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>delay <span class="dv">1</span> <span class="co"># aguarda 1 segundo</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>color bonds green <span class="co"># troca a coloração para verde</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>loop <span class="dv">1</span> <span class="co"># realiza o laço (efeito "piscante")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para deixar o laço, ou seja, interromper a sequência em <em>loop</em>, digita-se <em><code>quit</code></em>.</div>
 </section>
@@ -368,34 +420,34 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <h3 class="anchored" data-anchor-id="move">Move</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para o comando <code>move</code> bastam os parâmetros que se deseja modificar (<em>nove</em> no total). Dependendo do que se deseja não há necessidade de usar todos os parâmetros, e que são fornecidos abaixo:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>move rotX rotY rotZ zoom dx dy dz slab time</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>Onde<span class="sc">:</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  rotX, Y ou Z <span class="ot">=</span> rotação no eixo X, Y, ou Z</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  zoom <span class="ot">=</span> ampliação ou redução</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  dX, Y ou Z <span class="ot">=</span> translação no eixo X, Y ou Z</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  slab <span class="ot">=</span> plano de fatiamento da molécula</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  time <span class="ot">=</span> tempo total envolvido no movimento</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>move rotX rotY rotZ zoom dx dy dz slab time</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>Onde<span class="sc">:</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  rotX, Y ou Z <span class="ot">=</span> rotação no eixo X, Y, ou Z</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  zoom <span class="ot">=</span> ampliação ou redução</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  dX, Y ou Z <span class="ot">=</span> translação no eixo X, Y ou Z</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  slab <span class="ot">=</span> plano de fatiamento da molécula</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  time <span class="ot">=</span> tempo total envolvido no movimento</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seguem alguns exemplos:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>move <span class="dv">90</span> <span class="dv">180</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">21</span> <span class="co"># rotaciona o modelo por 45 graus em torno do eixo X e por 180 graus no eixo Y, e empregando um movimento gradual de 2 segundos</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>move <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">35</span> <span class="dv">0</span> <span class="dv">0</span> <span class="fl">0.5</span> <span class="co"># reduz o modelo em 35% de seu tamanho, e com movimento gradual de 0,5 segundos</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>move <span class="dv">45</span> <span class="dv">0</span> <span class="dv">90</span> <span class="dv">150</span> <span class="dv">0</span> <span class="dv">30</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">5</span> <span class="co"># rotaciona 45 graus no eixo X e 90 graus no eixo Z, ampliando o modelo em 150% e transladando-o por 30%, tudo ao longo de 5 segundos.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>move <span class="dv">90</span> <span class="dv">180</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">21</span> <span class="co"># rotaciona o modelo por 45 graus em torno do eixo X e por 180 graus no eixo Y, e empregando um movimento gradual de 2 segundos</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>move <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">35</span> <span class="dv">0</span> <span class="dv">0</span> <span class="fl">0.5</span> <span class="co"># reduz o modelo em 35% de seu tamanho, e com movimento gradual de 0,5 segundos</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>move <span class="dv">45</span> <span class="dv">0</span> <span class="dv">90</span> <span class="dv">150</span> <span class="dv">0</span> <span class="dv">30</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">5</span> <span class="co"># rotaciona 45 graus no eixo X e 90 graus no eixo Z, ampliando o modelo em 150% e transladando-o por 30%, tudo ao longo de 5 segundos.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="moveto" class="level3">
 <h3 class="anchored" data-anchor-id="moveto">MoveTo</h3>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resulta em orientação <em>absoluta</em> do modelo, não dependendo de suas coordenadas anteriores. Sua inserção não é simples, pois depende dos dados da orientação do modelo quando carregado pela 1a. vez, e que pode ser obtida por:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>show orientation</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>show orientation</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um exemplo de resultado pelo comando é:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>moveto <span class="sc">/</span><span class="er">*</span> time, axisAngle <span class="sc">*</span><span class="er">/</span> <span class="fl">1.0</span> { <span class="dv">616</span> <span class="sc">-</span><span class="dv">708</span> <span class="sc">-</span><span class="dv">346</span> <span class="fl">47.68</span>} <span class="sc">/</span><span class="er">*</span> zoom, translation <span class="sc">*</span><span class="er">/</span>  <span class="fl">400.0</span> <span class="fl">0.0</span> <span class="fl">0.0</span>  <span class="sc">/</span><span class="er">*</span> center, rotationRadius <span class="sc">*</span><span class="er">/</span> {<span class="fl">15.174467</span> <span class="fl">28.719118</span> <span class="fl">4.726837</span>} <span class="fl">35.148052</span> <span class="sc">/</span><span class="er">*</span> navigation center, translation, depth <span class="sc">*</span><span class="er">/</span> {<span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span>} <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="sc">/</span><span class="er">*</span> cameraDepth, cameraX, cameraY <span class="sc">*</span><span class="er">/</span>  <span class="fl">3.0</span> <span class="fl">0.0</span> <span class="fl">0.0</span>;</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#OR</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Follows Z-Y-Z convention for Euler angles</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>reset;center {<span class="fl">15.174467</span> <span class="fl">28.719118</span> <span class="fl">4.726837</span>}; rotate z <span class="fl">130.27</span>; rotate y <span class="fl">44.57</span>; rotate z <span class="sc">-</span><span class="fl">147.67</span>; zoom <span class="fl">400.0</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>moveto <span class="sc">/</span><span class="er">*</span> time, axisAngle <span class="sc">*</span><span class="er">/</span> <span class="fl">1.0</span> { <span class="dv">616</span> <span class="sc">-</span><span class="dv">708</span> <span class="sc">-</span><span class="dv">346</span> <span class="fl">47.68</span>} <span class="sc">/</span><span class="er">*</span> zoom, translation <span class="sc">*</span><span class="er">/</span>  <span class="fl">400.0</span> <span class="fl">0.0</span> <span class="fl">0.0</span>  <span class="sc">/</span><span class="er">*</span> center, rotationRadius <span class="sc">*</span><span class="er">/</span> {<span class="fl">15.174467</span> <span class="fl">28.719118</span> <span class="fl">4.726837</span>} <span class="fl">35.148052</span> <span class="sc">/</span><span class="er">*</span> navigation center, translation, depth <span class="sc">*</span><span class="er">/</span> {<span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span>} <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="sc">/</span><span class="er">*</span> cameraDepth, cameraX, cameraY <span class="sc">*</span><span class="er">/</span>  <span class="fl">3.0</span> <span class="fl">0.0</span> <span class="fl">0.0</span>;</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">#OR</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Follows Z-Y-Z convention for Euler angles</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>reset;center {<span class="fl">15.174467</span> <span class="fl">28.719118</span> <span class="fl">4.726837</span>}; rotate z <span class="fl">130.27</span>; rotate y <span class="fl">44.57</span>; rotate z <span class="sc">-</span><span class="fl">147.67</span>; zoom <span class="fl">400.0</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perceba que há dois conjuntos de comandos um pelo <em>moveTo</em> e outro por <em>reset, center, rotate e translate</em>. Para obter o modelo nas coordenadas originais, basta copiar um ou outro conjunto de dados.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usando-se o 1o. conjunto (<em>moveTo</em>), copia-se a linha e altera-se o tempo de animação, no caso o valor 1.0 em “axisAngle */ 1.0”.</div>
@@ -405,21 +457,21 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="comparando-dois-modelos-no-ecrã">Comparando dois modelos no ecrã</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compara 2 modelos e reorienta as coordenadas do segundo para justapor-se ao primeiro, por um algoritmo de correlação.</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>load files <span class="st">"$tyrosine"</span> <span class="st">"$epinephrine"</span>;</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>frame <span class="sc">*</span>;</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>compare {<span class="fl">2.1</span>} {<span class="fl">1.1</span>} rotate translate <span class="fl">5.0</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>load files <span class="st">"$tyrosine"</span> <span class="st">"$epinephrine"</span>;</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>frame <span class="sc">*</span>;</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>compare {<span class="fl">2.1</span>} {<span class="fl">1.1</span>} rotate translate <span class="fl">5.0</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="navigate" class="level2">
 <h2 class="anchored" data-anchor-id="navigate">Navigate</h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O comando permite explorar o modelo simulando um passeio panorâmico ao interior da estrutura. Os parâmetros envolvem o tempo de percuro (ou 2s quando omitido). Exemplificando:</div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>navigate depth <span class="dv">50</span> <span class="co"># imersão no modelo em 2s</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">3</span> rotate y <span class="dv">20</span> <span class="co"># rotaciona 20o no eixo y</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">4</span> trace <span class="co"># passeia pelo modelo em 4s</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">3</span> translate {<span class="dv">30</span> <span class="dv">50</span> <span class="dv">70</span>} modelo translada levemente por <span class="dv">3</span>s</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">5</span> center {<span class="dv">10</span> <span class="dv">20</span> <span class="dv">30</span>} <span class="co"># sonda ao lado do modelo, e nas coordenadas x, y, z</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">2</span> depth <span class="dv">30</span> <span class="sc">/</span> <span class="dv">5</span> rotate <span class="dv">180</span> <span class="sc">/</span> depth <span class="dv">20</span> <span class="sc">/</span> translate X <span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>navigate depth <span class="dv">50</span> <span class="co"># imersão no modelo em 2s</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">3</span> rotate y <span class="dv">20</span> <span class="co"># rotaciona 20o no eixo y</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">4</span> trace <span class="co"># passeia pelo modelo em 4s</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">3</span> translate {<span class="dv">30</span> <span class="dv">50</span> <span class="dv">70</span>} modelo translada levemente por <span class="dv">3</span>s</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">5</span> center {<span class="dv">10</span> <span class="dv">20</span> <span class="dv">30</span>} <span class="co"># sonda ao lado do modelo, e nas coordenadas x, y, z</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>navigate <span class="dv">2</span> depth <span class="dv">30</span> <span class="sc">/</span> <span class="dv">5</span> rotate <span class="dv">180</span> <span class="sc">/</span> depth <span class="dv">20</span> <span class="sc">/</span> translate X <span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="exemplos-de-animações-para-moléculas-no-jmol" class="level2">

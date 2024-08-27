@@ -1,0 +1,44 @@
+project:
+  type: website
+lang: pt
+
+book:
+  title: "Moléculas voadoras, animações, gráficos e mapas interativos...ou... Vivificando conteúdos para o Ensino Médio"
+
+  author: "José Maurício Schneedorf Ferreira da Silva"
+#  date: "8/6/2024"
+
+  chapters:
+    - index.qmd
+    - questoes.qmd
+    - ferramentas.qmd
+    - part: jmolPart.qmd
+    - jmol.qmd
+    - textoXmouse.qmd
+    - comandosJmol.qmd
+    - selecao.qmd
+    - animacao.qmd
+    - part: RPart.qmd
+    - rstudioCloud.qmd
+    - basicaoR.qmd
+    - basico.qmd
+    - animationPlots.qmd
+    - manipulate.qmd
+    - iplots.qmd
+    - ggplot2.qmd
+    - gganimate.qmd
+    - plotly.qmd
+    - leaflet.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    
+
+
+

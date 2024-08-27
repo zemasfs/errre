@@ -1,0 +1,13 @@
+---
+title: "Animando um gráfico básico - o pacote `animation.plots`"
+---
+
+## Uma palavrinha antes...
+
+|       Daqui em diante serão apresentados alguns pacotes do `R` que permitem animações, interatividade e simulações gráficas e de geovisualização. Cada pacote será brevemente descrito, sucedendo-se sua ilustração com temas contidos no [MAPA - Material de Apoio Pedagógico para Aprendizagens](https://seliga.educacao.mg.gov.br/cardenos-mapa) da Secretaria de Educação de Minas Gerais. 
+
+|       Será fornecida uma breve apresentação de cada *pacote*, o problema e seu emprego ilustrado junto ao *MAPA*, o trecho de código para execução/modificação no *RStudio*, seu resultado, e as vantagens/desvantagens aparentes de cada pacote. 
+
+## O pacote `animation.plots`
+
+|       O pacote [animation.plots](https://cran.r-project.org/web/packages/anim.plots/index.html) é uma biblioteca para animação de gráficos criados pelo sistema básico do `R`, tal como visto na @sec-basico. 

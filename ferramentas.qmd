@@ -29,24 +29,26 @@ title: "Um pouco sobre as ferramentas"
 
 ## Gráficos animados, simulações, e geovisualização
 
-|       [R](https://cran.r-project.org/) é um software gratuito desenvolvido para computação estatística e gráficos. Roda-se o *R* em diversas interfaces de usuário (GUI), dentre as quais destaca-se o [RStudio](https://www.rstudio.com/), um ambiente de desenvolvimento integrado (IDE) também gratuito. O *Rstudio* possui também uma *versão online* gratuita, acessível pelo sítio [RStudio Cloud](https://rstudio.cloud/). 
+|       [R](https://cran.r-project.org/) é um software gratuito e de código aberto, originalmente desenvolvido para computação estatística e gráficos. Roda-se o *R* em diversas interfaces de usuário (*GUI, Graphical User Interface*), dentre as quais destaca-se o [RStudio](https://www.rstudio.com/), um ambiente de desenvolvimento integrado (IDE) também gratuito. O *Rstudio* possui também uma *versão online* gratuita, acessível pelo site [RStudio Cloud](https://rstudio.cloud/). 
 
 [![](rLogo.jpeg){width=20%}](https://cran.r-project.org/)
 
 
-Pode-se trabalhar com o *Rstudio* para coisas simples, como texto, gráficos e tabelas, mas também com um largo espectro de atividades, em função da expansibilidade de pacotes instaláveis, permitindo análise e criação de textos, animações, música, arte, imagens, e pesquisa científica direcionada a temas específicos.
+Pode-se trabalhar com o *Rstudio* para coisas simples, como texto, gráficos e tabelas, mas também para um largo espectro de atividades, em função de sua expansibilidade por *pacotes instaláveis*. Esses pacotes são obtidos no [site oficial do projeto - R CRAN](https://cran.r-project.org), bem como desenvolvidos e disponibilizados por iniciativas individuais em sites autorais.
+
+|       Para se ter uma ideia desses espectro, alguns pacotes (*library*) permitem análise e criação de textos, interface com portadores de deficência visual, animações, gráficos e tabelas de qualidade de publicação técnico-científica, manipulação e anaĺise de dados e de imagens, música, arte, Ciência de Dados, internet das coisas (*IoT*), linguagem profunda de máquina, e mesmo inteligência artificial. 
+
+|       Para a pesquisa científica o `R` possui diversos *pacotes* direcionados a temas específicos e bem diversos, como Ecologia, Estatística, Matemática, Física, Biologia, Química, Artes, Geografia, Geologia, e História, dentre muitos. 
 
 [![](RStudioLogo.png){width=20%}](https://rstudio.cloud/)
 
-
-|       Entre os [diversos pacotes](https://cran.r-project.org/web/packages/available_packages_by_name.html) (na verdade, mais de duas dezenas de milhar), existem alguns que permitem elaborar objetos didáticos nos moldes do subtítulo retro. Segue a lista de pacotes que serão utilizados nestes Curso para exemplificar conteúdos do material de apoio pedagógico para aprendizagens de Minas Gerais [Mapa](https://seliga.educacao.mg.gov.br/cardenos-mapa):
+|       Entre os [diversos pacotes oficiais](https://cran.r-project.org/web/packages/available_packages_by_name.html) (na verdade, mais de 20 mil!), existem alguns que permitem a elaboração de objetos didáticos nos moldes do subtítulo retro. Esses pacotes são os listados abaixo, e serão ilustrados com conteúdos do ensino médio constantes do [Material de Apoio Pedagógico para Aprendizagens de Minas Gerais - Mapa](https://seliga.educacao.mg.gov.br/cardenos-mapa), bem como livros didáticos para Matemática, Física, Química e Biologia do nível educacional.
 
 * `basic` - criação de gráficos básicos
-* `ggplot2` - gráficos muito técnicos e muito bonitos
+* `ggplot2` - gráficos mais elaborados e muito bonitos
 * `animation.plots` - animação de gráficos
-* `manipulate` - simulação de equações
-* `gganimate` - animação de gráficos do pacote `gganimate`
+* `manipulate` - simulação gráfica de equações
+* `gganimate` - animação de gráficos do pacote `ggplot2`
 * `plotly`-  gráficos interativos
-* `ggplotly` - interatividade com o pacote `ggplot2`
 * `leaflet` - geovisualização em mapas
 

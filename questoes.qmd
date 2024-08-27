@@ -2,9 +2,9 @@
 title: "Algumas questões prévias"
 ---
 
-## De que se trata essa capacitação ? 
+## De que se trata esse material ? 
 
-|       Bom, como diz o título, de *vivificar* imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas...da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para o *Ensino Médio*, principalmente para *Ciências da Natureza e Suas Tecnologias*, também com *aplicações da Matemática* e baseadas em premissas de *Ensino Reprodutível*. 
+|       Bom, como diz o título, de *vivificar* imagens e relações numéricas encontrados em livros-texto. Em palavras mais abstratas...da tentativa de se oferecer algumas ferramentas para compor objetos didáticos para o *Ensino Médio*, principalmente para temas de *Física, Química e Biologia* contidos em *Ciências da Natureza e Suas Tecnologias*, também com *aplicações da Matemática* e baseadas em premissas de *Ensino Reprodutível*. 
 
 |       Agora, de modo mais claro, de instrumentalizar professores ao uso de dois programas básicos de computador, um para *visualização de moléculas em 3D*, e outro para *vivificar* algumas relações estáticas encontradas em livros-texto por *animações, interatividade, e simulações*.
 
@@ -13,11 +13,11 @@ title: "Algumas questões prévias"
 |       Também em módicos termos, para oferecer aos alunos uma visão mais *paupável e amigável* de conteúdos trazidos de livros-texto do nível educacional da proposta. 
 
 
-## Como os alunos podem beneficiar-se da oferta das ferramentas que serão tratadas no Curso ?
+## Como alunos do ensino médio podem beneficiar-se da oferta das ferramentas que serão tratadas aqui ?
 
 |       Isto tem muito a ver com o conceito de *letramento visual (visual literacy)* e também com *letramento científico*. Em síntese, os livros-texto oferecem formas distintas de apresentação de conteúdos, e que exigem do estudante diferentes **níveis de abstração**, como o *simbólico* (fórmula estrutural, equação), *esquemático* (fluxogramas, geovisualização), *gráfico* (relação entre variáveis), *realístico* (resultado experimental), e de *cartoon* (estrutura molecular).
 
-|       Assim, o Curso pretende oferecer uma ferramenta para auxiliar na abstração *de cartoon*, e outra para o *simbólico*, *esquemático*, *gráfico*, e de análise de dados presente na abstração *realística*. Essa segunda ferramenta permitirá acessar o conteúdo de livros-texto por animações e simulações.
+|       Assim, pretende-se oferecer uma ferramenta para auxiliar na abstração *de cartoon*, e outra para o *simbólico*, *esquemático*, *gráfico*, e de análise de dados presente na abstração *realística*. Essa segunda ferramenta permitirá acessar o conteúdo de livros-texto por animações e simulações.
 
 |       Na *prática imediata e de curto prazo*, essas ferramentas poderão possibilitar um menor nível de abstração para alguns conteúdos encontrados em *livros-texto do Ensino Médio*, por exemplo:
 
@@ -28,7 +28,7 @@ title: "Algumas questões prévias"
 
 |       Para a *visualização de moléculas em 3D* será empregado o **Jmol**, e para os demais mencionados o programa **R** com sua interface gráfica **RStudio**. São programas gratuitos para instalação em computador de mesa ou notebook, embora também acessáveis por navegador de internete, e nesse caso, sem necessidade de instalação.
 
-## Se o Curso envolve o uso de livros-texto, qual bibliografia será utilizada ?
+## Se este material envolve o uso de livros-texto, qual bibliografia será utilizada ?
 
 |       Nenhuma. Na verdade será utilizado algum conteúdo geral presente no [Material de Apoio Pedagógico para Aprendizagens - MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa/ensino-m%C3%A9dio-2024) para habilidades previstas no *Currículo Referência de Minas Gerais*, e pertinente principalmente à *Ciências da Natureza e Suas Tecnologias*.
 
