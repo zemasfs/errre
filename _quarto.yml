@@ -45,7 +45,7 @@ website:
             href: rstudioCloud.qmd
           - text: "Pacotes do R"
             href: pacotes.qmd
-          - text: "O pacote `Plotly`"
+          - text: "O pacote `plotly`"
             href: plotly.qmd
       - contato.qmd
             

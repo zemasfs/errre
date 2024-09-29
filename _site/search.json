@@ -286,13 +286,13 @@
   {
     "objectID": "plotly.html",
     "href": "plotly.html",
-    "title": "9 - Gráficos interativos - o pacote plotly",
+    "title": "Gráficos interativos com pacote plotly",
     "section": "",
-    "text": "A biblioteca plotly é a mais rica em interatividade entre as apresentadas neste material. Recapitulando, o pacote anim.plots gera arquivos de imagem (PNG, GIF) e mesmo arquivos em formato PDF, com animações pré-definidas pelo usuário, utilizando a biblioteca graphics para a construção de gráficos.\n\n\n      Por sua vez, o pacote manipulate já permite uma interação maior com o usuário, possibilitando a elaboração em tempo real de gráficos de funções matemáticas com alteração em parâmetros. Não obstante, o pacote só opera dentro do ambiente do RStudio. Já o pacote gganimate utiliza a riqueza da biblioteca (ou pacote) ggplot2 para criar animações em gráficos mais sofisticados, permitindo seu salvamento em formato de imagem (PNG), e mesmo em formato HTML.\n\n\n      Agora imagine uma biblioteca do R que una as duas características que distinguem as anteriores, ou seja, que produza gráficos em animação pré-definida pelo usuário, ao mesmo tempo em que permite modificar algum parâmetro, não necessáriamente de uma função matemática, e também armazenando o produto final em arquivo separado (PNG, HTML). E mais…que também possibilite facilmente ações de ampliação, redução e foco em determinada região do gráfico, bem como o efeito de mouse over (ou hover), em que a simples passagem do mouse sobre o dado gráfico abra as informações daquele ponto.\n\n\n      E pra fechar…que seja capaz de produzir gráficos de qualidade de publicação ou de grande complexidade integrando com o pacote ggplot2, e que assim como o pacote manipulate, também possibilite a inserção de seletores, menu suspenso, e botões.\n\n\n      Isso é o melhor dos mundos !! Porque, em síntese, é possível criar o gráfico, inserir comandos de animação e interatividade, e armazená-lo em arquivo separado HTML, possibilitando-o ser aberto em qualquer browser, mesmo estando sem conexão com a internet.\n\n\n      É exatamente isso (mas não “só”) que a biblioteca plotly é capaz de fazer. E essa biblioteca gráfica interativa é tão significativa no “reino” moderno da visualização de dados e do story telling, que pode ser obtida tanto para a linguagem R como para linguagem Python, e a linguagem JavaScript de programação.\n      Complementarmente, por possibilitar uma integração ao JavaScript, a biblioteca também é utilizado no Power Bi da Microsoft, uma coleção de aplicativos conectados para a visualização de dados.\n      De fato, é a própria biblioteca plotlyjs, externa ao R e RStudio que é incorporada ao R.",
+    "text": "Entre as duas dezenas de milhar de bibliotecas do R, algumas poucas permitem recursos de animação, simulação e interatividade. Elencando algumas brevemente, o pacote anim.plots permite gerar arquivos de animação por imagem (PNG, GIF) e mesmo arquivos em formato PDF, com as animações pré-definidas pelo usuário, e utilizando-se da biblioteca graphics que já vem na instalação do R para a construção de gráficos.\n\n\n      Por sua vez, o pacote manipulate já permite uma interação maior com o usuário, possibilitando a elaboração em tempo real de gráficos de funções matemáticas com alteração em parâmetros. Não obstante, o pacote só opera dentro do ambiente do RStudio. Já o pacote gganimate utiliza a riqueza da biblioteca (ou pacote) gráfica ggplot2 para criar animações em gráficos mais sofisticados, permitindo seu salvamento em formato de imagem (PNG), e mesmo em formato HTML.\n\n\n      Já a biblioteca plotly é mais rica em interatividade entre as mencionadas acima. Além de produzir gráficos em animação pré-definida pelo usuário, também permite modificar algum parâmetro o variável categórica/numérica, armazena o produto final em arquivo separado (PNG, HTML), possibilita facilmente ações de ampliação, redução e foco em determinada região do gráfico, bem como o efeito de mouse over (ou hover), em que a simples passagem do mouse sobre o dado gráfico abra as informações daquele ponto. E pra fechar o plotly é capaz de produzir gráficos de qualidade de publicação ou de grande complexidade integrando-se ao pacote ggplot2, além de possibilitar a inserção de seletores, menu suspenso, e de botões.\n\n\n      Isso é o melhor dos mundos !! Porque, em síntese, é possível criar o gráfico, inserir comandos de animação e interatividade, e armazená-lo em arquivo separado HTML, possibilitando-o ser aberto em qualquer browser, mesmo estando sem conexão com a internet, em computador ou dispositivo móvel. Isso caracteriza o ploly como uma ferramenta potencial ao ensino e aprendizagem, já que seus gráficos são armazenados separadamente em uma página HTML, e que não depende nem de internete e nem de computador para sua utilização.\n\n\n      O plotly constitui portanto uma biblioteca gráfica interativa bastante significativa no “reino” moderno da visualização de dados e do story telling, e pode ser obtida tanto para a linguagem R como para linguagem Python, e a linguagem JavaScript de programação.\n      Complementarmente, por possibilitar uma integração ao JavaScript, a biblioteca também é utilizada em alguns paineis de dados, como no Power Bi da Microsoft, uma coleção de aplicativos conectados para a visualização de dados. De fato, é a própria biblioteca plotlyjs, externa ao R e RStudio que é incorporada ao R.",
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
-      "O pacote `Plotly`"
+      "O pacote `plotly`"
     ]
   },
   {
@@ -304,19 +304,19 @@
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
-      "O pacote `Plotly`"
+      "O pacote `plotly`"
     ]
   },
   {
     "objectID": "plotly.html#um-gráfico-interativo-simples-com-o-plotly",
     "href": "plotly.html#um-gráfico-interativo-simples-com-o-plotly",
-    "title": "9 - Gráficos interativos - o pacote plotly",
+    "title": "Gráficos interativos com pacote plotly",
     "section": "Um gráfico interativo simples com o plotly",
-    "text": "Um gráfico interativo simples com o plotly\n      Assim como os pacotes graphics e ggplot2, a elaboração de gráficos pelo plotly requer alguns comandos básicos. Mas a boa notícia é que o gráfico produzido com poucos comandos já apresenta interatividade, como ampliação/redução, deslocamento dos dados em eixos, e efeitos de informação por passagem do mouse (hover).\n      Ilustrando um gráfico simples produzido com o plotly e nativamente interativo, segue um trecho de código para a sua elaboração com o pacote básico graphic, seguido de outro, com o pacote plotly:\n\nlibrary(plotly) # carrega a biblioteca\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nx = 1:10 # atribui valores de 1 a 10 à variável \"x\"\ny = x^2 # atribui à variável \"y\" o quadrado do valor da variável \"x\"\nplot(x,y) # elabora o gráfico com o pacote `graphics`.\n\n\n\n\n\n\n\n\n      Agora com o pacote plotly:\n\nplot_ly(x = ~x, y = ~y, type=\"scatter\") \n\nNo scatter mode specifed:\n  Setting the mode to markers\n  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode\n\n\n\n\n\n# sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)\n#                    type: para atribuir um tipo de gráfico\n\n      Agora observe quanta interatividade surgiu com o simples comando acima, passando o mouse pelos pontos do gráfico, ou clicando nos ícones que apareceram acima do gráficok. Teste essa interatividade:\n\nPassando o mouse sobre os pontos do gráfico (hover) você obterá as coordenadas de cada ponto;\nClicando com o botão esquerdo do mouse em qualquer parte do gráfico e desenhando um retângulo você obterá uma ampliação da área;\nSe der dois cliques após a ampliação você retornará ao gráfico original;\nPosicionando o ponteiro do mouse entre os valores de um eixo, e arrastando o mouse, você verá um deslocamento do eixo selecionado;\nSelecionando um ícone no canto superior direito do gráfico, você poderá, na sequência a partir da esquerda, baixar o plot como imagem, realizar uma ampliação, deslocar os eixos, selecionar os pontos dentro de uma caixa, ou dentro de um laço, ampliar, reduzir, escalonar ao tamanho original, realinhar os eixos aos do plot original, observar as coordenadas (x e y), observar somente a coordenada y, e retornar ao início.",
+    "text": "Um gráfico interativo simples com o plotly\n      A elaboração de gráficos pelo plotly requer alguns comandos básicos. Mas a boa notícia é que o gráfico produzido com poucos comandos já apresenta interatividade, como ampliação/redução, deslocamento dos dados em eixos, e efeitos de informação por passagem do mouse (hover).\n      Ilustrando um gráfico simples produzido com o plotly e nativamente interativo, segue um trecho de código para a sua elaboração:\n\nlibrary(plotly) # carregamento da biblioteca\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nx = 1:10 # atribui valores de 1 a 10 à variável \"x\"\ny = x^2 # atribui à variável \"y\" o quadrado do valor da variável \"x\"\n\nplot_ly(x = ~x, y = ~y, type=\"scatter\") \n\nNo scatter mode specifed:\n  Setting the mode to markers\n  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode\n\n\n\n\n\n# Observação:\n#sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)\n#                    type: para atribuir um tipo de gráfico\n\n      Agora observe quanta interatividade surgiu com o simples comando acima, passando o mouse pelos pontos do gráfico, ou clicando-se nos ícones que apareceram acima do gráfico. Teste essa interatividade:\n\nPassando o mouse sobre os pontos do gráfico (hover) você obterá as coordenadas de cada ponto;\nClicando com o botão esquerdo do mouse em qualquer parte do gráfico e desenhando um retângulo você obterá uma ampliação da área;\nSe der dois cliques após a ampliação você retornará ao gráfico original;\nPosicionando o ponteiro do mouse entre os valores de um eixo, e arrastando o mouse, você verá um deslocamento do eixo selecionado;\nSelecionando um ícone no canto superior direito do gráfico, você poderá, na sequência a partir da esquerda, baixar o plot como imagem, realizar uma ampliação, deslocar os eixos, selecionar os pontos dentro de uma caixa, ou dentro de um laço, ampliar, reduzir, escalonar ao tamanho original, realinhar os eixos aos do plot original, observar as coordenadas (x e y), observar somente a coordenada y, e retornar ao início.",
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
-      "O pacote `Plotly`"
+      "O pacote `plotly`"
     ]
   },
   {
@@ -328,43 +328,43 @@
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
-      "O pacote `Plotly`"
+      "O pacote `plotly`"
     ]
   },
   {
     "objectID": "plotly.html#sofisticando-a-sintaxe-para-o-plotly",
     "href": "plotly.html#sofisticando-a-sintaxe-para-o-plotly",
-    "title": "9 - Gráficos interativos - o pacote plotly",
+    "title": "Gráficos interativos com pacote plotly",
     "section": "Sofisticando a sintaxe para o plotly",
-    "text": "Sofisticando a sintaxe para o plotly\n      Como é da sabedoria popular, “nada vem de graça…”, e também é assim com o aprendizado de linguagens de programação ou sintaxes dos pacotes do R. Contudo, e como também repousado na sabedoria popular, após espremer-se os limões, eis que temos a limonada !\n      Na prática, é possível construir-se gráficos bastante sofisticados com o pacote plotly, embora nem tanto como para o ggplot2. Contudo, trata-se de outra biblioteca e, portanto, de outros comandos a empregar. Assim, também é possível dimensionar os pontos, escolher o seu tipo, colorir linhas, inserir legendas, e outras tantas “façanhas” digitais. Mas também é preciso aprender a sintaxe adequada pra isso, o que não vamos tratar neste material, por direcioná-lo principalmente ao emprego do recurso à produção de objetos didáticos interativos.\n      Mas, só pra dar um “gostinho”, segue um trecho de código para agregar valor ao gráfico simples de crescimento exponencial compilado com o plotly:\n\nplot_ly(x = ~x, y = ~y, type=\"scatter\", mode = \"markers+lines\", name = \"Dados\") %&gt;%\n  # Configurar marcadores (símbolos)\n  add_markers(marker = list(size = 15, symbol = \"circle\", opacity = 0.7)) %&gt;%\n  # Configurar linha\n  add_lines(line = list(color = \"blue\", width = 2)) %&gt;%\n  ## ADicionando etiquetas e nomes\n  # Layout do gráfico\n  layout(\n    title = \"Gráfico com Tamanho Independente de Símbolos e Linha\",\n    xaxis = list(title = \"Eixo X\"),\n    yaxis = list(title = \"Eixo Y\")\n  )",
+    "text": "Sofisticando a sintaxe para o plotly\n      Como é da sabedoria popular, “nada vem de graça…”, e também é assim com o aprendizado de linguagens de programação ou sintaxes dos pacotes do R. Contudo, e como também repousado na sabedoria popular, após espremer-se os limões, eis que temos uma limonada !! !\n      Na prática, é possível construir gráficos bastante sofisticados com o pacote plotly. Assim, é possível dimensionar os pontos, escolher o seu tipo, colorir linhas, inserir legendas, e outras tantas “façanhas” digitais. Mas também é preciso aprender a sintaxe adequada pra isso, o que não vamos tratar em detalhes neste material, por direcioná-lo principalmente ao emprego do recurso à produção de objetos didáticos interativos.\n      Mas, só pra dar um “gostinho”, segue um trecho de código para agregar valor ao gráfico simples de crescimento exponencial compilado com o plotly:\n\nplot_ly(x = ~x, y = ~y, type=\"scatter\", mode = \"markers+lines\", name = \"Dados\") %&gt;%\n  # Configurar marcadores (símbolos)\n  add_markers(marker = list(size = 15, symbol = \"circle\", opacity = 0.7)) %&gt;%\n  # Configurar linha\n  add_lines(line = list(color = \"blue\", width = 2)) %&gt;%\n  ## ADicionando etiquetas e nomes\n  # Layout do gráfico\n  layout(\n    title = \"Gráfico com Tamanho Independente de Símbolos e Linha\",\n    xaxis = list(title = \"Eixo X\"),\n    yaxis = list(title = \"Eixo Y\")\n  )",
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
-      "O pacote `Plotly`"
+      "O pacote `plotly`"
     ]
   },
   {
     "objectID": "plotly.html#mais-interatividade",
     "href": "plotly.html#mais-interatividade",
-    "title": "9 - Gráficos interativos - o pacote plotly",
+    "title": "Gráficos interativos com pacote plotly",
     "section": "Mais interatividade…",
     "text": "Mais interatividade…\n      Até o momento só “arranhamos” a interatividade do pacote plotly. Como mencionado ao início desse capítulo, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (sliders), menu de escolha, botões, entre muitos.\n\nAdicionando um controle deslizante\n      Assim, ilustrando mais interatividade, é possível agregar um controle deslizante de intervalo (rangeslider) ao gráfico construído, tal como representado abaixo:\n\nplot_ly(x = ~x, y = ~y, type=\"scatter\") %&gt;%\n  add_lines() %&gt;%\n  rangeslider()\n\nNo scatter mode specifed:\n  Setting the mode to markers\n  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode\n\n\n\n\n\n\n      Experimente posicionar o mouse num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observando o resultado.\n\n\nAdicionando um menu suspenso\n      Menus suspensos (dropdown menu) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (dataframe) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:\n\nx = 1:10 # vetor da variável independente \"x\"\nyLin = x\nyQuad = x^2\nyCub = x^3 # criação das variáveis dependentes \"y\"\n\ndatLQC &lt;-data.frame(x,yLin,yQuad,yCub)\n\n      Agora podemos inserir o menu suspenso para opção das tendências matemáticas:\n\nplot_ly(datLQC, x = ~x, y = ~yLin, type = \"scatter\", mode = \"line\", name = \"Linear\") %&gt;%\n  add_trace(x = ~x, y = ~yQuad, mode = \"line\", name = \"Quadrático\") %&gt;%\n  add_trace(x = ~x, y = ~yCub, mode = \"line\", name = \"Cúbico\") %&gt;%\n  layout(\n    title = \"Gráficos de potência\",\n    xaxis = list(title = \"x\"),\n    yaxis = list(title = \"y\"),\n    updatemenus = list(\n      list(\n        buttons = list(\n          list(label = \"yLin\", method = \"update\", args = list(list(visible = c(TRUE, FALSE, FALSE)))),\n          list(label = \"yQuad\", method = \"update\", args = list(list(visible = c(FALSE, TRUE, FALSE)))),\n          list(label = \"yCub\", method = \"update\", args = list(list(visible = c(FALSE, FALSE, TRUE))))\n        )\n      )\n    )\n  )\n\n\n\n\n\n      Ainda que você achar meio complicado o trecho de código acima, apenas copie-o, cole-o num script, e execute-o. Isso exemplifica a essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo accriação de novos. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (label) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua scatter por bar, por exemplo), ou o título do gráfico (title).\n      Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando plot_ly, a seleção do tipo de potência a representar pelo menu suspenso.\n      Assim como para os demais pacotes, existe um número significativo de comandos e widgets interativos com o plotly (sliders, botões de controle, por ex), e que, nesse caso específico, daria “pano pra manga” pra uma obra literária isolada. Mas você pode consultar as referências abaixo para um aprendizado mais abrangente, e mesmo um livro online gratuito com códigos e produtos correlatos.",
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
-      "O pacote `Plotly`"
+      "O pacote `plotly`"
     ]
   },
   {
     "objectID": "plotly.html#referência-do-pacote",
     "href": "plotly.html#referência-do-pacote",
-    "title": "9 - Gráficos interativos - o pacote plotly",
+    "title": "Gráficos interativos com pacote plotly",
     "section": "Referência do pacote:",
     "text": "Referência do pacote:\n\nGeral\nManual:\nTutorial:",
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
-      "O pacote `Plotly`"
+      "O pacote `plotly`"
     ]
   },
   {
@@ -903,6 +903,18 @@
       "Contato",
       "Vivificando Conteúdos Didáticos",
       "Saudações"
+    ]
+  },
+  {
+    "objectID": "plotly.html#uma-palavrinha-sobre-alguns-pacotes-para-interatividade-gráfica-no-r",
+    "href": "plotly.html#uma-palavrinha-sobre-alguns-pacotes-para-interatividade-gráfica-no-r",
+    "title": "Gráficos interativos com pacote plotly",
+    "section": "",
+    "text": "Entre as duas dezenas de milhar de bibliotecas do R, algumas poucas permitem recursos de animação, simulação e interatividade. Elencando algumas brevemente, o pacote anim.plots permite gerar arquivos de animação por imagem (PNG, GIF) e mesmo arquivos em formato PDF, com as animações pré-definidas pelo usuário, e utilizando-se da biblioteca graphics que já vem na instalação do R para a construção de gráficos.\n\n\n      Por sua vez, o pacote manipulate já permite uma interação maior com o usuário, possibilitando a elaboração em tempo real de gráficos de funções matemáticas com alteração em parâmetros. Não obstante, o pacote só opera dentro do ambiente do RStudio. Já o pacote gganimate utiliza a riqueza da biblioteca (ou pacote) gráfica ggplot2 para criar animações em gráficos mais sofisticados, permitindo seu salvamento em formato de imagem (PNG), e mesmo em formato HTML.\n\n\n      Já a biblioteca plotly é mais rica em interatividade entre as mencionadas acima. Além de produzir gráficos em animação pré-definida pelo usuário, também permite modificar algum parâmetro o variável categórica/numérica, armazena o produto final em arquivo separado (PNG, HTML), possibilita facilmente ações de ampliação, redução e foco em determinada região do gráfico, bem como o efeito de mouse over (ou hover), em que a simples passagem do mouse sobre o dado gráfico abra as informações daquele ponto. E pra fechar o plotly é capaz de produzir gráficos de qualidade de publicação ou de grande complexidade integrando-se ao pacote ggplot2, além de possibilitar a inserção de seletores, menu suspenso, e de botões.\n\n\n      Isso é o melhor dos mundos !! Porque, em síntese, é possível criar o gráfico, inserir comandos de animação e interatividade, e armazená-lo em arquivo separado HTML, possibilitando-o ser aberto em qualquer browser, mesmo estando sem conexão com a internet, em computador ou dispositivo móvel. Isso caracteriza o ploly como uma ferramenta potencial ao ensino e aprendizagem, já que seus gráficos são armazenados separadamente em uma página HTML, e que não depende nem de internete e nem de computador para sua utilização.\n\n\n      O plotly constitui portanto uma biblioteca gráfica interativa bastante significativa no “reino” moderno da visualização de dados e do story telling, e pode ser obtida tanto para a linguagem R como para linguagem Python, e a linguagem JavaScript de programação.\n      Complementarmente, por possibilitar uma integração ao JavaScript, a biblioteca também é utilizada em alguns paineis de dados, como no Power Bi da Microsoft, uma coleção de aplicativos conectados para a visualização de dados. De fato, é a própria biblioteca plotlyjs, externa ao R e RStudio que é incorporada ao R.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos com R",
+      "O pacote `plotly`"
     ]
   }
 ]
