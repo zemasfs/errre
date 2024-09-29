@@ -8,7 +8,7 @@ website:
   image: RStudioLogo.png # não funciona
   reader-mode: true # funciona
   google-analytics: "G-S1L73VGCG5"
-  title: "Ensino Reprodutível - ERRE" # omite-se o título pra não duplicar nome na aba
+  title: "ERRE - Ensino Reprodutível" # omite-se o título pra não duplicar nome na aba
   favicon: avatar.png # ícone da aba da página
   page-footer: 
         left: |
@@ -67,26 +67,26 @@ website:
     left:
       - text: "Jardim de Moléculas"
         menu:
-          - text: "Jardim"
-            href: Portfolio/JmolBook/iniciativa.html
+          - text: "Introdução"
+            href: Portfolio/JmolBook/iniciativa_Jmol.qmd
           - text: "Classificação"
-            href: Portfolio/JmolBook/classifica.html
+            href: Portfolio/JmolBook/classifica.qmd
           - text: "Orgânicas"
-            href: Portfolio/JmolBook/organica.html
+            href: Portfolio/JmolBook/organica.qmd
           - text: "Inorgânicas"
-            href: Portfolio/JmolBook/inorganica.html
+            href: Portfolio/JmolBook/inorganica.qmd
           - text: "Biomoléculas"
-            href: Portfolio/JmolBook/biomol.html
+            href: Portfolio/JmolBook/biomol.qmd
           - text: "Farmacológicas"
-            href: Portfolio/JmolBook/farmac.html
+            href: Portfolio/JmolBook/farmac.qmd
           - text: "Medicinais"
-            href: Portfolio/JmolBook/medicin.html
+            href: Portfolio/JmolBook/medicin.qmd
           - text: "Toxicológicas"
-            href: Portfolio/JmolBook/toxicol.html
+            href: Portfolio/JmolBook/toxicol.qmd
           - text: "Nutricionais"
-            href: Portfolio/JmolBook/nutri.html
+            href: Portfolio/JmolBook/nutri.qmd
           - text: "Supramoleculares"
-            href: Portfolio/JmolBook/supramol.html
+            href: Portfolio/JmolBook/supramol.qmd
          
             
             # o truque é colocar a pasta dos
@@ -94,14 +94,16 @@ website:
             # pasta do website
       - text: "Gráficos Interativos"
         menu:
+          - text: "Introdução"
+            href: Portfolio/ODR/iniciativa_ODR.qmd
           - text: "Física"
-            href: cheatsheets.html
+            href: Portfolio/ODR/ODR.qmd
             target: "_blank"
           - text: "Química"
-            href: cheatsheets.html
+            href: Portfolio/ODR/ODR.qmd
             target: "_blank"    
           - text: "Biologia"
-            href: cheatsheets.html
+            href: Portfolio/ODR/ODR.qmd
             target: "_blank"
  
       - text: "Folhas de Dicas"
