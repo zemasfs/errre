@@ -1,0 +1,15 @@
+{
+  "hash": "d30062c377fc86f39efabe87f6f05f41",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Como acessar o Jmol pela internet (JSmol)\"\n---\n\n\nThis is a Quarto book.\n\nTo learn more about Quarto books visit <https://quarto.org/docs/books>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n|       Para acessar o jmol, é necessário realizar o dowload, em uma pasta denominada arquivo zip, com necessidade de extrair, em seguida o arquivo será aberto no computador, pronto para realizar os comandos que o usuário deseja, os comandos são executados em inglês, apesar de ser uma linguagem diferente da habitual, o intuito é demonstrar de maneira dinâmica como é determinada uma molécula.A denominação é realizada em 3D, diferente do que é ensinado nas salas de aula, na questão da utilização dos comandos em inglês, serão apenas poucas palavras que demandam a língua estrangeira. Portanto, o foco principal será o modo diferente de ensinar substâncias químicas, não se opondo á linguagem básica dos alunos e professores, o necessário mesmo é a ferramenta em 3D, a questão que envolve linguagem diferente é relativamente menos importante  em relação á questão que envolve  aprendizagem com a utilização do jmol.\n\n|       Como sugestão para linguagem básica envolvendo os comandos do jmol, a utilização do google tradutor que visa a interpretação de palavras de idiomas diferentes, seria uma opção a ser utilizada para a execução dos comandos necessários para ter acesso a substância que se deseja direcionar o ensino. Visto que, a tradução é realizada em diversos idiomas e possibilita a utilização do vocabulo correto que deve ser escrito em Inglês para efetuar o acesso, é uma possibilidade para facilitar no momento da escrita necessária para execução dos comandos. O importante é chamar atenção dos alunos para a mobilidade das moléculas e como o ensino e aprendizagem é inovador através do programa, não sendo necessaário que saiba minuciosamente inglês, sendo básico ao nível básico de entendimento.     ",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

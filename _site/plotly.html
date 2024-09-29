@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ERRE - Ensino Reprodutível - Gráficos interativos - o pacote plotly</title>
+<title>ERRE &amp; EM - 9 - Gráficos interativos - o pacote plotly</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,6 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./contato.html" rel="next">
+<link href="./pacotes.html" rel="prev">
 <link href="./avatar.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -78,12 +114,21 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +139,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <img src="./avatar.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">ERRE - Ensino Reprodutível</span>
+    <span class="navbar-title">ERRE &amp; EM</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -103,160 +148,278 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ensino-médio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Ensino Médio</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-jardim-de-moléculas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Jardim de Moléculas</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino-médio">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-jardim-de-moléculas">    
         <li>
-    <a class="dropdown-item" href="./inicio.html">
- <span class="dropdown-text">Como diriam no telemarketing … !</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/iniciativa.html">
+ <span class="dropdown-text">Jardim</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./questoes.html">
- <span class="dropdown-text">Algumas questões prévias</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/classifica.html">
+ <span class="dropdown-text">Classificação</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./ferramentas.html">
- <span class="dropdown-text">Um pouco sobre as ferramentas</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/organica.html">
+ <span class="dropdown-text">Orgânicas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./jmolPart.html">
- <span class="dropdown-text">PARTE 1 - Jmol</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/inorganica.html">
+ <span class="dropdown-text">Inorgânicas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./jmol.html">
- <span class="dropdown-text">Usando o Jmol para observar moléculas em 3D</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/biomol.html">
+ <span class="dropdown-text">Biomoléculas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./textoXmouse.html">
- <span class="dropdown-text">Cliques de mouse <em>versus</em> linhas de comando</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/farmac.html">
+ <span class="dropdown-text">Farmacológicas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./comandosJmol.html">
- <span class="dropdown-text">Alguns comandos pra se aventurar nas moléculas voadoras</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/medicin.html">
+ <span class="dropdown-text">Medicinais</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./selecao.html">
- <span class="dropdown-text">Seleção de partes da molécula</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/toxicol.html">
+ <span class="dropdown-text">Toxicológicas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./animacao.html">
- <span class="dropdown-text">Animando a molécula</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/nutri.html">
+ <span class="dropdown-text">Nutricionais</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./RPart.html">
- <span class="dropdown-text">PARTE 2 - R &amp; RStudio</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./rstudioCloud.html">
- <span class="dropdown-text">Como usar o R &amp; Rstudio - instalação e nuvem</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./basicaoR.html">
- <span class="dropdown-text">Comandos básicos &amp; Scripts no R</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./basico.html">
- <span class="dropdown-text">Gráficos básicos e simulações</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./animationPlots.html">
- <span class="dropdown-text">Animando um gráfico básico - o pacote <code>animation.plots</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./anim.plots.html">
- <span class="dropdown-text">A Lei dos Gases Ideais e o pacote <code>anim.plots</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./manipulate.html">
- <span class="dropdown-text">Simulando equações de forma animada - o pacote <code>manipulate</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./iplots.html">
- <span class="dropdown-text">Comparação de gráficos em Java - o pacote <code>iplots</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./ggplot2.html">
- <span class="dropdown-text">Gráficos mais elaborados - pacote `ggplot2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./gganimate.html">
- <span class="dropdown-text">Animando gráficos do ggplot2 - o pacote <code>gganimate</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./plotly.html">
- <span class="dropdown-text">Gráficos interativos - o pacote <code>plotly</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./cinetica.html">
- <span class="dropdown-text">Cinética de reações e o pacote <code>plotly</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./leaflet.html">
- <span class="dropdown-text">Mapas interativos - o pacote <code>leaflet</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./references.html">
- <span class="dropdown-text">References</span></a>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/supramol.html">
+ <span class="dropdown-text">Supramoleculares</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ensino-superior" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Ensino Superior</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-gráficos-interativos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Gráficos Interativos</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-ensino-superior">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-gráficos-interativos">    
         <li>
-    <a class="dropdown-item" href="./bioquanti.html">
- <span class="dropdown-text">bioQuanti - Bioquímica Quantitativa</span></a>
+    <a class="dropdown-item" href="./cheatsheets.html" target="_blank">
+ <span class="dropdown-text">Física</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cheatsheets.html" target="_blank">
+ <span class="dropdown-text">Química</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cheatsheets.html" target="_blank">
+ <span class="dropdown-text">Biologia</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-folhas-de-dicas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Folhas de Dicas</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-folhas-de-dicas">    
+        <li>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">Jmol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/plotly.pdf" target="_blank">
+ <span class="dropdown-text">Plotly</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Portfolio/Cheatsheet/r_cheat.en.pt.pdf" target="_blank">
+ <span class="dropdown-text">R</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Outros</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-outros">    
+        <li>
+    <a class="dropdown-item" href="https://bioquanti.netlify.app/" target="_blank">
+ <span class="dropdown-text">Bioquanti</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./contato.html"> 
+    <a class="nav-link active" href="./contato.html" aria-current="page"> 
 <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools tools-wide">
     <div class="dropdown">
-      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-bank"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://code.com">
-            Source Code
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.unifal-mg.edu.br/portal/index/">
+            UNIFAL-MG
             </a>
           </li>
           <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://bugs.com">
-            Report a Bug
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.unifal-mg.edu.br/dbq/">
+            Depto. Bioquímica
             </a>
           </li>
       </ul>
     </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly.html">O pacote <code>Plotly</code></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Vivificando Conteúdos Didáticos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ERRE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./saudacoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Saudações</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./questoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Algumas questões</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ferramentas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Caixa de Ferramentas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Moléculas em 3D com Jmol</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./textoXmouse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mouse <em>versus</em> Comandos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./comandosJmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Comandos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Gráficos Interativos com R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rstudioCloud.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R &amp; RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pacotes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pacotes do R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">O pacote <code>Plotly</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contato.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contato</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#diferença-dos-demais-pacotes-vistos" id="toc-diferença-dos-demais-pacotes-vistos" class="nav-link active" data-scroll-target="#diferença-dos-demais-pacotes-vistos">Diferença dos demais pacotes vistos</a></li>
+  <li><a href="#um-gráfico-interativo-simples-com-o-plotly" id="toc-um-gráfico-interativo-simples-com-o-plotly" class="nav-link" data-scroll-target="#um-gráfico-interativo-simples-com-o-plotly">Um gráfico interativo simples com o <code>plotly</code></a></li>
+  <li><a href="#gráficos-produzidos-com-ggplot2-e-com-a-interatividade-do-plotly" id="toc-gráficos-produzidos-com-ggplot2-e-com-a-interatividade-do-plotly" class="nav-link" data-scroll-target="#gráficos-produzidos-com-ggplot2-e-com-a-interatividade-do-plotly">Gráficos produzidos com <code>ggplot2</code>, e com a interatividade do <code>plotly</code></a></li>
+  <li><a href="#sofisticando-a-sintaxe-para-o-plotly" id="toc-sofisticando-a-sintaxe-para-o-plotly" class="nav-link" data-scroll-target="#sofisticando-a-sintaxe-para-o-plotly">Sofisticando a sintaxe para o <code>plotly</code></a></li>
+  <li><a href="#mais-interatividade" id="toc-mais-interatividade" class="nav-link" data-scroll-target="#mais-interatividade">Mais interatividade…</a>
+  <ul class="collapse">
+  <li><a href="#adicionando-um-controle-deslizante" id="toc-adicionando-um-controle-deslizante" class="nav-link" data-scroll-target="#adicionando-um-controle-deslizante">Adicionando um controle deslizante</a></li>
+  <li><a href="#adicionando-um-menu-suspenso" id="toc-adicionando-um-menu-suspenso" class="nav-link" data-scroll-target="#adicionando-um-menu-suspenso">Adicionando um menu suspenso</a></li>
+  </ul></li>
+  <li><a href="#referência-do-pacote" id="toc-referência-do-pacote" class="nav-link" data-scroll-target="#referência-do-pacote">Referência do pacote:</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly.html">O pacote <code>Plotly</code></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Gráficos interativos - o pacote <code>plotly</code></h1>
+<h1 class="title">9 - Gráficos interativos - o pacote <code>plotly</code></h1>
 </div>
 
 
@@ -273,10 +436,217 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
+<section id="diferença-dos-demais-pacotes-vistos" class="level2">
+<h2 class="anchored" data-anchor-id="diferença-dos-demais-pacotes-vistos">Diferença dos demais pacotes vistos</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A biblioteca <code>plotly</code> é a mais rica em interatividade entre as apresentadas neste material. Recapitulando, o pacote <code>anim.plots</code> gera arquivos de imagem (<em>PNG, GIF</em>) e mesmo arquivos em formato <em>PDF</em>, com animações pré-definidas pelo usuário, utilizando a biblioteca <code>graphics</code> para a construção de gráficos.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por sua vez, o pacote <code>manipulate</code> já permite uma interação maior com o usuário, possibilitando a elaboração em tempo real de gráficos de funções matemáticas com alteração em parâmetros. Não obstante, o pacote só opera dentro do ambiente do <em>RStudio</em>. Já o pacote <code>gganimate</code> utiliza a riqueza da biblioteca (ou pacote) <code>ggplot2</code> para criar animações em gráficos mais sofisticados, permitindo seu salvamento em formato de imagem (<em>PNG</em>), e mesmo em formato <em>HTML.</em></div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora imagine uma biblioteca do <code>R</code> que una as duas características que distinguem as anteriores, ou seja, que produza gráficos em animação pré-definida pelo usuário, ao mesmo tempo em que permite modificar algum parâmetro, não necessáriamente de uma função matemática, e também armazenando o produto final em arquivo separado (<em>PNG, HTML</em>). E mais…que também possibilite facilmente ações de ampliação, redução e foco em determinada região do gráfico, bem como o efeito de <em>mouse over</em> (ou <em>hover</em>), em que a simples passagem do mouse sobre o dado gráfico abra as informações daquele ponto.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E pra fechar…que seja capaz de produzir gráficos de qualidade de publicação ou de grande complexidade integrando com o pacote <code>ggplot2</code>, e que assim como o pacote <code>manipulate</code>, também possibilite a inserção de seletores, menu suspenso, e botões.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isso é o melhor dos mundos !! Porque, em síntese, é possível criar o gráfico, inserir comandos de animação e interatividade, e armazená-lo em arquivo separado <em>HTML</em>, possibilitando-o ser aberto em qualquer <em>browser</em>, mesmo estando sem conexão com a internet.</div>
+<p><br>
+</p>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É exatamente isso (mas não <em>“só”</em>) que a biblioteca <code>plotly</code> é capaz de fazer. E essa biblioteca gráfica interativa é tão significativa no <em>“reino”</em> moderno da <em>visualização de dados</em> e do <em>story telling</em>, que pode ser obtida tanto para a <a href="https://plotly.com/r/">linguagem <code>R</code></a> como para linguagem <a href="https://plotly.com/python/">Python</a>, e a linguagem <a href="https://plotly.com/javascript/">JavaScript</a> de programação.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complementarmente, por possibilitar uma integração ao <em>JavaScript</em>, a biblioteca também é utilizado no <a href="https://www.microsoft.com/pt-br/power-platform/products/power-bi">Power Bi</a> da <em>Microsoft</em>, uma coleção de aplicativos conectados para a visualização de dados.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De fato, é a própria biblioteca <code>plotlyjs</code>, externa ao <code>R</code> e <em>RStudio</em> que é incorporada ao <code>R</code>.</div>
+</section>
+<section id="um-gráfico-interativo-simples-com-o-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="um-gráfico-interativo-simples-com-o-plotly">Um gráfico interativo simples com o <code>plotly</code></h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim como os pacotes <code>graphics</code> e <code>ggplot2</code>, a elaboração de gráficos pelo <code>plotly</code> requer alguns comandos básicos. Mas a boa notícia é que o gráfico produzido com poucos comandos já apresenta interatividade, como ampliação/redução, deslocamento dos dados em eixos, e efeitos de informação por passagem do <em>mouse</em> (<em>hover</em>).</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ilustrando um gráfico simples produzido com o <code>plotly</code> e nativamente interativo, segue um trecho de código para a sua elaboração com o pacote básico <code>graphic</code>, seguido de outro, com o pacote <code>plotly</code>:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly) <span class="co"># carrega a biblioteca</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: ggplot2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'plotly'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:ggplot2':
+
+    last_plot</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:stats':
+
+    filter</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:graphics':
+
+    layout</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># atribui valores de 1 a 10 à variável "x"</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span> <span class="co"># atribui à variável "y" o quadrado do valor da variável "x"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y) <span class="co"># elabora o gráfico com o pacote `graphics`.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="plotly_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora com o pacote <code>plotly</code>:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type=</span><span class="st">"scatter"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No scatter mode specifed:
+  Setting the mode to markers
+  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-4864ad38d38553444ae9" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-4864ad38d38553444ae9">{"x":{"visdat":{"7c9c14794519":["function () ","plotlyVisDat"]},"cur_data":"7c9c14794519","attrs":{"7c9c14794519":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">#                    type: para atribuir um tipo de gráfico</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora observe quanta interatividade surgiu com o simples comando acima, passando o <em>mouse</em> pelos pontos do gráfico, ou clicando nos ícones que apareceram acima do gráficok. Teste essa interatividade:</div>
+<ul>
+<li>Passando o <em>mouse</em> sobre os pontos do gráfico (<em>hover</em>) você obterá as coordenadas de cada ponto;</li>
+<li>Clicando com o botão esquerdo do <em>mouse</em> em qualquer parte do gráfico e desenhando um retângulo você obterá uma ampliação da área;</li>
+<li>Se der dois cliques após a ampliação você retornará ao gráfico original;</li>
+<li>Posicionando o ponteiro do <em>mouse</em> entre os valores de um eixo, e arrastando o <em>mouse</em>, você verá um deslocamento do eixo selecionado;</li>
+<li>Selecionando um ícone no canto superior direito do gráfico, você poderá, na sequência a partir da esquerda, baixar o <em>plot</em> como imagem, realizar uma ampliação, deslocar os eixos, selecionar os pontos dentro de uma caixa, ou dentro de um laço, ampliar, reduzir, escalonar ao tamanho original, realinhar os eixos aos do plot original, observar as coordenadas (x e y), observar somente a coordenada <em>y</em>, e retornar ao início.</li>
+</ul>
+</section>
+<section id="gráficos-produzidos-com-ggplot2-e-com-a-interatividade-do-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="gráficos-produzidos-com-ggplot2-e-com-a-interatividade-do-plotly">Gráficos produzidos com <code>ggplot2</code>, e com a interatividade do <code>plotly</code></h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toda a interatividade obtida acima com o <code>plotly</code> é facilmente exportada para um gráfico elaborado com o <code>ggplot2</code>. Para isso, ilustra-se um gráfico simples produzido por esse:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="dv">2</span><span class="sc">*</span>x<span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>x)  <span class="co"># valor de "y" como uma função hiperbólica em "x"</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span><span class="cn">NULL</span>, <span class="fu">aes</span>(x,y))<span class="sc">+</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="plotly_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E agora, basta incluir o comando <code>ggplotly</code> abrangendo a linha que produz o gráfico, para obter-se o mesmo gráfico, mas com a interatividade do pacote <code>plotly</code>:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(<span class="fu">ggplot</span>(<span class="at">data=</span><span class="cn">NULL</span>, <span class="fu">aes</span>(x,y))<span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-68b276be4d6724e854f2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-68b276be4d6724e854f2">{"x":{"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,1.3333333333333333,1.5,1.6000000000000001,1.6666666666666667,1.7142857142857142,1.75,1.7777777777777777,1.8,1.8181818181818181],"text":["x:  1<br />y: 1.000000","x:  2<br />y: 1.333333","x:  3<br />y: 1.500000","x:  4<br />y: 1.600000","x:  5<br />y: 1.666667","x:  6<br />y: 1.714286","x:  7<br />y: 1.750000","x:  8<br />y: 1.777778","x:  9<br />y: 1.800000","x: 10<br />y: 1.818182"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.228310502283104,"r":7.3059360730593621,"b":40.182648401826491,"l":43.105022831050235},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.55000000000000004,10.449999999999999],"tickmode":"array","ticktext":["2.5","5.0","7.5","10.0"],"tickvals":[2.5,5,7.5,10],"categoryorder":"array","categoryarray":["2.5","5.0","7.5","10.0"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"x","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.95909090909090911,1.8590909090909091],"tickmode":"array","ticktext":["1.0","1.2","1.4","1.6","1.8"],"tickvals":[1,1.2,1.3999999999999999,1.6000000000000001,1.8],"categoryorder":"array","categoryarray":["1.0","1.2","1.4","1.6","1.8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"y","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"7c9c1f2a3819":{"x":{},"y":{},"type":"scatter"}},"cur_data":"7c9c1f2a3819","visdat":{"7c9c1f2a3819":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="sofisticando-a-sintaxe-para-o-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="sofisticando-a-sintaxe-para-o-plotly">Sofisticando a sintaxe para o <code>plotly</code></h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como é da sabedoria popular, “nada vem de graça…”, e também é assim com o aprendizado de linguagens de programação ou sintaxes dos pacotes do <code>R</code>. Contudo, e como também repousado na sabedoria popular, após espremer-se os limões, eis que temos a limonada !</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na prática, é possível construir-se gráficos bastante sofisticados com o pacote <code>plotly</code>, embora nem tanto como para o <code>ggplot2</code>. Contudo, trata-se de outra biblioteca e, portanto, de outros comandos a empregar. Assim, também é possível dimensionar os pontos, escolher o seu tipo, colorir linhas, inserir legendas, e outras tantas “façanhas” digitais. Mas também é preciso aprender a sintaxe adequada pra isso, o que não vamos tratar neste material, por direcioná-lo principalmente ao emprego do recurso à produção de objetos didáticos interativos.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mas, só pra dar um “gostinho”, segue um trecho de código para agregar valor ao gráfico simples de crescimento exponencial compilado com o <code>plotly</code>:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type=</span><span class="st">"scatter"</span>, <span class="at">mode =</span> <span class="st">"markers+lines"</span>, <span class="at">name =</span> <span class="st">"Dados"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Configurar marcadores (símbolos)</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_markers</span>(<span class="at">marker =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">15</span>, <span class="at">symbol =</span> <span class="st">"circle"</span>, <span class="at">opacity =</span> <span class="fl">0.7</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Configurar linha</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_lines</span>(<span class="at">line =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">"blue"</span>, <span class="at">width =</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">## ADicionando etiquetas e nomes</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Layout do gráfico</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Gráfico com Tamanho Independente de Símbolos e Linha"</span>,</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Eixo X"</span>),</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Eixo Y"</span>)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-718ed0d96046342aa3c3" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-718ed0d96046342aa3c3">{"x":{"visdat":{"7c9c59d8d7d3":["function () ","plotlyVisDat"]},"cur_data":"7c9c59d8d7d3","attrs":{"7c9c59d8d7d3":{"x":{},"y":{},"mode":"markers+lines","name":"Dados","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"7c9c59d8d7d3.1":{"x":{},"y":{},"mode":"markers","name":"Dados","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","marker":{"size":15,"symbol":"circle","opacity":0.69999999999999996},"inherit":true},"7c9c59d8d7d3.2":{"x":{},"y":{},"mode":"lines","name":"Dados","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","line":{"color":"blue","width":2},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráfico com Tamanho Independente de Símbolos e Linha","xaxis":{"domain":[0,1],"automargin":true,"title":"Eixo X"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Eixo Y"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,1.3333333333333333,1.5,1.6000000000000001,1.6666666666666667,1.7142857142857142,1.75,1.7777777777777777,1.8,1.8181818181818181],"mode":"markers+lines","name":"Dados","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,1.3333333333333333,1.5,1.6000000000000001,1.6666666666666667,1.7142857142857142,1.75,1.7777777777777777,1.8,1.8181818181818181],"mode":"markers","name":"Dados","type":"scatter","marker":{"color":"rgba(255,127,14,1)","size":15,"symbol":"circle","opacity":0.69999999999999996,"line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,1.3333333333333333,1.5,1.6000000000000001,1.6666666666666667,1.7142857142857142,1.75,1.7777777777777777,1.8,1.8181818181818181],"mode":"lines","name":"Dados","type":"scatter","line":{"color":"blue","width":2},"marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="mais-interatividade" class="level2">
+<h2 class="anchored" data-anchor-id="mais-interatividade">Mais interatividade…</h2>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Até o momento só “arranhamos” a interatividade do pacote <code>plotly</code>. Como mencionado ao início desse capítulo, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (<em>sliders</em>), menu de escolha, botões, entre muitos.</div>
+<section id="adicionando-um-controle-deslizante" class="level3">
+<h3 class="anchored" data-anchor-id="adicionando-um-controle-deslizante">Adicionando um controle deslizante</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim, ilustrando <em>mais interatividade</em>, é possível agregar um <em>controle deslizante de intervalo</em> (<em>rangeslider</em>) ao gráfico construído, tal como representado abaixo:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type=</span><span class="st">"scatter"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_lines</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rangeslider</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No scatter mode specifed:
+  Setting the mode to markers
+  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-6015d0a43fa05ae95913" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6015d0a43fa05ae95913">{"x":{"visdat":{"7c9c6fb30367":["function () ","plotlyVisDat"]},"cur_data":"7c9c6fb30367","attrs":{"7c9c6fb30367":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"7c9c6fb30367.1":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","mode":"lines","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"visible":true},"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,1.3333333333333333,1.5,1.6000000000000001,1.6666666666666667,1.7142857142857142,1.75,1.7777777777777777,1.8,1.8181818181818181],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,1.3333333333333333,1.5,1.6000000000000001,1.6666666666666667,1.7142857142857142,1.75,1.7777777777777777,1.8,1.8181818181818181],"type":"scatter","mode":"lines","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente posicionar o <em>mouse</em> num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observando o resultado.</div>
+</section>
+<section id="adicionando-um-menu-suspenso" class="level3">
+<h3 class="anchored" data-anchor-id="adicionando-um-menu-suspenso">Adicionando um menu suspenso</h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menus suspensos (<em>dropdown menu</em>) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (<em>dataframe</em>) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># vetor da variável independente "x"</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>yLin <span class="ot">=</span> x</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>yQuad <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>yCub <span class="ot">=</span> x<span class="sc">^</span><span class="dv">3</span> <span class="co"># criação das variáveis dependentes "y"</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>datLQC <span class="ot">&lt;-</span><span class="fu">data.frame</span>(x,yLin,yQuad,yCub)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora podemos inserir o <em>menu suspenso</em> para opção das tendências matemáticas:</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(datLQC, <span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yLin, <span class="at">type =</span> <span class="st">"scatter"</span>, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Linear"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yQuad, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Quadrático"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yCub, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Cúbico"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Gráficos de potência"</span>,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"x"</span>),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"y"</span>),</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">updatemenus =</span> <span class="fu">list</span>(</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">list</span>(</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">buttons =</span> <span class="fu">list</span>(</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yLin"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>)))),</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yQuad"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)))),</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yCub"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>))))</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-582ff747ef05ba70bc37" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-582ff747ef05ba70bc37">{"x":{"visdat":{"7c9c9787072":["function () ","plotlyVisDat"]},"cur_data":"7c9c9787072","attrs":{"7c9c9787072":{"x":{},"y":{},"mode":"line","name":"Linear","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"7c9c9787072.1":{"x":{},"y":{},"mode":"line","name":"Quadrático","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"7c9c9787072.2":{"x":{},"y":{},"mode":"line","name":"Cúbico","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráficos de potência","xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"updatemenus":[{"buttons":[{"label":"yLin","method":"update","args":[{"visible":[true,false,false]}]},{"label":"yQuad","method":"update","args":[{"visible":[false,true,false]}]},{"label":"yCub","method":"update","args":[{"visible":[false,false,true]}]}]}],"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,2,3,4,5,6,7,8,9,10],"mode":"line","name":"Linear","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"line","name":"Quadrático","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,8,27,64,125,216,343,512,729,1000],"mode":"line","name":"Cúbico","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ainda que você achar meio complicado o trecho de código acima, apenas copie-o, cole-o num <em>script</em>, e execute-o. Isso exemplifica a <em>essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo accriação de novos</em>. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (<em>label</em>) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua <em>scatter</em> por <em>bar</em>, por exemplo), ou o título do gráfico (<em>title</em>).</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando <code>plot_ly</code>, a seleção do tipo de potência a representar pelo menu suspenso.</div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim como para os demais pacotes, existe um número significativo de comandos e <em>widgets interativos</em> com o <code>plotly</code> (<em>sliders</em>, botões de controle, por ex), e que, nesse caso específico, daria “pano pra manga” pra uma obra literária isolada. Mas você pode consultar as referências abaixo para um aprendizado mais abrangente, e mesmo um <a href="https://plotly-r.com/">livro online</a> gratuito com códigos e produtos correlatos.</div>
+</section>
+</section>
+<section id="referência-do-pacote" class="level2">
+<h2 class="anchored" data-anchor-id="referência-do-pacote">Referência do pacote:</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/plotly/index.html">Geral</a></li>
+<li><a href="https://cran.r-project.org/web/packages/plotly/plotly.pdf">Manual</a>:</li>
+<li><a href="https://plotly.com/r/">Tutorial</a>:</li>
+</ul>
 
 
+</section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -830,7 +1200,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./pacotes.html" class="pagination-link" aria-label="Pacotes do R">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Pacotes do R</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./contato.html" class="pagination-link" aria-label="Contato">
+        <span class="nav-page-text">Contato</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Curso de Formação em Educação Digital</p>
+</div>   
+    <div class="nav-footer-center">
+<p>UNIFAL-MG</p>
+</div>
+    <div class="nav-footer-right">
+<p>Página criada com pacote Quarto</p>
+</div>
+  </div>
+</footer>
 
 
 

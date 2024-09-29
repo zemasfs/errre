@@ -1,5 +1,0 @@
----
-title: "Gráficos mais elaborados - pacote `ggplot2"
----
-
-

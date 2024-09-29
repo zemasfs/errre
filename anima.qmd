@@ -1,0 +1,17 @@
+---
+title: "Como produzir animações às moléculas"
+---
+
+This is a Quarto book.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
+
+```{r}
+1 + 1
+```
+
+## Animar as moléculas.
+
+|       Para animar a molécula selecionada basta clicar com o botão esquerdo do mouse e em seguida será apresentado uma sequência com as instruções a serem realizadas, modificando a estrutura com a finalidade didática. Essa sequência é comandada pelo usuário, que para estudar melhor a estrutura da molécula, tem como opção, mudar de cor, destacar os elementos presentes que desejam, ocultar alguns elementos e girara molécula para o sentido que se deseja.
+
+|       Veja como exemplo a es modificaçãoes realizadas com a estrutura molecular da água.

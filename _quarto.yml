@@ -1,55 +1,127 @@
 project:
   type: website
+  output-dir: _site
 
 website:
+  page-navigation: true # não funciona
+  back-to-top-navigation: true
+  image: RStudioLogo.png # não funciona
+  reader-mode: true # funciona
   google-analytics: "G-S1L73VGCG5"
-  title: "ERRE - Ensino Reprodutível" # omite-se o título pra não duplicar nome na aba
+  title: "ERRE & EM" # omite-se o título pra não duplicar nome na aba
   favicon: avatar.png # ícone da aba da página
+  page-footer: 
+        left: |
+          Curso de Formação em Educação Digital
+        center: |
+            UNIFAL-MG
+        right: |
+           Página criada com pacote Quarto
+  
+  sidebar:
+    - contents:
+      - section: "Vivificando Conteúdos Didáticos"
+        contents:
+          - text: "ERRE"
+            href: index.qmd
+          - text: "Saudações"
+            href: saudacoes.qmd
+          - text: "Algumas questões"
+            href: questoes.qmd
+          - text: "Caixa de Ferramentas"
+            href: ferramentas.qmd
+      - section: "Moléculas em 3D com Jmol"
+        contents:
+          - text: "Jmol"
+            href: jmol.qmd
+          - text: "Mouse *versus* Comandos"
+            href: textoXmouse.qmd
+          - text: "Comandos"
+            href: comandosJmol.qmd
+          
+      - section: "Gráficos Interativos com R"
+        contents:
+          - text: "R & RStudio"
+            href: rstudioCloud.qmd
+          - text: "Pacotes do R"
+            href: pacotes.qmd
+          - text: "O pacote `Plotly`"
+            href: plotly.qmd
+      - contato.qmd
+            
+            
   navbar:
+    search: true
     logo: avatar.png # logo ao lado esquerdo da Home
     background: primary # cor de fundo
     tools:  # ícones específico
       # - icon: twitter
       #   href: https://twitter.com
-      - icon: github
+      - icon: bank
         menu:
-          - text: Source Code
-            href:  https://code.com
-          - text: Report a Bug
-            href:  https://bugs.com
+          - text: UNIFAL-MG
+            href:  https://www.unifal-mg.edu.br/portal/index/
+          - text: Depto. Bioquímica
+            href:  https://www.unifal-mg.edu.br/dbq/
   
     left:
-      - href: index.qmd
-        text: Home
-      - text: "Ensino Médio"
+      - text: "Jardim de Moléculas"
         menu:
-          - inicio.qmd
-          - questoes.qmd
-          - ferramentas.qmd
-          - jmolPart.qmd
-          - jmol.qmd
-          - textoXmouse.qmd
-          - comandosJmol.qmd
-          - selecao.qmd
-          - animacao.qmd
-          - RPart.qmd
-          - rstudioCloud.qmd
-          - basicaoR.qmd
-          - basico.qmd
-          - animationPlots.qmd
-          - anim.plots.qmd
-          - manipulate.qmd
-          - iplots.qmd
-          - ggplot2.qmd
-          - gganimate.qmd
-          - plotly.qmd
-          - cinetica.qmd
-          - leaflet.qmd
-          - references.qmd
-          
-      - text: "Ensino Superior"
+          - text: "Jardim"
+            href: Portfolio/JmolBook/iniciativa.html
+          - text: "Classificação"
+            href: Portfolio/JmolBook/classifica.html
+          - text: "Orgânicas"
+            href: Portfolio/JmolBook/organica.html
+          - text: "Inorgânicas"
+            href: Portfolio/JmolBook/inorganica.html
+          - text: "Biomoléculas"
+            href: Portfolio/JmolBook/biomol.html
+          - text: "Farmacológicas"
+            href: Portfolio/JmolBook/farmac.html
+          - text: "Medicinais"
+            href: Portfolio/JmolBook/medicin.html
+          - text: "Toxicológicas"
+            href: Portfolio/JmolBook/toxicol.html
+          - text: "Nutricionais"
+            href: Portfolio/JmolBook/nutri.html
+          - text: "Supramoleculares"
+            href: Portfolio/JmolBook/supramol.html
+         
+            
+            # o truque é colocar a pasta dos
+            # livros com tudo dentro de alguma
+            # pasta do website
+      - text: "Gráficos Interativos"
         menu:
-          - bioquanti.qmd
+          - text: "Física"
+            href: cheatsheets.html
+            target: "_blank"
+          - text: "Química"
+            href: cheatsheets.html
+            target: "_blank"    
+          - text: "Biologia"
+            href: cheatsheets.html
+            target: "_blank"
+ 
+      - text: "Folhas de Dicas"
+        menu:
+          - text: "Jmol"
+            href: Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf
+            target: "_blank"
+          - text: "Plotly"
+            href: Portfolio/Cheatsheet/plotly.pdf
+            target: "_blank"    
+          - text: "R"
+            href: Portfolio/Cheatsheet/r_cheat.en.pt.pdf
+            target: "_blank"
+           
+      - text: "Outros" 
+        menu: 
+          - text: "Bioquanti"
+            href: https://bioquanti.netlify.app/
+            target: "_blank"
+        
       - contato.qmd
       
 format:
@@ -60,5 +132,4 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
-
+editor: source

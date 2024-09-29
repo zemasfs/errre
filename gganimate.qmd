@@ -1,5 +1,0 @@
----
-title: "Animando gráficos do ggplot2 - o pacote `gganimate`"
----
-
-

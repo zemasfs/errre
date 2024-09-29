@@ -1,5 +1,0 @@
----
-title: "Mapas interativos - o pacote `leaflet`"
----
-
-

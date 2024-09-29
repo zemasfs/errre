@@ -1,5 +1,0 @@
----
-title: "Simulando equações de forma animada - o pacote `manipulate`"
----
-
-
