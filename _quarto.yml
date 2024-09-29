@@ -8,7 +8,7 @@ website:
   image: RStudioLogo.png # não funciona
   reader-mode: true # funciona
   google-analytics: "G-S1L73VGCG5"
-  title: "ERRE & EM" # omite-se o título pra não duplicar nome na aba
+  title: "Ensino Reprodutível - ERRE" # omite-se o título pra não duplicar nome na aba
   favicon: avatar.png # ícone da aba da página
   page-footer: 
         left: |
