@@ -1,5 +1,5 @@
 ---
-title: "2 - Comandos básicos & Scripts no R"
+title: "Comandos básicos & Scripts no R"
 ---
 
 |       O `R` é um programa que opera por linha de comando. Isso é um pouco chato, como já visto, porque qualquer erro na digitação de um comando resulta na interrupção do código. Mas, por outro lado, e também como já visto, *linhas de comando encadeadas e comentadas permitem a reprodução e modificação de trechos de códigos convergentes a um produto* qualquer, no caso, objetos didáticos ao ensino médio.

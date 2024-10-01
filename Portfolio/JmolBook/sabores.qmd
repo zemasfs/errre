@@ -1,0 +1,27 @@
+---
+title: "Moléculas de interesse para sabores"
+---
+
+[![Glutamato monossódico;realça o sabor umami.](glutamato monossodico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(CC(=O)O)[C@@H](C(=O)[O-])N.[Na+])
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Glutamato monosodico)
+</p>
+
+[![Cafeína;presente em café e dá sabor amargo.](cafeína.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1C=NC2=C1C(=O)N(C(=O)N2C)C)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Cafeína)
+</p>
+
+[![Capsaicina;responsável pelo sabor picante em pimentas.](caps.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)/C=C/CCCCC(=O)NCC1=CC(=C(C=C1)O)OC)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Capsaicina)
+</p>
+
+[![Ácido cítrico;dá o sabor ácido presente nos cítrico.](ácido citrico.png){width="40%"}](https://chemapps.stolaf.edu/jmol/jmol.php?model=C(C(=O)O)C(CC(=O)O)(C(=O)O)O)
+
+<p style="text-align:right;">
+[Wikipedia](https://pt.wikipedia.org/wiki/Ácido cítrico)
+</p>

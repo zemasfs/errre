@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ERRE - Ensino Reprodutível - Gráficos interativos com pacote plotly</title>
+<title>ERRE - Ensino Reprodutível - Gráficos interativos com o pacote plotly</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,7 +30,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./contato.html" rel="next">
+<link href="./plotly_interat.html" rel="next">
 <link href="./pacotes.html" rel="prev">
 <link href="./avatar.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -114,15 +80,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </script>
-<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="site_libs/plotly-binding-4.10.4/plotly.js"></script>
-<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
-<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
-<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
-<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
-<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
-<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -136,7 +93,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./avatar.png" alt="" class="navbar-logo">
+    <img src="./logo-unifal.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">ERRE - Ensino Reprodutível</span>
@@ -148,6 +105,17 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-curso-de-capacitação-ao-ensino-médio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Curso de Capacitação Ao Ensino Médio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-curso-de-capacitação-ao-ensino-médio">    
+        <li>
+    <a class="dropdown-item" href="./Portfolio/JmolBook/iniciativa_Jmol.html">
+ <span class="dropdown-text">Introdução</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-jardim-de-moléculas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Jardim de Moléculas</span>
@@ -284,7 +252,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly.html">O pacote <code>plotly</code></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly.html">4 - O pacote <code>plotly</code></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -299,7 +267,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Vivificando Conteúdos Didáticos</span></a>
+ <span class="menu-text">Ensino Reprodutível &amp; Objetos Didáticos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -343,19 +311,25 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./jmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jmol</span></a>
+ <span class="menu-text">1 - Jmol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./textoXmouse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mouse <em>versus</em> Comandos</span></a>
+ <span class="menu-text">2 - Mouse <em>versus</em> Comandos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./comandosJmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Comandos</span></a>
+ <span class="menu-text">3 - Alguns comandos do Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anima_Jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Algumas animações com Jmol</span></a>
   </div>
 </li>
       </ul>
@@ -372,19 +346,55 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rstudioCloud.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R &amp; RStudio</span></a>
+ <span class="menu-text">1 - R &amp; RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basicaoR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 - Um pouco sobre uso do <code>R</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pacotes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pacotes do R</span></a>
+ <span class="menu-text">3 - Pacotes do R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./plotly.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">O pacote <code>plotly</code></span></a>
+ <span class="menu-text">4 - O pacote <code>plotly</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_interat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 - Gráficos interativos com <code>plotly</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_embeleza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 - Embelezando o gráfico</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_maisInterat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 - Mais interatividade aos gráficos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_anima.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8- Animação em gráficos interativos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plotly_maps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9 - Mapas interativos com <code>plotly</code></span></a>
   </div>
 </li>
       </ul>
@@ -406,13 +416,6 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#uma-palavrinha-sobre-alguns-pacotes-para-interatividade-gráfica-no-r" id="toc-uma-palavrinha-sobre-alguns-pacotes-para-interatividade-gráfica-no-r" class="nav-link active" data-scroll-target="#uma-palavrinha-sobre-alguns-pacotes-para-interatividade-gráfica-no-r">Uma palavrinha sobre alguns pacotes para interatividade gráfica no <code>R</code></a></li>
-  <li><a href="#um-gráfico-interativo-simples-com-o-plotly" id="toc-um-gráfico-interativo-simples-com-o-plotly" class="nav-link" data-scroll-target="#um-gráfico-interativo-simples-com-o-plotly">Um gráfico interativo simples com o <code>plotly</code></a></li>
-  <li><a href="#sofisticando-a-sintaxe-para-o-plotly" id="toc-sofisticando-a-sintaxe-para-o-plotly" class="nav-link" data-scroll-target="#sofisticando-a-sintaxe-para-o-plotly">Sofisticando a sintaxe para o <code>plotly</code></a></li>
-  <li><a href="#mais-interatividade" id="toc-mais-interatividade" class="nav-link" data-scroll-target="#mais-interatividade">Mais interatividade…</a>
-  <ul class="collapse">
-  <li><a href="#adicionando-um-controle-deslizante" id="toc-adicionando-um-controle-deslizante" class="nav-link" data-scroll-target="#adicionando-um-controle-deslizante">Adicionando um controle deslizante</a></li>
-  <li><a href="#adicionando-um-menu-suspenso" id="toc-adicionando-um-menu-suspenso" class="nav-link" data-scroll-target="#adicionando-um-menu-suspenso">Adicionando um menu suspenso</a></li>
-  </ul></li>
   <li><a href="#referência-do-pacote" id="toc-referência-do-pacote" class="nav-link" data-scroll-target="#referência-do-pacote">Referência do pacote:</a></li>
   </ul>
 </nav>
@@ -420,9 +423,9 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly.html">O pacote <code>plotly</code></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly.html">4 - O pacote <code>plotly</code></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Gráficos interativos com pacote <code>plotly</code></h1>
+<h1 class="title">Gráficos interativos com o pacote <code>plotly</code></h1>
 </div>
 
 
@@ -456,152 +459,12 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O <code>plotly</code> constitui portanto uma biblioteca gráfica interativa bastante significativa no <em>“reino”</em> moderno da <em>visualização de dados</em> e do <em>story telling</em>, e pode ser obtida tanto para a <a href="https://plotly.com/r/">linguagem <code>R</code></a> como para linguagem <a href="https://plotly.com/python/">Python</a>, e a linguagem <a href="https://plotly.com/javascript/">JavaScript</a> de programação.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complementarmente, por possibilitar uma integração ao <em>JavaScript</em>, a biblioteca também é utilizada em alguns paineis de dados, como no <a href="https://www.microsoft.com/pt-br/power-platform/products/power-bi">Power Bi</a> da <em>Microsoft</em>, uma coleção de aplicativos conectados para a visualização de dados. De fato, é a própria biblioteca <code>plotlyjs</code>, externa ao <code>R</code> e <em>RStudio</em> que é incorporada ao <code>R</code>.</div>
 </section>
-<section id="um-gráfico-interativo-simples-com-o-plotly" class="level2">
-<h2 class="anchored" data-anchor-id="um-gráfico-interativo-simples-com-o-plotly">Um gráfico interativo simples com o <code>plotly</code></h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A elaboração de gráficos pelo <code>plotly</code> requer alguns comandos básicos. Mas a boa notícia é que o gráfico produzido com poucos comandos já apresenta interatividade, como ampliação/redução, deslocamento dos dados em eixos, e efeitos de informação por passagem do <em>mouse</em> (<em>hover</em>).</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ilustrando um gráfico simples produzido com o <code>plotly</code> e nativamente interativo, segue um trecho de código para a sua elaboração:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly) <span class="co"># carregamento da biblioteca</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: ggplot2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'plotly'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:ggplot2':
-
-    last_plot</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:stats':
-
-    filter</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:graphics':
-
-    layout</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># atribui valores de 1 a 10 à variável "x"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span> <span class="co"># atribui à variável "y" o quadrado do valor da variável "x"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type=</span><span class="st">"scatter"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>No scatter mode specifed:
-  Setting the mode to markers
-  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
-</div>
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-794b5c225fae54b2067c" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-794b5c225fae54b2067c">{"x":{"visdat":{"af8c5281d7b9":["function () ","plotlyVisDat"]},"cur_data":"af8c5281d7b9","attrs":{"af8c5281d7b9":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Observação:</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                    type: para atribuir um tipo de gráfico</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora observe quanta interatividade surgiu com o simples comando acima, passando o <em>mouse</em> pelos pontos do gráfico, ou clicando-se nos ícones que apareceram acima do gráfico. Teste essa interatividade:</div>
-<ul>
-<li>Passando o <em>mouse</em> sobre os pontos do gráfico (<em>hover</em>) você obterá as coordenadas de cada ponto;</li>
-<li>Clicando com o botão esquerdo do <em>mouse</em> em qualquer parte do gráfico e desenhando um retângulo você obterá uma ampliação da área;</li>
-<li>Se der dois cliques após a ampliação você retornará ao gráfico original;</li>
-<li>Posicionando o ponteiro do <em>mouse</em> entre os valores de um eixo, e arrastando o <em>mouse</em>, você verá um deslocamento do eixo selecionado;</li>
-<li>Selecionando um ícone no canto superior direito do gráfico, você poderá, na sequência a partir da esquerda, baixar o <em>plot</em> como imagem, realizar uma ampliação, deslocar os eixos, selecionar os pontos dentro de uma caixa, ou dentro de um laço, ampliar, reduzir, escalonar ao tamanho original, realinhar os eixos aos do plot original, observar as coordenadas (x e y), observar somente a coordenada <em>y</em>, e retornar ao início.</li>
-</ul>
-</section>
-<section id="sofisticando-a-sintaxe-para-o-plotly" class="level2">
-<h2 class="anchored" data-anchor-id="sofisticando-a-sintaxe-para-o-plotly">Sofisticando a sintaxe para o <code>plotly</code></h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como é da sabedoria popular, <em>“nada vem de graça…”</em>, e também é assim com o aprendizado de <em>linguagens de programação ou sintaxes dos pacotes do <code>R</code></em>. Contudo, e como também repousado na sabedoria popular, após <em>espremer-se os limões, eis que temos uma limonada !!</em> !</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na prática, é possível construir gráficos bastante sofisticados com o pacote <code>plotly</code>. Assim, é possível dimensionar os pontos, escolher o seu tipo, colorir linhas, inserir legendas, e outras tantas <em>“façanhas”</em> digitais. Mas também é preciso aprender a sintaxe adequada pra isso, o que não vamos tratar em detalhes neste material, por direcioná-lo principalmente ao emprego do recurso à produção de objetos didáticos interativos.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mas, só pra dar um “gostinho”, segue um trecho de código para agregar valor ao gráfico simples de crescimento exponencial compilado com o <code>plotly</code>:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type=</span><span class="st">"scatter"</span>, <span class="at">mode =</span> <span class="st">"markers+lines"</span>, <span class="at">name =</span> <span class="st">"Dados"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Configurar marcadores (símbolos)</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_markers</span>(<span class="at">marker =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">15</span>, <span class="at">symbol =</span> <span class="st">"circle"</span>, <span class="at">opacity =</span> <span class="fl">0.7</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Configurar linha</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_lines</span>(<span class="at">line =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">"blue"</span>, <span class="at">width =</span> <span class="dv">2</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">## ADicionando etiquetas e nomes</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Layout do gráfico</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Gráfico com Tamanho Independente de Símbolos e Linha"</span>,</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Eixo X"</span>),</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Eixo Y"</span>)</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-85a29d3a61a47368fed5" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-85a29d3a61a47368fed5">{"x":{"visdat":{"af8c489fff13":["function () ","plotlyVisDat"]},"cur_data":"af8c489fff13","attrs":{"af8c489fff13":{"x":{},"y":{},"mode":"markers+lines","name":"Dados","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"af8c489fff13.1":{"x":{},"y":{},"mode":"markers","name":"Dados","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","marker":{"size":15,"symbol":"circle","opacity":0.69999999999999996},"inherit":true},"af8c489fff13.2":{"x":{},"y":{},"mode":"lines","name":"Dados","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","line":{"color":"blue","width":2},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráfico com Tamanho Independente de Símbolos e Linha","xaxis":{"domain":[0,1],"automargin":true,"title":"Eixo X"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Eixo Y"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"markers+lines","name":"Dados","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"markers","name":"Dados","type":"scatter","marker":{"color":"rgba(255,127,14,1)","size":15,"symbol":"circle","opacity":0.69999999999999996,"line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"lines","name":"Dados","type":"scatter","line":{"color":"blue","width":2},"marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</section>
-<section id="mais-interatividade" class="level2">
-<h2 class="anchored" data-anchor-id="mais-interatividade">Mais interatividade…</h2>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Até o momento só “arranhamos” a interatividade do pacote <code>plotly</code>. Como mencionado ao início desse capítulo, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (<em>sliders</em>), menu de escolha, botões, entre muitos.</div>
-<section id="adicionando-um-controle-deslizante" class="level3">
-<h3 class="anchored" data-anchor-id="adicionando-um-controle-deslizante">Adicionando um controle deslizante</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim, ilustrando <em>mais interatividade</em>, é possível agregar um <em>controle deslizante de intervalo</em> (<em>rangeslider</em>) ao gráfico construído, tal como representado abaixo:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>y, <span class="at">type=</span><span class="st">"scatter"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_lines</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rangeslider</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>No scatter mode specifed:
-  Setting the mode to markers
-  Read more about this attribute -&gt; https://plotly.com/r/reference/#scatter-mode</code></pre>
-</div>
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-b4d25d7f8957a98bd8ae" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-b4d25d7f8957a98bd8ae">{"x":{"visdat":{"af8c6cd68d5c":["function () ","plotlyVisDat"]},"cur_data":"af8c6cd68d5c","attrs":{"af8c6cd68d5c":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"af8c6cd68d5c.1":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","mode":"lines","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"visible":true},"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"type":"scatter","mode":"lines","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimente posicionar o <em>mouse</em> num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observando o resultado.</div>
-</section>
-<section id="adicionando-um-menu-suspenso" class="level3">
-<h3 class="anchored" data-anchor-id="adicionando-um-menu-suspenso">Adicionando um menu suspenso</h3>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menus suspensos (<em>dropdown menu</em>) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (<em>dataframe</em>) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># vetor da variável independente "x"</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>yLin <span class="ot">=</span> x</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>yQuad <span class="ot">=</span> x<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>yCub <span class="ot">=</span> x<span class="sc">^</span><span class="dv">3</span> <span class="co"># criação das variáveis dependentes "y"</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>datLQC <span class="ot">&lt;-</span><span class="fu">data.frame</span>(x,yLin,yQuad,yCub)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agora podemos inserir o <em>menu suspenso</em> para opção das tendências matemáticas:</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(datLQC, <span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yLin, <span class="at">type =</span> <span class="st">"scatter"</span>, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Linear"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yQuad, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Quadrático"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_trace</span>(<span class="at">x =</span> <span class="sc">~</span>x, <span class="at">y =</span> <span class="sc">~</span>yCub, <span class="at">mode =</span> <span class="st">"line"</span>, <span class="at">name =</span> <span class="st">"Cúbico"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Gráficos de potência"</span>,</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"x"</span>),</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"y"</span>),</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">updatemenus =</span> <span class="fu">list</span>(</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">list</span>(</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">buttons =</span> <span class="fu">list</span>(</span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yLin"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>)))),</span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yQuad"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)))),</span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>          <span class="fu">list</span>(<span class="at">label =</span> <span class="st">"yCub"</span>, <span class="at">method =</span> <span class="st">"update"</span>, <span class="at">args =</span> <span class="fu">list</span>(<span class="fu">list</span>(<span class="at">visible =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>))))</span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-074ea244e7e97e396bfb" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-074ea244e7e97e396bfb">{"x":{"visdat":{"af8c6c6e4f5a":["function () ","plotlyVisDat"]},"cur_data":"af8c6c6e4f5a","attrs":{"af8c6c6e4f5a":{"x":{},"y":{},"mode":"line","name":"Linear","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"af8c6c6e4f5a.1":{"x":{},"y":{},"mode":"line","name":"Quadrático","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"af8c6c6e4f5a.2":{"x":{},"y":{},"mode":"line","name":"Cúbico","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráficos de potência","xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"updatemenus":[{"buttons":[{"label":"yLin","method":"update","args":[{"visible":[true,false,false]}]},{"label":"yQuad","method":"update","args":[{"visible":[false,true,false]}]},{"label":"yCub","method":"update","args":[{"visible":[false,false,true]}]}]}],"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,2,3,4,5,6,7,8,9,10],"mode":"line","name":"Linear","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,4,9,16,25,36,49,64,81,100],"mode":"line","name":"Quadrático","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[1,8,27,64,125,216,343,512,729,1000],"mode":"line","name":"Cúbico","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ainda que você achar meio complicado o trecho de código acima, apenas copie-o, cole-o num <em>script</em>, e execute-o. Isso exemplifica a <em>essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo accriação de novos</em>. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (<em>label</em>) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua <em>scatter</em> por <em>bar</em>, por exemplo), ou o título do gráfico (<em>title</em>).</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando <code>plot_ly</code>, a seleção do tipo de potência a representar pelo menu suspenso.</div>
-<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim como para os demais pacotes, existe um número significativo de comandos e <em>widgets interativos</em> com o <code>plotly</code> (<em>sliders</em>, botões de controle, por ex), e que, nesse caso específico, daria “pano pra manga” pra uma obra literária isolada. Mas você pode consultar as referências abaixo para um aprendizado mais abrangente, e mesmo um <a href="https://plotly-r.com/">livro online</a> gratuito com códigos e produtos correlatos.</div>
-</section>
-</section>
 <section id="referência-do-pacote" class="level2">
 <h2 class="anchored" data-anchor-id="referência-do-pacote">Referência do pacote:</h2>
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/plotly/index.html">Geral</a></li>
-<li><a href="https://cran.r-project.org/web/packages/plotly/plotly.pdf">Manual</a>:</li>
-<li><a href="https://plotly.com/r/">Tutorial</a>:</li>
+<li><a href="https://cran.r-project.org/web/packages/plotly/plotly.pdf">Manual</a></li>
+<li><a href="https://plotly.com/r/">Tutorial</a></li>
 </ul>
 
 
@@ -1163,13 +1026,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./pacotes.html" class="pagination-link" aria-label="Pacotes do R">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Pacotes do R</span>
+      <a href="./pacotes.html" class="pagination-link" aria-label="3 - Pacotes do R">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3 - Pacotes do R</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./contato.html" class="pagination-link" aria-label="Contato">
-        <span class="nav-page-text">Contato</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./plotly_interat.html" class="pagination-link" aria-label="5 - Gráficos interativos com `plotly`">
+        <span class="nav-page-text">5 - Gráficos interativos com <code>plotly</code></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

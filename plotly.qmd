@@ -1,5 +1,5 @@
 ---
-title: "Gráficos interativos com pacote `plotly`"
+title: "Gráficos interativos com o pacote `plotly`"
 ---
 
 ## Uma palavrinha sobre alguns pacotes para interatividade gráfica no `R`
@@ -21,118 +21,11 @@ title: "Gráficos interativos com pacote `plotly`"
 
 |       Complementarmente, por possibilitar uma integração ao *JavaScript*, a biblioteca também é utilizada em alguns paineis de dados, como no [Power Bi](https://www.microsoft.com/pt-br/power-platform/products/power-bi) da *Microsoft*, uma coleção de aplicativos conectados para a visualização de dados. De fato, é a própria biblioteca `plotlyjs`, externa ao `R` e *RStudio* que é incorporada ao `R`.
 
-## Um gráfico interativo simples com o `plotly`
-
-|       A elaboração de gráficos pelo `plotly` requer alguns comandos básicos. Mas a boa notícia é que o gráfico produzido com poucos comandos já apresenta interatividade, como ampliação/redução, deslocamento dos dados em eixos, e efeitos de informação por passagem do *mouse* (*hover*).
-
-|       Ilustrando um gráfico simples produzido com o `plotly` e nativamente interativo, segue um trecho de código para a sua elaboração:
-
-
-```{r}
-library(plotly) # carregamento da biblioteca
-x = 1:10 # atribui valores de 1 a 10 à variável "x"
-y = x^2 # atribui à variável "y" o quadrado do valor da variável "x"
-
-plot_ly(x = ~x, y = ~y, type="scatter") 
-
-# Observação:
-#sintaxe do plotly: ~variável, para atribuir uma variável (x ou y)
-#                    type: para atribuir um tipo de gráfico
-```
-
-
-|       Agora observe quanta interatividade surgiu com o simples comando acima, passando o *mouse* pelos pontos do gráfico, ou clicando-se nos ícones que apareceram acima do gráfico. Teste essa interatividade:
-
--   Passando o *mouse* sobre os pontos do gráfico (*hover*) você obterá as coordenadas de cada ponto;
--   Clicando com o botão esquerdo do *mouse* em qualquer parte do gráfico e desenhando um retângulo você obterá uma ampliação da área;
--   Se der dois cliques após a ampliação você retornará ao gráfico original;
--   Posicionando o ponteiro do *mouse* entre os valores de um eixo, e arrastando o *mouse*, você verá um deslocamento do eixo selecionado;
--   Selecionando um ícone no canto superior direito do gráfico, você poderá, na sequência a partir da esquerda, baixar o *plot* como imagem, realizar uma ampliação, deslocar os eixos, selecionar os pontos dentro de uma caixa, ou dentro de um laço, ampliar, reduzir, escalonar ao tamanho original, realinhar os eixos aos do plot original, observar as coordenadas (x e y), observar somente a coordenada *y*, e retornar ao início.
-
-## Sofisticando a sintaxe para o `plotly`
-
-|       Como é da sabedoria popular, *"nada vem de graça..."*, e também é assim com o aprendizado de *linguagens de programação ou sintaxes dos pacotes do `R`*. Contudo, e como também repousado na sabedoria popular, após *espremer-se os limões, eis que temos uma limonada !!* !
-
-|       Na prática, é possível construir gráficos bastante sofisticados com o pacote `plotly`. Assim, é possível dimensionar os pontos, escolher o seu tipo, colorir linhas, inserir legendas, e outras tantas *"façanhas"* digitais. Mas também é preciso aprender a sintaxe adequada pra isso, o que não vamos tratar em detalhes neste material, por direcioná-lo principalmente ao emprego do recurso à produção de objetos didáticos interativos.
-
-|       Mas, só pra dar um "gostinho", segue um trecho de código para agregar valor ao gráfico simples de crescimento exponencial compilado com o `plotly`:
-
-```{r}
-plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines", name = "Dados") %>%
-  # Configurar marcadores (símbolos)
-  add_markers(marker = list(size = 15, symbol = "circle", opacity = 0.7)) %>%
-  # Configurar linha
-  add_lines(line = list(color = "blue", width = 2)) %>%
-  ## ADicionando etiquetas e nomes
-  # Layout do gráfico
-  layout(
-    title = "Gráfico com Tamanho Independente de Símbolos e Linha",
-    xaxis = list(title = "Eixo X"),
-    yaxis = list(title = "Eixo Y")
-  )
-
-```
-
-## Mais interatividade...
-
-|       Até o momento só "arranhamos" a interatividade do pacote `plotly`. Como mencionado ao início desse capítulo, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (*sliders*), menu de escolha, botões, entre muitos.
-
-### Adicionando um controle deslizante
-
-|       Assim, ilustrando *mais interatividade*, é possível agregar um *controle deslizante de intervalo* (*rangeslider*) ao gráfico construído, tal como representado abaixo:
-
-```{r}
-plot_ly(x = ~x, y = ~y, type="scatter") %>%
-  add_lines() %>%
-  rangeslider()
-```
-
-|       Experimente posicionar o *mouse* num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observando o resultado.
-
-### Adicionando um menu suspenso
-
-|       Menus suspensos (*dropdown menu*) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (*dataframe*) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:
-
-```{r}
-x = 1:10 # vetor da variável independente "x"
-yLin = x
-yQuad = x^2
-yCub = x^3 # criação das variáveis dependentes "y"
-
-datLQC <-data.frame(x,yLin,yQuad,yCub)
-```
-
-|       Agora podemos inserir o *menu suspenso* para opção das tendências matemáticas:
-
-```{r}
-plot_ly(datLQC, x = ~x, y = ~yLin, type = "scatter", mode = "line", name = "Linear") %>%
-  add_trace(x = ~x, y = ~yQuad, mode = "line", name = "Quadrático") %>%
-  add_trace(x = ~x, y = ~yCub, mode = "line", name = "Cúbico") %>%
-  layout(
-    title = "Gráficos de potência",
-    xaxis = list(title = "x"),
-    yaxis = list(title = "y"),
-    updatemenus = list(
-      list(
-        buttons = list(
-          list(label = "yLin", method = "update", args = list(list(visible = c(TRUE, FALSE, FALSE)))),
-          list(label = "yQuad", method = "update", args = list(list(visible = c(FALSE, TRUE, FALSE)))),
-          list(label = "yCub", method = "update", args = list(list(visible = c(FALSE, FALSE, TRUE))))
-        )
-      )
-    )
-  )
-
-```
-
-|       Ainda que você achar meio complicado o trecho de código acima, apenas copie-o, cole-o num *script*, e execute-o. Isso exemplifica a *essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo accriação de novos*. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (*label*) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua *scatter* por *bar*, por exemplo), ou o título do gráfico (*title*).
-
-|       Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando `plot_ly`, a seleção do tipo de potência a representar pelo menu suspenso.
-
-|       Assim como para os demais pacotes, existe um número significativo de comandos e *widgets interativos* com o `plotly` (*sliders*, botões de controle, por ex), e que, nesse caso específico, daria "pano pra manga" pra uma obra literária isolada. Mas você pode consultar as referências abaixo para um aprendizado mais abrangente, e mesmo um [livro online](https://plotly-r.com/) gratuito com códigos e produtos correlatos.
 
 ## Referência do pacote:
 
--   [Geral](https://cran.r-project.org/web/packages/plotly/index.html)
--   [Manual](https://cran.r-project.org/web/packages/plotly/plotly.pdf):
--   [Tutorial](https://plotly.com/r/):
+*   [Geral](https://cran.r-project.org/web/packages/plotly/index.html)
+*   [Manual](https://cran.r-project.org/web/packages/plotly/plotly.pdf)
+*   [Tutorial](https://plotly.com/r/)
+
+

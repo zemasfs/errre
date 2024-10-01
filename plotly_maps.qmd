@@ -1,0 +1,63 @@
+---
+title: "Mapas interativos com `plotly"
+---
+
+|       Por fim, deixamos esta última parte de nosso curso para lhe apresentar outro potencial *"gigantesco"* do `plotly` ensino e aprendizagem: a construção de mapas interativos. 
+
+|       Mapas interativos permitem que se observe informações por *mouse hover* (passagem do *mouse* sobre os dados) ou por clique de *mouse* sobre um mapa contendo esses dados. Por se tratar de um mapa, as informações são obtidas em coordenadas geográficas específicas. Essa característica torna indispensável, portanto, as *coordenadas de longitude e de latitude* relacionadas aos pontos geográficos que se deseja apresentar.
+
+|       Segue um exemplo simples, localizando o município de Alfenas, e onde fica o campus sede Universidade Federal de Alfenas (UNIFAL-MG).
+
+```{r}
+library(plotly)
+
+# Criar dados de exemplo com coordenadas de algumas cidades
+cities <- data.frame(
+  name = c("Alfenas", "Varginha", "Poços de Caldas"),
+  lat = c(-21.42943530, -21.539957, -21.783731),  # Latitude
+  lon = c(-45.95948212, -45.433960, -46.564178)   # Longitude
+)
+
+# Criar o mapa interativo
+map <- plot_ly(
+  data = cities,
+  lat = ~lat,
+  lon = ~lon,
+  type = 'scattergeo',
+  mode = 'markers+text',
+  text = ~name,
+  marker = list(size = 10, color = 'blue', opacity = 0.7),
+  textposition = "top center"
+) %>%
+  layout(
+    title = "Municípios dos campi da UNIFAL-MG",
+    geo = list(
+      scope = 'south america',
+      showland = TRUE
+    )
+  )
+
+# Exibir o mapa
+map
+```
+
+
+|       Para observar os municípios, vá ampliando a imagem com o *mouse*. Veja que o mapa inicia na América do Sul, uma condição inserida no código para facilitar a busca das cidades. Experimente colocar um comentário (*#*) à esquerda do trecho "*scope = ..."*, e a informação partirá do mapa mundi.
+
+|       Observe também que o mapa que se apresenta não possui o detalhamento de satélite encontrado, por exemplo, no *Google Maps*. De fato, o `plot_ly` constitui uma excelente biblioteca para gráficos interativos, mas nem tanto assim para mapas interativos. Para uma visão de satélite com as coordenada do exemplo acima, tem mais efeito o uso de outro pacote do `R`,  denominado `leaflet`. 
+
+|       Instale o pacote `leaflet` no *RStudio*, cole o código abaixo, e veja a difereça de saída (*output*):
+
+```{r}
+library(leaflet)
+
+# Criar um mapa interativo com visualização de satélite
+leaflet() %>%
+  addTiles() %>%  # Adiciona o estilo de mapa padrão
+  addProviderTiles(providers$Esri.WorldImagery) %>%  # Mapa de satélite
+  setView(lng = -47.9292, lat = -15.7801, zoom = 4) %>%  # Centro do mapa e nível de zoom
+  addMarkers(lng = c(-45.95948212, -45.433960, -46.564178),
+             lat = c(-21.42943530, -21.539957, -21.783731),
+             popup = c("Alfenas", "Varginha", "Poços de Caldas"))
+```
+

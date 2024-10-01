@@ -5,7 +5,7 @@ project:
 website:
   page-navigation: true # não funciona
   back-to-top-navigation: true
-  image: RStudioLogo.png # não funciona
+  image: unifal-logo.png # não funciona
   reader-mode: true # funciona
   google-analytics: "G-S1L73VGCG5"
   title: "ERRE - Ensino Reprodutível" # omite-se o título pra não duplicar nome na aba
@@ -19,8 +19,9 @@ website:
            Página criada com pacote Quarto
   
   sidebar:
-    - contents:
-      - section: "Vivificando Conteúdos Didáticos"
+  # collapse: true # não funcionou- menu lateral minimizado
+    contents:
+      - section: "Ensino Reprodutível & Objetos Didáticos"
         contents:
           - text: "ERRE"
             href: index.qmd
@@ -32,27 +33,43 @@ website:
             href: ferramentas.qmd
       - section: "Moléculas em 3D com Jmol"
         contents:
-          - text: "Jmol"
+          - text: "1 - Jmol"
             href: jmol.qmd
-          - text: "Mouse *versus* Comandos"
+          - text: "2 - Mouse *versus* Comandos"
             href: textoXmouse.qmd
-          - text: "Comandos"
+          - text: "3 - Alguns comandos do Jmol"
             href: comandosJmol.qmd
+          - text: "4 - Algumas animações com Jmol"
+            href: anima_Jmol.qmd
           
       - section: "Gráficos Interativos com R"
         contents:
-          - text: "R & RStudio"
+          - text: "1 - R & RStudio"
             href: rstudioCloud.qmd
-          - text: "Pacotes do R"
+          - text: "2 - Um pouco sobre uso do `R`"
+            href: basicaoR.qmd
+          - text: "3 - Pacotes do R"
             href: pacotes.qmd
-          - text: "O pacote `plotly`"
+          - text: "4 - O pacote `plotly`"
             href: plotly.qmd
+          - text: "5 - Gráficos interativos com `plotly`"
+            href: plotly_interat.qmd
+          - text: "6 - Embelezando o gráfico"
+            href: plotly_embeleza.qmd
+          - text: "7 - Mais interatividade aos gráficos"
+            href: plotly_maisInterat.qmd
+          - text: "8- Animação em gráficos interativos"
+            href: plotly_anima.qmd
+          - text: "9 - Mapas interativos (`plotly` e `leaflet`)"
+            href: plotly_maps.qmd
+          
       - contato.qmd
+      
             
             
   navbar:
     search: true
-    logo: avatar.png # logo ao lado esquerdo da Home
+    logo: logo-unifal.png # logo ao lado esquerdo da Home
     background: primary # cor de fundo
     tools:  # ícones específico
       # - icon: twitter
@@ -63,8 +80,16 @@ website:
             href:  https://www.unifal-mg.edu.br/portal/index/
           - text: Depto. Bioquímica
             href:  https://www.unifal-mg.edu.br/dbq/
+            
+      
   
     left:
+      - text: "Curso de Capacitação Ao Ensino Médio"
+        menu:
+          - text: "Introdução"
+            href: Portfolio/JmolBook/iniciativa_Jmol.qmd
+            
+            
       - text: "Jardim de Moléculas"
         menu:
           - text: "Introdução"
@@ -87,6 +112,13 @@ website:
             href: Portfolio/JmolBook/nutri.qmd
           - text: "Supramoleculares"
             href: Portfolio/JmolBook/supramol.qmd
+    # right:
+    #   - icon: false  # Evitar ícones padrão
+    #     href: "https://www.unifal-mg.edu.br/portal/index/"  
+    #     html: |
+    #      <img src="logo-unifal.png" alt="Universidade Federal de Alfenas" style="height: 30px;"/>  # Ajuste o tamanho da imagem conforme necessário
+
+          
          
             
             # o truque é colocar a pasta dos
@@ -126,6 +158,8 @@ website:
         
       - contato.qmd
       
+      
+      
 format:
   html:
     theme: 
@@ -133,5 +167,6 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+  # include-after-body: collapse-sidebar.js
 
 editor: source

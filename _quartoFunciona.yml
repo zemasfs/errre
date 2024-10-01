@@ -1,0 +1,142 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  page-navigation: true  # funciona para navegação entre páginas
+  back-to-top-navigation: true
+  image: RStudioLogo.png  # Verifique o caminho da imagem
+  reader-mode: true  # funciona
+  google-analytics: "G-S1L73VGCG5"
+  title: "ERRE - Ensino Reprodutível"  # omite-se o título para não duplicar nome na aba
+  favicon: avatar.png  # ícone da aba da página
+  page-footer:
+    left: |
+      Curso de Formação em Educação Digital
+    center: |
+      UNIFAL-MG
+    right: |
+      Página criada com pacote Quarto
+
+  sidebar:
+    collapse: true # página inicia com menu lateral minimizado
+    contents:
+      - section: "Vivificando Conteúdos Didáticos"
+        contents:
+          - text: "ERRE"
+            href: index.qmd
+          - text: "Saudações"
+            href: saudacoes.qmd
+          - text: "Algumas questões"
+            href: questoes.qmd
+          - text: "Caixa de Ferramentas"
+            href: ferramentas.qmd
+      - section: "Moléculas em 3D com Jmol"
+        contents:
+          - text: "Jmol"
+            href: jmol.qmd
+          - text: "Mouse *versus* Comandos"
+            href: textoXmouse.qmd
+          - text: "Comandos"
+            href: comandosJmol.qmd
+          - text: "Algumas animações com Jmol"
+            href: anima_Jmol.qmd
+      - section: "Gráficos Interativos com R"
+        contents:
+          - text: "R & RStudio"
+            href: rstudioCloud.qmd
+          - text: "Um pouco sobre uso do `R`"
+            href: basicaoR.qmd
+          - text: "Pacotes do R"
+            href: pacotes.qmd
+          - text: "O pacote `plotly`"
+            href: plotly.qmd
+          - text: "Gráficos interativos com `plotly`"
+            href: plotly_interat.qmd
+          - text: "Embelezando o gráfico"
+            href: plotly_embeleza.qmd
+          - text: "Mais interatividade ao gráfico"
+            href: plotly_maisInterat.qmd
+          - text: "Animação em gráficos interativos"
+            href: plotly_anima.qmd
+          - text: "Mapas interativos com `plotly`"
+            href: plotly_maps.qmd
+      - contato.qmd
+
+  navbar:
+    search: true
+    logo: avatar.png
+    background: primary
+    tools:
+      - icon: bank
+        menu:
+          - text: UNIFAL-MG
+            href: https://www.unifal-mg.edu.br/portal/index/
+          - text: Depto. Bioquímica
+            href: https://www.unifal-mg.edu.br/dbq/
+
+    left:
+      - text: "Jardim de Moléculas"
+        menu:
+          - text: "Introdução"
+            href: Portfolio/JmolBook/iniciativa_Jmol.qmd
+          - text: "Classificação"
+            href: Portfolio/JmolBook/classifica.qmd
+          - text: "Orgânicas"
+            href: Portfolio/JmolBook/organica.qmd
+          - text: "Inorgânicas"
+            href: Portfolio/JmolBook/inorganica.qmd
+          - text: "Biomoléculas"
+            href: Portfolio/JmolBook/biomol.qmd
+          - text: "Farmacológicas"
+            href: Portfolio/JmolBook/farmac.qmd
+          - text: "Medicinais"
+            href: Portfolio/JmolBook/medicin.qmd
+          - text: "Toxicológicas"
+            href: Portfolio/JmolBook/toxicol.qmd
+          - text: "Nutricionais"
+            href: Portfolio/JmolBook/nutri.qmd
+          - text: "Supramoleculares"
+            href: Portfolio/JmolBook/supramol.qmd
+
+      - text: "Gráficos Interativos"
+        menu:
+          - text: "Introdução"
+            href: Portfolio/ODR/iniciativa_ODR.qmd
+          - text: "Física"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"
+          - text: "Química"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"
+          - text: "Biologia"
+            href: Portfolio/ODR/ODR.qmd
+            target: "_blank"
+
+      - text: "Folhas de Dicas"
+        menu:
+          - text: "Jmol"
+            href: Portfolio/Cheatsheet/jmol_cheat.en.pt.pdf
+            target: "_blank"
+          - text: "Plotly"
+            href: Portfolio/Cheatsheet/plotly.pdf
+            target: "_blank"
+          - text: "R"
+            href: Portfolio/Cheatsheet/r_cheat.en.pt.pdf
+            target: "_blank"
+
+      - text: "Outros"
+        menu:
+          - text: "Bioquanti"
+            href: https://bioquanti.netlify.app/
+            target: "_blank"
+
+  format:
+    html:
+      theme:
+        light: flatly
+        dark: darkly
+      css: styles.css
+      toc: true
+
+editor: source

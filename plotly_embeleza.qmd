@@ -1,0 +1,117 @@
+---
+title: "Embelezando o gráfico"
+---
+
+## Embelezando o gráfico 
+
+|       Como é da sabedoria popular, *"nada vem de graça..."*, e também é assim com o aprendizado de *linguagens de programação ou sintaxes dos pacotes do `R`*. Contudo, e como também repousado na sabedoria popular, após *espremer-se os limões, eis que temos uma limonada !!* !
+
+|       Na prática, é possível construir gráficos bastante sofisticados com o pacote `plotly`. Assim, é possível dimensionar os pontos, escolher o seu tipo, colorir linhas, inserir legenda, produzir gráficos lado a lado, e outras tantas *"façanhas"* digitais. Mas também é preciso aprender a sintaxe adequada pra isso, o que não vamos tratar em detalhes neste material, por direcioná-lo principalmente ao emprego do recurso à produção de objetos didáticos interativos. Mas uma boa fonte é um [livro *online*](https://plotly-r.com/) de Carson Sievert (*Interactive web-based data visualization with R, plotly, and shiny*). 
+
+
+|       A partir do gráfico mais simples de dispersão anterior podemos acrescentar mais informações que resultem no aprimoramento do mesmo. Como estamos em outro página do *browser*, precisamos computar os dados da curva quadrática, antes.
+
+```{r, warning=FALSE, message=FALSE}
+x = 1:10
+y = x^2
+```
+
+|       Também precisamos carregar a biblioteca `plotly` e uma outra, chamada `magrittr`. Essa última é pra permitir o uso do *pipe* (*conetor*, em tradução livre), `%>%`, um símbolo que permite trabalhar com os comandos do `R` de forma aninhada, ou seja, concatenando-os sequencialmente.
+
+
+```{r}
+library(magrittr)  # biblioteca para a função `pipe`, "%>%"
+library(plotly)
+```
+
+
+|       Agora, sim, elaboramos o gráfico de dispersão, novamente.
+
+```{r}
+library(magrittr)  # biblioteca para a função `pipe`, "%>%"
+library(plotly)
+
+plot_ly(x = ~x, y = ~y, type="scatter", mode = 'markers+lines')
+```
+
+|       Podemos agora colocar um
+
+```{r}
+plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines") %>%
+  # Configurar marcadores (símbolos)
+  add_markers(marker = list(size = 25))
+```
+
+|       Podemos colocar uma etiqueta na legenda, mudar o símbolo, e torná-lo mais transparente.  
+## Sofisticando a sintaxe para o `plotly`
+
+
+```{r}
+plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines", name = "Gráfico de Função Quadrática") %>%
+  # Configurar marcadores (símbolos)
+  add_markers(marker = list(size = 25, symbol = "square", opacity = 0.5))
+```
+
+
+|       E agora podemos atribuir uma espessura maior e uma cor diferente à linha.
+
+```{r}
+plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines", name = "Legenda") %>%
+  # Configurar marcadores (símbolos)
+  add_markers(marker = list(size = 20, symbol = "triangle", opacity = 0.7)) %>%
+  # Configurar linha
+  add_lines(line = list(color = "green", width = 2))
+```
+
+|       E também dá pra inserir um título no gráfico, e etiquetas nos eixos (nomes).
+
+```{r}
+plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines", name = "Legenda") %>%
+  # Configurar marcadores (símbolos)
+  add_markers(marker = list(size = 20, symbol = "square", opacity = 0.7)) %>%
+  # Configurar linha
+  add_lines(line = list(color = "pink", width = 1.2))  %>%
+
+## Adicionando título e etiquetas nos eixos  # Layout do gráfico
+  layout(
+    title = "Gráfico com Tamanho Independente de Símbolos e Linha",
+    xaxis = list(title = "valores de x"),
+    yaxis = list(title = "y=x^2")
+  )
+```
+
+
+## Outras perfumarias...
+
+|       O `plotly` permite um conjunto enorme de formatações. Podemos, por exemplo, alterar a cor de fundo do gráfico:
+
+```{r}
+plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines") %>%
+  add_markers(marker = list(size = 25, color="blue")) %>%
+  layout(plot_bgcolor = "lightgrey") # alteração da cor de fundo
+```
+
+|       Também dá pra mudar o tamanho e o tipo de fontes utilizadas no gráfico, reposicionar a legenda, e alterar os limites dos eixos:
+
+```{r}
+plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines") %>%
+  add_markers(marker = list(size = 25, color="pink")) %>%
+  layout(font = list(family = "Arial", size = 16, color = "brown"), # alteração das fontes
+         legend = list(x = 0.5, y = 0.7), # alteração da legenda
+         xaxis = list(range = c(2, 7)), # alteração dos limites dos eixos
+         yaxis = list(range = c(30, 70)))
+```
+
+|       E também podemos fazer anotações e mudar a forma como as marcas (*ticks*) são colocadas nos eixos:
+
+```{r}
+plot_ly(x = ~x, y = ~y, type="scatter", mode = "markers+lines") %>%
+  layout(annotations = list(
+    list(x = 3, y = 10, text = "Baixos valores"),
+    list(x = 7, y = 50, text = "Altos valores")), # anotações
+    xaxis = list(ticks = "outside"),
+    yaxis = list(ticks = "inside")
+)
+```
+
+

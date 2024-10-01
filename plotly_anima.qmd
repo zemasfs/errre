@@ -1,0 +1,204 @@
+---
+title: "Animação em gráficos interativos"
+---
+
+|       Além do aspecto puramente interativo de gráficos elaborados com o `plotly`, o que já perfaz um grande diferencial ao preparo de materiais ilustrativos de conteúdos didáticos, a biblioteca ainda é capaz de rodar animações com os gráficos!
+
+|       A animação se dá por meio de transições de uma imagem a outra de um gráfico quando se deseja observar o que ocorre com esse quando se altera uma variável (numérica ou categórica). O comando chave pra isso é `frame` (quadro). A animação no `plotly` também serve para os 3 tipos de entrada de dados, ou seja: *equações, vetores, datasets importados*. Vamos exemplificar inicialmente um trecho de código para animações a cada tipo de entrada.
+
+
+## Dados a partir de vetores
+
+|       Quando comparado com a entrada por equação, esse forma é mais simples pra se obter uma animação com o `plotly`. Vamos definir alguns vetores primeiro, e proceder a animação.
+
+```{r}
+x <- 1:10
+y <- rnorm(10,0,1) * x  # gera dados aleatórios em "y"
+z <- c("A","B","C","D","E","F","G","H","I","J")
+
+library(plotly) 
+
+plot_ly(x = ~x, y = ~y, frame = ~ z) # a animação variando-se "z"
+```
+
+
+|       Veja que legal ! Surge um botão de *PLAY* para executar a animação. Alternativamente, pode-se selecionar qual o *frame* desejado por arraste do seletor.
+
+|       Também é possível alterar o código acima de modo bem simples, para se observar outra variável na animação, veja:
+
+```{r}
+x <- 1:10
+y <- rnorm(10,0,1) * x  # gera dados aleatórios em "y"
+z <- c("A","B","C","D","E","F","G","H","I","J")
+
+plot_ly(x = ~z, y = ~x, frame = ~ y) # a animação variando-se "x"
+```
+
+
+|       Doido, não ?! Mas é só ilustrativo. Uma animação mais apropriada pode ser realizada com dados mais realistas Veja o exemplo abaixo, retirado do 
+
+vamos utilizar o exemplo mencionado no [MAPA](https://seliga.educacao.mg.gov.br/cardenos-mapa), especificamente à página 12 do 1o. Bimestre do 3o. Ano, como segue:
+\
+
+![Imagem extraída do MAPA sobre o saneamento básico nas regiões brasileiras, tal como informado pelo Sistema de Informações Hospitalares do SUS](saneamento.png).
+
+|       Inicialmente precisamos criar o gráfico a partir dos dados originais. Para isso é necessário obter os dados a partir da *fonte original* (Sistema de Informações Hospitalares do SUS, no caso).
+
+|       Mas há ocasiões em que os dados originais não estão disponíveis, havendo a necessidade de se extrair os dados diretamente do gráfico. Não é o caso da presente situação, mas vamos proceder dessa forma, no intuito de exemplificar tais situações.
+
+|       Nesse caso podemos estimar os dados do gráfico acima utilizando um extrator de dados de imagens, e para o qual sugerimos o digitalizador *online* [PlotDigitizer](https://plotdigitizer.com/app). A partir dos dados obtidos, pode-se 1) tranferir os dados ao `R` e 2) elaborar um gráfico similar ao de internações por carência visto acima.
+
+|       Mas nesse momento vamos para algo mais prático: a reprodução dos dados de saneamento básico, a partir de um trecho de código para o `R`. Para carregar os dados extraídos do gráfico, copie e rode o trecho de código abaixo.
+
+```{r}
+dados <- structure(list(ano = c(2009L, 2010L, 2011L, 2012L, 2013L, 2014L, 
+                                2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 2011L, 2012L, 2013L, 
+                                2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2011L, 2012L, 2013L, 
+                                2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 2011L, 2012L, 
+                                2013L, 2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 2011L, 
+                                2012L, 2013L, 2014L, 2015L, 2016L, 2017L, 2018L, 2009L, 2010L, 
+                                2011L, 2012L, 2013L, 2014L, 2015L, 2016L, 2017L, 2018L), interna = c(56.5, 
+                                                                                                     74.9, 57.9, 43.8, 45.2, 38.1, 36.7, 48, 22.6, 28.2, 142.7, 152.5, 
+                                                                                                     107.3, 97.5, 91.8, 81.9, 81.9, 76.3, 63.6, 46.6, 183.6, 161, 
+                                                                                                     134.2, 132.8, 110.2, 111.6, 103.1, 63.6, 63.6, 226, 317.8, 161, 
+                                                                                                     148.3, 169.5, 137, 139.8, 115.8, 76.3, 76.3, 311, 343.2, 289.5, 
+                                                                                                     248.6, 233.1, 187.9, 187.9, 187.9, 134.2, 120.1, 450.6, 488.7, 
+                                                                                                     384.2, 305.1, 265.5, 223.2, 226, 170.9, 134.2, 108.8), regiao = c("Sudeste", 
+                                                                                                                                                                       "Sudeste", "Sudeste", "Sudeste", "Sudeste", "Sudeste", "Sudeste", 
+                                                                                                                                                                       "Sudeste", "Sudeste", "Sudeste", "Sul", "Sul", "Sul", "Sul", 
+                                                                                                                                                                       "Sul", "Sul", "Sul", "Sul", "Sul", "Sul", "Brasil", "Brasil", 
+                                                                                                                                                                       "Brasil", "Brasil", "Brasil", "Brasil", "Brasil", "Brasil", "Brasil", 
+                                                                                                                                                                       "Centro-oeste", "Centro-oeste", "Centro-oeste", "Centro-oeste", 
+                                                                                                                                                                       "Centro-oeste", "Centro-oeste", "Centro-oeste", "Centro-oeste", 
+                                                                                                                                                                       "Centro-oeste", "Centro-oeste", "Nordeste", "Nordeste", "Nordeste", 
+                                                                                                                                                                       "Nordeste", "Nordeste", "Nordeste", "Nordeste", "Nordeste", "Nordeste", 
+                                                                                                                                                                       "Nordeste", "Norte", "Norte", "Norte", "Norte", "Norte", "Norte", 
+                                                                                                                                                                       "Norte", "Norte", "Norte", "Norte")), class = "data.frame", row.names = c(NA, 
+                                                                                                                                                                                                                                                 -59L))
+```
+
+|       Não se preocupe com a sintaxe complicada, basta copiar, colar num *script* do *RStudio*, e compilar. Mas se desejar aprender um pouco mais sobre como essa sintaxe foi obtida, procure algo sobre a função `dput` do `R`, como [neste link](https://rdrr.io/r/base/dput.html).
+
+|       Agora a reprodução do gráfico de internações, com auxílio do código abaixo:
+
+
+
+```{r, fig.cap="Animação do gráfico de internações por carência no saneamento básico."}
+
+plot_ly(dados, 
+        x = ~ano, 
+        y = ~interna,
+        size = 7,
+        frame = ~regiao)
+```
+\
+
+|       Ou mais avançado um pouco, com a descrição de outros parâmetros na animação. 
+
+
+```{r}
+dados %>%
+  plot_ly(
+    x = ~ano,
+    y = ~interna,
+    size = ~interna,
+    color = ~regiao,
+    frame = ~regiao,
+    text = ~interna,
+    hoverinfo = "text",
+    type = 'scatter',
+    mode = 'markers'
+    )
+```
+
+## Dados a partir de uma função matemática
+
+```{r, eval=FALSE}
+# Instalar os pacotes necessários
+install.packages("plotly")
+
+library(plotly)
+
+# Geração de dados
+x <- seq(0, 2 * pi, length.out = 500)
+
+# Função para gerar y com base no parâmetro a
+func <- function(a, x) {
+  return(a * sin(x))
+}
+
+# Valores do parâmetro 'a' que irão variar
+a_values <- seq(0.5, 3, length.out = 30)
+
+# Criando um data frame com todos os valores de a e x para plotar
+data <- data.frame(
+  x = rep(x, times = length(a_values)),
+  y = unlist(lapply(a_values, function(a) func(a, x))),
+  a = rep(a_values, each = length(x))
+)
+
+# Criando o gráfico interativo com animação
+p <- plot_ly(data, 
+             x = ~x, 
+             y = ~y, 
+             frame = ~a, 
+             type = 'scatter', 
+             mode = 'lines') %>%
+  layout(
+    title = "Variação da função y = a * sin(x) com diferentes valores de a",
+    xaxis = list(title = "x"),
+    yaxis = list(title = "y", range = c(-3, 3))
+  )
+
+# Exibe o gráfico
+p
+
+```
+
+
+## Dados a partir de datasets
+
+|       XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+```{r}
+# Instalar os pacotes necessários (se ainda não estiverem instalados)
+# install.packages("plotly")
+# install.packages("gapminder")
+
+library(plotly)
+library(gapminder)
+
+# Filtrando os dados necessários do gapminder
+gapminder_data <- gapminder
+
+# Criando o gráfico interativo com animação
+p <- plot_ly(
+  gapminder_data,
+  x = ~gdpPercap,
+  y = ~lifeExp,
+  size = ~pop,
+  color = ~country,
+  frame = ~year,          # Frame para a animação por ano
+  text = ~country,
+  hoverinfo = "text",
+  type = 'scatter',
+  mode = 'markers',
+  marker = list(sizemode = 'diameter', opacity = 0.7)
+) %>%
+  layout(
+    title = "GDP per capita vs Life Expectancy",
+    xaxis = list(title = "GDP per capita (log scale)", type = "log"),
+    yaxis = list(title = "Life Expectancy"),
+    showlegend = FALSE
+  ) %>%
+  animation_opts(
+    frame = 50,           # Velocidade da animação
+    transition = 0,
+    redraw = FALSE
+  )
+
+# Exibe o gráfico
+p
+
+```
+

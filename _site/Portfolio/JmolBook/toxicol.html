@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -125,7 +91,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../avatar.png" alt="" class="navbar-logo">
+    <img src="../../logo-unifal.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">ERRE - Ensino Reprodutível</span>
@@ -138,13 +104,24 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-curso-de-capacitação-ao-ensino-médio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Curso de Capacitação Ao Ensino Médio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-curso-de-capacitação-ao-ensino-médio">    
+        <li>
+    <a class="dropdown-item" href="../../Portfolio/JmolBook/iniciativa_Jmol.html">
+ <span class="dropdown-text">Introdução</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-jardim-de-moléculas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Jardim de Moléculas</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-jardim-de-moléculas">    
         <li>
     <a class="dropdown-item" href="../../Portfolio/JmolBook/iniciativa_Jmol.html">
- <span class="dropdown-text">Jardim</span></a>
+ <span class="dropdown-text">Introdução</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Portfolio/JmolBook/classifica.html">
@@ -191,7 +168,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
     <ul class="dropdown-menu" aria-labelledby="nav-menu-gráficos-interativos">    
         <li>
     <a class="dropdown-item" href="../../Portfolio/ODR/iniciativa_ODR.html">
- <span class="dropdown-text">Iniciativa</span></a>
+ <span class="dropdown-text">Introdução</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../Portfolio/ODR/ODR.html" target="_blank">
@@ -288,7 +265,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Vivificando Conteúdos Didáticos</span></a>
+ <span class="menu-text">Ensino Reprodutível &amp; Objetos Didáticos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -332,19 +309,25 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../jmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jmol</span></a>
+ <span class="menu-text">1 - Jmol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../textoXmouse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mouse <em>versus</em> Comandos</span></a>
+ <span class="menu-text">2 - Mouse <em>versus</em> Comandos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../comandosJmol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Comandos</span></a>
+ <span class="menu-text">3 - Alguns comandos do Jmol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../anima_Jmol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4 - Algumas animações com Jmol</span></a>
   </div>
 </li>
       </ul>
@@ -361,19 +344,55 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../rstudioCloud.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R &amp; RStudio</span></a>
+ <span class="menu-text">1 - R &amp; RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../basicaoR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 - Um pouco sobre uso do <code>R</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../pacotes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pacotes do R</span></a>
+ <span class="menu-text">3 - Pacotes do R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../plotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">O pacote <code>Plotly</code></span></a>
+ <span class="menu-text">4 - O pacote <code>plotly</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../plotly_interat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5 - Gráficos interativos com <code>plotly</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../plotly_embeleza.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6 - Embelezando o gráfico</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../plotly_maisInterat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7 - Mais interatividade aos gráficos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../plotly_anima.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8- Animação em gráficos interativos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../plotly_maps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9 - Mapas interativos (<code>plotly</code> e <code>leaflet</code>)</span></a>
   </div>
 </li>
       </ul>
@@ -414,14 +433,42 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BC-%5D#N"><img src="cianeto.png" class="img-fluid figure-img" style="width:40.0%" alt="Cianeto são sais derivados do Cianeto de hidrogênio, (HCN) também chamado ácido cianídrico ou ácido prússico,tanto os sais como o ácido são conhecidos por serem altamente letais."></a></p>
+<figcaption>Cianeto são sais derivados do Cianeto de hidrogênio, (HCN) também chamado ácido cianídrico ou ácido prússico,tanto os sais como o ácido são conhecidos por serem altamente letais.</figcaption>
+</figure>
 </div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Cianeto">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BHg%5D"><img src="Mercúrio.png" class="img-fluid figure-img" style="width:40.0%" alt="Mercúrio;metal tóxico com efeito cumulativo."></a></p>
+<figcaption>Mercúrio;metal tóxico com efeito cumulativo.</figcaption>
+</figure>
 </div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Mercúrio">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=%5BPb%5D"><img src="chumbo.png" class="img-fluid figure-img" style="width:40.0%" alt="Chumbo;tóxico apenas para o sistema nervoso."></a></p>
+<figcaption>Chumbo;tóxico apenas para o sistema nervoso.</figcaption>
+</figure>
+</div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Chumbo">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=C1=C2C(=CC(=C1Cl)Cl)OC3=CC(=C(C=C3O2)Cl)Cl"><img src="dioxina.png" class="img-fluid figure-img" style="width:40.0%" alt="Dioxina;um dos mais potentes carcinogênicos."></a></p>
+<figcaption>Dioxina;um dos mais potentes carcinogênicos.</figcaption>
+</figure>
+</div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Dioxina">Wikipedia</a>
+</p>
 
 
 

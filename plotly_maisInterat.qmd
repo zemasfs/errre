@@ -1,0 +1,167 @@
+---
+title: "Mais interatividade aos gráficos"
+---
+
+|       Até o momento só *"arranhamos"* o potencial de interatividade gráfica do pacote `plotly`. Como já mencionado, essa biblioteca permite um grande conjunto de ações de usuário, como deslizadores (*sliders*), menu de escolha, e botões, entre muitos.
+\
+
+## Adicionando um controle deslizante
+
+|       Um *slider* pode auxiliar no estudo de funções quando se deseja alterar um parâmetro. Nesse caso é possível produzir o gráfico e permitir que usuário o altere, apenas selecionando outro valor para o controle deslizante. Para ilustrar isso, vamos construir um gráfico hiperbólico, e permitindo que se observe o que ocorre quando se modifica um dos parâmetros. 
+
+```{r}
+# Instale o pacote plotly se ainda não estiver instalado
+# install.packages("plotly")
+
+# Carregando o pacote plotly
+library(plotly)
+
+# Definindo os dados para o gráfico
+x <- seq(-10, 10, length.out = 100)  # Valores de x
+a_values <- c(1, -3, 20)  # Valores de a para o slider
+b = 2
+
+# Função para calcular y em função de x e do parâmetro a
+calculate_y <- function(x, a) {
+  return(b * x/(a+x))
+}
+
+# Criando o gráfico inicial com plotly
+p <- plot_ly()
+
+# Adicionando as curvas iniciais para cada valor de a
+for (a in a_values) {
+  p <- add_trace(p, x = x, y = calculate_y(x, a), type = 'scatter', mode = 'lines', 
+                 name = paste("a =", a))
+}
+
+# Criando os passos para o slider
+steps <- list()
+for (i in seq_along(a_values)) {
+  step <- list(
+    label = paste("a =", a_values[i]),
+    method = "update",
+    args = list(list(visible = lapply(a_values, function(av) av == a_values[i])), 
+                list(y = lapply(a_values, function(av) calculate_y(x, av)))),
+    value = a_values[i]
+  )
+  steps <- c(steps, list(step))
+}
+
+# Adicionando o slider ao layout
+p <- p %>% layout(
+  title = "Gráfico Interativo com Slider",
+  xaxis = list(title = "x"),
+  yaxis = list(title = "y"),
+  sliders = list(
+    list(
+      active = 0,
+      steps = steps
+    )
+  )
+)
+
+# Mostrando o gráfico
+p
+
+```
+
+# Um controle deslizante por intervalo
+
+|       Assim, ilustrando *mais interatividade*, é possível agregar um *controle deslizante de intervalo* (*rangeslider*) ao gráfico construído, tal como representado abaixo:
+
+```{r}
+x = 1:10 # dados
+y = x^2
+
+library(magrittr)  # bibliotecas necessárias
+library(plotly)
+
+plot_ly(x = ~x, y = ~y, type="scatter") %>%
+  add_lines() %>%
+  rangeslider()
+```
+
+|       Experimente posicionar o *mouse* num dos dois marcadores laterais do gráfico inferior, arrastando-o em seguida, e observando o resultado.
+
+## Permitindo que dois plots *"conversem"* entre si
+
+|       Apesar do título um tanto *IA*, trata-se na verdade de empregar uma técnica chamada *linking & brushing*, e na qual uma observação em um gráfico correlacionado a outro permite que se evidencie as duas observações simultaneamente. Exemplificando, os gráficos que seguem são correlacionados pela aplicação de um recíproco duplo aos valores de suas variáveis.
+
+```{r}
+library(plotly)
+library(crosstalk)
+
+# Criar alguns dados de exemplo
+
+x = 1:100
+y = 10*x/(0.5+x)
+dados <- data.frame(x,y,
+  grupo = sample(c("A", "B")))
+
+# Criar um crosstalk shared data frame
+shared_data <- SharedData$new(dados)
+
+# Criar o primeiro gráfico
+p1 <- plot_ly(shared_data, x = ~x, y = ~y, color = ~grupo, type = "scatter", size=5, mode = "markers") %>%
+  layout(title = "Gráfico 1") %>%
+  highlight()
+
+# Criar o segundo gráfico
+p2 <- plot_ly(shared_data, x = ~1/x, y = ~1/y, color = "orange", type = "scatter", size= 5, mode = "markers") %>%
+  layout(title = "Gráfico 2") %>%
+  highlight()
+
+# Organizar os gráficos lado a lado
+subplot(p1, p2)
+```
+
+
+### Adicionando um menu suspenso
+
+|       Menus suspensos (*dropdown menu*) permitem observar um gráfico diferente a cada opção selecionada. Para exemplificar esse recurso interativos, vamos primeiramente elaborar um conjunto de dados (*dataframe*) que possua a resposta linear, quadrática, e cúbica a uma variável independente, tal como segue:
+
+```{r}
+x = 1:10 # vetor da variável independente "x"
+yLin = x
+yQuad = x^2
+yCub = x^3 # criação das variáveis dependentes "y"
+
+datLQC <-data.frame(x,yLin,yQuad,yCub)
+```
+
+|       Agora podemos inserir o *menu suspenso* para opção das tendências matemáticas:
+
+```{r}
+plot_ly(datLQC, x = ~x, y = ~yLin, type = "scatter", mode = "line", name = "Linear") %>%
+  add_trace(x = ~x, y = ~yQuad, mode = "line", name = "Quadrático") %>%
+  add_trace(x = ~x, y = ~yCub, mode = "line", name = "Cúbico") %>%
+  layout(
+    title = "Gráficos de potência",
+    xaxis = list(title = "x"),
+    yaxis = list(title = "y=função de x"),
+    updatemenus = list(
+      list(
+        buttons = list(
+          list(label = "yLin", method = "update", args = list(list(visible = c(TRUE, FALSE, FALSE)))),
+          list(label = "yQuad", method = "update", args = list(list(visible = c(FALSE, TRUE, FALSE)))),
+          list(label = "yCub", method = "update", args = list(list(visible = c(FALSE, FALSE, TRUE))))
+        )
+      )
+    )
+  )
+
+```
+
+|       Ainda que você possa achar meio complicado o trecho de código acima, apenas copie-o, cole-o num *script*, e execute-o. Isso exemplifica a *essência inerente ao Ensino Reprodutível, desde a simples reprodução do código, até sua alteração e mesmo a criação de novos*. Sentindo curiosidade, você pode alterar alguns termos do código acima, como as etiquetas (*label*) que surgem no menu suspenso, o tipo de gráfico pretendido (substitua *scatter* por *bar*, por exemplo), ou o título do gráfico (*title*).
+
+|       Em relação à interatividade produzida, adiciona-se às que já estavam presentes pelo comando `plot_ly`, a seleção do tipo de potência a representar pelo menu suspenso.
+
+
+
+|       Assim como para vários pacotes do `R`, existe um número significativo de comandos e *widgets interativos* com o `plotly`, e que, nesse caso específico, daria "pano pra manga" pra uma obra literária isolada. Mas você pode consultar inúmeros *sites* sobre o `plotly` para um aprendizado mais abrangente, os *links* abaixo, e mesmo um [livro online](https://plotly-r.com/) gratuito, com códigos e gráficos correlatos. Para observar a imensa riqueza de gráficos interativos, dê uma olhada no [website do `plotly`](https://plotly.com/r/) para o `R`.
+\
+
+*   [Geral](https://cran.r-project.org/web/packages/plotly/index.html)
+*   [Manual](https://cran.r-project.org/web/packages/plotly/plotly.pdf)
+*   [Tutorial](https://plotly.com/r/)

@@ -1,0 +1,34 @@
+project:
+  type: book
+
+book:
+  title: "Jardim de Moléculas & Jmol"
+  date: today
+  chapters:
+    - index.qmd
+    - jardim.qmd
+    - classifica.qmd
+    - organica.qmd
+    - inorganica.qmd
+    - biomol.qmd
+    - farmac.qmd
+    - medicin.qmd
+    - toxicol.qmd
+    - nutri.qmd
+    - supramol.qmd
+    - industrial.qmd
+    - aromas.qmd
+    - sabores.qmd 
+    - antiinflamatorias.qmd
+    - plantasToxicas.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
