@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -426,7 +392,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../plotly_maps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">9 - Mapas interativos com <code>plotly</code></span></a>
+ <span class="menu-text">9 - Mapas interativos (<code>plotly</code> e <code>leaflet</code>)</span></a>
   </div>
 </li>
       </ul>
@@ -467,14 +433,42 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1(%5BC@@H%5D(N2%5BC@H%5D(S1)%5BC@@H%5D(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C"><img src="Penicilina.png" class="img-fluid figure-img" style="width:40.0%" alt="Penicilina Antibiótico descoberto por Alexander Fleming"></a></p>
+<figcaption>Penicilina Antibiótico descoberto por Alexander Fleming</figcaption>
+</figure>
 </div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Penicilina">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CN1CC%5BC@%5D23%5BC@@H%5D4%5BC@H%5D1CC5=C2C(=C(C=C5)O)O%5BC@H%5D3%5BC@H%5D(C=C4)O"><img src="morfina.png" class="img-fluid figure-img" style="width:40.0%" alt="Morfina analgésico opioide derivado da planta papoula."></a></p>
+<figcaption>Morfina analgésico opioide derivado da planta papoula.</figcaption>
+</figure>
 </div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Morfina">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=:%20CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O"><img src="Warfarina.png" class="img-fluid figure-img" style="width:40.0%" alt="Warfarina atua como anticoagulante."></a></p>
+<figcaption>Warfarina atua como anticoagulante.</figcaption>
+</figure>
+</div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Warfarina">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(C)C1=C(C(=C(N1CC%5BC@H%5D(C%5BC@H%5D(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4"><img src="Atorvastatina.png" class="img-fluid figure-img" style="width:40.0%" alt="Atorvastatina utlizada para redução de colesterol."></a></p>
+<figcaption>Atorvastatina utlizada para redução de colesterol.</figcaption>
+</figure>
+</div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Atorvastatina">Wikipedia</a>
+</p>
 
 
 

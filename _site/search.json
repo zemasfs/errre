@@ -54,7 +54,7 @@
     "href": "Portfolio/JmolBook/medicin.html",
     "title": "Moléculas de interesse medicinal",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "text": "Penicilina Antibiótico descoberto por Alexander Fleming\n\n\n\nWikipedia\n\n\n\n\nMorfina analgésico opioide derivado da planta papoula.\n\n\n\nWikipedia\n\n\n\n\nWarfarina atua como anticoagulante.\n\n\n\nWikipedia\n\n\n\n\nAtorvastatina utlizada para redução de colesterol.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Portfolio/JmolBook/toxicol.html",
@@ -71,18 +71,39 @@
     "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
   },
   {
+    "objectID": "Portfolio/JmolBook/industrial.html",
+    "href": "Portfolio/JmolBook/industrial.html",
+    "title": "Moléculas de interesse industrial",
+    "section": "",
+    "text": "Amoníaco; utilizado na produção de fertilizantes\n\n\n\nWikipedia\n\n\n\n\nMetanol; utilizado como solvente e na produção de formaldeído\n\n\n\nWikipedia\n\n\n\n\nPolietileno; plástico mais comum do mundo\n\n\n\nWikipedia\n\n\n\n\nCloreto de Vinila; utilizado na produção de PVC\n\n\n\nWikipedia\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "Portfolio/JmolBook/farmac.html",
     "href": "Portfolio/JmolBook/farmac.html",
     "title": "Moléculas de interesse farmacológico",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "text": "Paracetamol é classificado como um analgésico leve para alivio de de dores\n\n\n\nWikipedia\n\n\n\n\nIbuprofeno pode ser utilizado para o alívio sintomático de enxaquecas e atua como antiinflamatório.\n\n\n\nWikipedia\n\n\n\n\nAmoxicilina é um antibiótico usado no tratamento de diversas infeções bacterianas\n\n\n\nWikipedia\n\n\n\nWikipedia\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Portfolio/JmolBook/classifica.html",
-    "href": "Portfolio/JmolBook/classifica.html",
-    "title": "Classificação geral das moléculas",
+    "objectID": "Portfolio/JmolBook/inorganica.html",
+    "href": "Portfolio/JmolBook/inorganica.html",
+    "title": "Moléculas Inorgânicas",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "text": "## Ácidos\n\n\n\nAcido sulfúrico os usos principais incluem produção de fertilizantes (e outros processamentos minerais), refinamento de petróleo, tratamento de águas residuais e síntese química. Possui um vasto uso de aplicações finais, como em eletrólitos de baterias de chumbo-ácido e em vários agentes de limpeza.\n\n\n\nWikipedia\n\n\n\n\nAcido cloridrico é frequentemente usado em análises químicas para preparar amostras “digeridas” para análise. O ácido clorídrico concentrado dissolve muitos metais e forma cloretos metálicos oxidados e gás hidrogênio.\n\n\n\nWikipedia\n\n## Bases\n\n\n\nHidróxido de sódio é usado na indústria, principalmente como base química, no fabrico de papel, tecidos, detergentes, alimentos e biodiesel. Trata-se de uma base forte.\n\n\n\nWikipedia\n\n\n\n\nHidróxido de amonio é uma base solúvel, só existe em solução aquosa quando faz-se o borbulhamento de amônia (NH3) em água. Hidróxido de Amônio não é considerado\n\n\n\nWikipedia\n\n  ## Sais\n\n\n\nCloreto de sódio é utilizado em larga escala na produção de hidróxido de sódio, cloro, hidrogênio e indiretamente ácido clorídrico por eletrólise de sua solução aquosa (processo cloro-álcali). O sal também é utilizado para a produção de gás cloro e de sódio metálico, através da eletrólise ígnea.\n\n\n\nWikipedia\n\n\n\n\nHipoclorito de sódio é usado na desinfecção de água potável na concentração de 1 L de lixívia doméstica para cada 4000 L de água. A quantidade exata necessária depende da química da água, da temperatura, do tempo de contato e da presença ou ausência de sedimentos.\n\n\n\nWikipedia\n\n  ## òxidos\n\n\n\nDióxido de carbono é um material industrial versátil, utilizado, por exemplo, como gás inerte em soldagem e extintores de incêndio, como gás pressurizador em pistolas de ar e recuperação de óleo e como solvente fluido supercrítico na descafeinação de café e secagem supercrítica\n\n\n\nWikipedia\n\n\n\n\nÓxido de cálcio é utilizado na construção civil para elaboração de argamassas e preparação dos processos de pintura. Também tem emprego nas indústrias farmacêutica, cerâmica e metalúrgica. Na agricultura, o óxido de cálcio é usado para produzir hidróxido de cálcio, que tem por finalidade o controle da acidez do solo.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Portfolio/JmolBook/aromas.html",
+    "href": "Portfolio/JmolBook/aromas.html",
+    "title": "Moléculas de interesse para aromas",
+    "section": "",
+    "text": "Limoneno:aromas citrícos presentes nas cascas de laranja.\n\n\n\nWikipedia\n\n\n\n\nVanilina;aroma de baunilha.\n\n\n\nWikipedia\n\n\n\n\nGeraniol;aroma de rosas.\n\n\n\nWikipedia\n\n\n\n\nEugenol;aroma de cravos.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Portfolio/JmolBook/sabores.html",
+    "href": "Portfolio/JmolBook/sabores.html",
+    "title": "Moléculas de interesse para sabores",
+    "section": "",
+    "text": "Glutamato monossódico;realça o sabor umami.\n\n\n\nWikipedia\n\n\n\n\nCafeína;presente em café e dá sabor amargo.\n\n\n\nWikipedia\n\n\n\n\nCapsaicina;responsável pelo sabor picante em pimentas.\n\n\n\nWikipedia\n\n\n\n\nÁcido cítrico;dá o sabor ácido presente nos cítrico.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
   },
   {
     "objectID": "questoes.html",
@@ -401,9 +422,33 @@
   {
     "objectID": "plotly_maps.html",
     "href": "plotly_maps.html",
-    "title": "Mapas interativos com `plotly",
+    "title": "Mapas interativos (plotly e leaflet)",
     "section": "",
-    "text": "Por fim, deixamos esta última parte de nosso curso para lhe apresentar outro potencial “gigantesco” do plotly ensino e aprendizagem: a construção de mapas interativos.\n      Mapas interativos permitem que se observe informações por mouse hover (passagem do mouse sobre os dados) ou por clique de mouse sobre um mapa contendo esses dados. Por se tratar de um mapa, as informações são obtidas em coordenadas geográficas específicas. Essa característica torna indispensável, portanto, as coordenadas de longitude e de latitude relacionadas aos pontos geográficos que se deseja apresentar.\n      Segue um exemplo simples, localizando o município de Alfenas, e onde fica o campus sede Universidade Federal de Alfenas (UNIFAL-MG).\n\nlibrary(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n# Criar dados de exemplo com coordenadas de algumas cidades\ncities &lt;- data.frame(\n  name = c(\"Alfenas\", \"Varginha\", \"Poços de Caldas\"),\n  lat = c(-21.42943530, -21.539957, -21.783731),  # Latitude\n  lon = c(-45.95948212, -45.433960, -46.564178)   # Longitude\n)\n\n# Criar o mapa interativo\nmap &lt;- plot_ly(\n  data = cities,\n  lat = ~lat,\n  lon = ~lon,\n  type = 'scattergeo',\n  mode = 'markers+text',\n  text = ~name,\n  marker = list(size = 10, color = 'blue', opacity = 0.7),\n  textposition = \"top center\"\n) %&gt;%\n  layout(\n    title = \"Municípios dos campi da UNIFAL-MG\",\n    geo = list(\n      scope = 'south america',\n      showland = TRUE\n    )\n  )\n\n# Exibir o mapa\nmap\n\n\n\n\n\n      Para observar os municípios, vá ampliando a imagem com o mouse. Veja que o mapa inicia na América do Sul, uma condição inserida no código para facilitar a busca das cidades. Experimente colocar um comentário (#) à esquerda do trecho “scope = …“, e a informação partirá do mapa mundi.\n      Observe também que o mapa que se apresenta não possui o detalhamento de satélite encontrado, por exemplo, no Google Maps. De fato, o plot_ly constitui uma excelente biblioteca para gráficos interativos, mas nem tanto assim para mapas interativos. Para uma visão de satélite com as coordenada do exemplo acima, tem mais efeito o uso de outro pacote do R, denominado leaflet.\n      Instale o pacote leaflet no RStudio, cole o código abaixo, e veja a difereça de saída (output):\n\nlibrary(leaflet)\n\n# Criar um mapa interativo com visualização de satélite\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Adiciona o estilo de mapa padrão\n  addProviderTiles(providers$Esri.WorldImagery) %&gt;%  # Mapa de satélite\n  setView(lng = -47.9292, lat = -15.7801, zoom = 4) %&gt;%  # Centro do mapa e nível de zoom\n  addMarkers(lng = c(-45.95948212, -45.433960, -46.564178),\n             lat = c(-21.42943530, -21.539957, -21.783731),\n             popup = c(\"Alfenas\", \"Varginha\", \"Poços de Caldas\"))\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "Por fim, deixamos esta última parte de nosso curso para lhe apresentar outro potencial “gigantesco” do plotly ensino e aprendizagem: a construção de mapas interativos.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos com R",
+      "9 - Mapas interativos (`plotly` e `leaflet`)"
+    ]
+  },
+  {
+    "objectID": "plotly_maps.html#mapas-interativos-com-plotly",
+    "href": "plotly_maps.html#mapas-interativos-com-plotly",
+    "title": "Mapas interativos (plotly e leaflet)",
+    "section": "Mapas interativos com plotly",
+    "text": "Mapas interativos com plotly\n      Segue um exemplo simples, localizando o município de Alfenas, e onde fica o campus sede Universidade Federal de Alfenas (UNIFAL-MG).\n\nlibrary(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n# Criar dados de exemplo com coordenadas de algumas cidades\ncities &lt;- data.frame(\n  name = c(\"Alfenas\", \"Varginha\", \"Poços de Caldas\"),\n  lat = c(-21.42943530, -21.539957, -21.783731),  # Latitude\n  lon = c(-45.95948212, -45.433960, -46.564178)   # Longitude\n)\n\n# Criar o mapa interativo\nmap &lt;- plot_ly(\n  data = cities,\n  lat = ~lat,\n  lon = ~lon,\n  type = 'scattergeo',\n  mode = 'markers+text',\n  text = ~name,\n  marker = list(size = 10, color = 'blue', opacity = 0.7),\n  textposition = \"top center\"\n) %&gt;%\n  layout(\n    title = \"Municípios dos campi da UNIFAL-MG\",\n    geo = list(\n      scope = 'south america',\n      showland = TRUE\n    )\n  )\n\n# Exibir o mapa\nmap\n\n\n\n\n\n      Para observar os municípios, vá ampliando a imagem com o mouse. Veja que o mapa inicia na América do Sul, uma condição inserida no código para facilitar a busca das cidades. Experimente colocar um comentário (#) à esquerda do trecho “scope = …“, e a informação partirá do mapa mundi.\n      Observe também que o mapa que se apresenta não possui o detalhamento de satélite encontrado, por exemplo, no Google Maps. De fato, o plot_ly constitui uma excelente biblioteca para gráficos interativos, mas nem tanto assim para mapas interativos. Para uma visão de satélite com as coordenada do exemplo acima, tem mais efeito o uso de outro pacote do R, denominado leaflet.",
+    "crumbs": [
+      "Contato",
+      "Gráficos Interativos com R",
+      "9 - Mapas interativos (`plotly` e `leaflet`)"
+    ]
+  },
+  {
+    "objectID": "plotly_maps.html#mapas-interativos-com-leaflet",
+    "href": "plotly_maps.html#mapas-interativos-com-leaflet",
+    "title": "Mapas interativos (plotly e leaflet)",
+    "section": "Mapas interativos com leaflet",
+    "text": "Mapas interativos com leaflet\n      Instale o pacote leaflet no RStudio, cole o código abaixo, e veja a difereça de saída (output):\n\nlibrary(leaflet)\n\n# Criar um mapa interativo com visualização de satélite\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Adiciona o estilo de mapa padrão\n  addProviderTiles(providers$Esri.WorldImagery) %&gt;%  # Mapa de satélite\n  setView(lng = -47.9292, lat = -15.7801, zoom = 4) %&gt;%  # Centro do mapa e nível de zoom\n  addMarkers(lng = c(-45.95948212, -45.433960, -46.564178),\n             lat = c(-21.42943530, -21.539957, -21.783731),\n             popup = c(\"Alfenas\", \"Varginha\", \"Poços de Caldas\"))\n\n\n\n\n\n      Bem mais legal, é ?!\n\nBancos de Dados e mapas informativos com leaflet\n      Assim como o plotly está para gráficos interativos, arrisca-se afirmar que o pacote leaflet está para mapas interativos. Claro que existem outras bibliotecas para mapas interativos, tais como ggiraph, highchart e rbokeh, mas focaremos aqui no leaflet.",
     "crumbs": [
       "Contato",
       "Gráficos Interativos com R",
@@ -965,6 +1010,13 @@
     ]
   },
   {
+    "objectID": "Portfolio/JmolBook/antiinflamatorias.html",
+    "href": "Portfolio/JmolBook/antiinflamatorias.html",
+    "title": "Moléculas antiinflamatórias",
+    "section": "",
+    "text": "Ibuprofeno; inibidor da COX (ciclo-oxigenase), amplamente usado para dor e inflamação.\n\n\n\nWikipedia\n\n\n\n\nDiclofenaco;antiinflamatório não esteroidal(AINE)que inibe a COX-1 e COX-2.\n\n\n\nWikipedia\n\n\n\n\nPrednisona;corticosteroide usado em inflamações mais graves.\n\n\n\nWikipedia\n\n\n\n\nPiroxicam AINE com longa meia-vida, utilizado para inflamações crônicas.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "Portfolio/JmolBook/iniciativa_Jmol.html",
     "href": "Portfolio/JmolBook/iniciativa_Jmol.html",
     "title": "Iniciativa",
@@ -972,18 +1024,53 @@
     "text": "Iniciativa\n      Este Jardim de Moléculas em elaboração pretende auxiliar no aprendizado interativo de moléculas com auxílio de modelos atômicos tridimensionais juntamente a códigos para compilação a observações puntuais, cores, cálculos, renderização variada de estruturas atômicas, e animação, entre outros.\n\nEquipe de Jardinagem:\n      Marília Gabriela Freire Nogueira (graduanda, Curso de Licenciatura em Ciências Biológicas, UNIFAL-MG).\n      Prof. Dr. Luiz Eduardo Silva\n      Prof. Dr. Luiz Antônio Staub Mafra\n      Prof. Dr. José Maurício Schneedorf Ferreira da Silva\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Portfolio/JmolBook/inorganica.html",
-    "href": "Portfolio/JmolBook/inorganica.html",
-    "title": "Moléculas Inorgânicas",
+    "objectID": "Portfolio/JmolBook/classifica.html",
+    "href": "Portfolio/JmolBook/classifica.html",
+    "title": "Classificação geral das moléculas",
     "section": "",
-    "text": "Acido sulfúrico, os usos principais incluem produção de fertilizantes (e outros processamentos minerais), refinamento de petróleo, tratamento de águas residuais e síntese química. Possui um vasto uso de aplicações finais, como em eletrólitos de baterias de chumbo-ácido e em vários agentes de limpeza.\n\n\n\nWikipedia\n\n\n\n\nAcido cloridrico, é frequentemente usado em análises químicas para preparar amostras “digeridas” para análise. O ácido clorídrico concentrado dissolve muitos metais e forma cloretos metálicos oxidados e gás hidrogênio.\n\n\n\nWikipedia\n\n      #Bases\n\n\n\nHidróxido de sódio,é usado na indústria, principalmente como base química, no fabrico de papel, tecidos, detergentes, alimentos e biodiesel. Trata-se de uma base forte.\n\n\n\nWikipedia\n\n\n\n\nHidróxido de amonio,é uma base solúvel, só existe em solução aquosa quando faz-se o borbulhamento de amônia (NH3) em água. Hidróxido de Amônio não é considerado\n\n\n\nWikipedia\n\n      ##Sais\n\n\n\nCloreto de sódio,é utilizado em larga escala na produção de hidróxido de sódio, cloro, hidrogênio e indiretamente ácido clorídrico por eletrólise de sua solução aquosa (processo cloro-álcali). O sal também é utilizado para a produção de gás cloro e de sódio metálico, através da eletrólise ígnea.\n\n\n\nWikipedia\n\n\n\n\nHipoclorito de sódio,é usado na desinfecção de água potável na concentração de 1 L de lixívia doméstica para cada 4000 L de água. A quantidade exata necessária depende da química da água, da temperatura, do tempo de contato e da presença ou ausência de sedimentos.\n\n\n\nWikipedia\n\n      #òxidos\n\n\n\nDióxido de carbono é um material industrial versátil, utilizado, por exemplo, como gás inerte em soldagem e extintores de incêndio, como gás pressurizador em pistolas de ar e recuperação de óleo e como solvente fluido supercrítico na descafeinação de café e secagem supercrítica\n\n\n\nWikipedia\n\n\n\n\nÓxido de cálcio, é utilizado na construção civil para elaboração de argamassas e preparação dos processos de pintura. Também tem emprego nas indústrias farmacêutica, cerâmica e metalúrgica. Na agricultura, o óxido de cálcio é usado para produzir hidróxido de cálcio, que tem por finalidade o controle da acidez do solo.\n\n\n\nWikipedia"
+    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Portfolio/JmolBook/inorganica.html#ácidos",
-    "href": "Portfolio/JmolBook/inorganica.html#ácidos",
-    "title": "Moléculas Inorgânicas",
+    "objectID": "Portfolio/JmolBook/plantasToxicas.html",
+    "href": "Portfolio/JmolBook/plantasToxicas.html",
+    "title": "Moléculas de plantas tóxicas",
     "section": "",
-    "text": "Acido sulfúrico, os usos principais incluem produção de fertilizantes (e outros processamentos minerais), refinamento de petróleo, tratamento de águas residuais e síntese química. Possui um vasto uso de aplicações finais, como em eletrólitos de baterias de chumbo-ácido e em vários agentes de limpeza.\n\n\n\nWikipedia\n\n\n\n\nAcido cloridrico, é frequentemente usado em análises químicas para preparar amostras “digeridas” para análise. O ácido clorídrico concentrado dissolve muitos metais e forma cloretos metálicos oxidados e gás hidrogênio.\n\n\n\nWikipedia\n\n      #Bases\n\n\n\nHidróxido de sódio,é usado na indústria, principalmente como base química, no fabrico de papel, tecidos, detergentes, alimentos e biodiesel. Trata-se de uma base forte.\n\n\n\nWikipedia\n\n\n\n\nHidróxido de amonio,é uma base solúvel, só existe em solução aquosa quando faz-se o borbulhamento de amônia (NH3) em água. Hidróxido de Amônio não é considerado\n\n\n\nWikipedia\n\n      ##Sais\n\n\n\nCloreto de sódio,é utilizado em larga escala na produção de hidróxido de sódio, cloro, hidrogênio e indiretamente ácido clorídrico por eletrólise de sua solução aquosa (processo cloro-álcali). O sal também é utilizado para a produção de gás cloro e de sódio metálico, através da eletrólise ígnea.\n\n\n\nWikipedia\n\n\n\n\nHipoclorito de sódio,é usado na desinfecção de água potável na concentração de 1 L de lixívia doméstica para cada 4000 L de água. A quantidade exata necessária depende da química da água, da temperatura, do tempo de contato e da presença ou ausência de sedimentos.\n\n\n\nWikipedia\n\n      #òxidos\n\n\n\nDióxido de carbono é um material industrial versátil, utilizado, por exemplo, como gás inerte em soldagem e extintores de incêndio, como gás pressurizador em pistolas de ar e recuperação de óleo e como solvente fluido supercrítico na descafeinação de café e secagem supercrítica\n\n\n\nWikipedia\n\n\n\n\nÓxido de cálcio, é utilizado na construção civil para elaboração de argamassas e preparação dos processos de pintura. Também tem emprego nas indústrias farmacêutica, cerâmica e metalúrgica. Na agricultura, o óxido de cálcio é usado para produzir hidróxido de cálcio, que tem por finalidade o controle da acidez do solo.\n\n\n\nWikipedia"
+    "text": "Atropina; alcaloide presente em plantas como a beladona (Atropabelladonna.\n\n\n\nWikipedia\n\n\n\n\nTetrodotoxina;presente em certas plantas marinhas, como algas tóxica.\n\n\n\nWikipedia\n\n\n\n\nOleandrina;toxina presente no oleandro (Nerium oleander), extremamente perigosa.\n\n\n\nWikipedia\n\n\n\n\nAconitina;presente em plantas do gênero Aconitum, extremamente tóxica.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Portfolio/JmolBook/organica (copy 1).html",
+    "href": "Portfolio/JmolBook/organica (copy 1).html",
+    "title": "Moléculas orgânicas",
+    "section": "",
+    "text": "Metano pode ser utilizado na fabricação de resinas acrílicas e fibras de poliéster e na indústria farmacêutica\n\n\n\nWikipedia\n\n\n\n\nEtano pode ser usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos. Fabricação de bebidas (vodca, gin, licores), vinagre, vacinas, antibióticos e antisséptico\n\n\n\nWikipedia\n\n\n\n\nPropano presente em alguns combustíveis utilizados nos automóveis, como a gasolina e o álcool.\n\n\n\nWikipedia\n\n\n\n\nButano pode ser utilizado como combustível de isqueiros, como matéria-prima na produção de borracha sintética, para o aquecimento das piscinas e saunas e como solvente nos aerossóis.\n\n\n\nWikipedia\n\n\n\n\nHexadecano um composto de alta pureza amplamente utilizado em diversas aplicações laboratoriais e industriais\n\n\n\nWikipedia\n\n\n\n\n\n\n\nEtileno é produzido durante o amadurecimento das frutas. Por isso que ao embrulhar alguma fruta em jornal, o seu amadurecimento é acelerado\n\n\n\nWikipedia\n\n\n\n\nPropileno utilizado como fixador de perfumes, veículo de alguns ingredientes em medicamentos tópicos e também hidratante umectante em cosméticos diversos\n\n\n\nWikipedia\n\n\n\n\nPenteno uma molécula utilizada como solvente, aditivo de combustíveis, e na produção de polímeros\n\n\n\nWikipedia\n\n\n\n\nBenzeno é empregado na produção de lubrificantes, borrachas, corantes, solventes e pesticidas\n\n\n\nWikipedia\n\n\n\n\nHexeno é muito comum verificar seu uso na indústria química, petroquímica e postos de gasolina, bem como na geração de energia, extração de óleo vegetal e polimerização da borracha\n\n\n\nWikipedia\n\n      Links:\n\nAlcanos e alcenos\n\n\n\n\n\n\n\nAcetileno utilizado na fabricação de explosivos, solventes e plásticos. Além disso, ele é utilizado em processos de corte de metais, de síntese orgânica e em equipamentos de absorção atômica\n\n\n\nWikipedia\n\n\n\n\nPropino é utilizado em soldadura.\n\n\n\nWikipedia\n\n\n\n\n2-butino,o principal uso é a síntese do butadieno para a borracha artificial. Além disso é produto de partida na síntese do 2-butanol por adição de água em presença de ácido.\n\n\n\nWikipedia"
+  },
+  {
+    "objectID": "Portfolio/JmolBook/organica (copy 1).html#alcano",
+    "href": "Portfolio/JmolBook/organica (copy 1).html#alcano",
+    "title": "Moléculas orgânicas",
+    "section": "",
+    "text": "Metano pode ser utilizado na fabricação de resinas acrílicas e fibras de poliéster e na indústria farmacêutica\n\n\n\nWikipedia\n\n\n\n\nEtano pode ser usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos. Fabricação de bebidas (vodca, gin, licores), vinagre, vacinas, antibióticos e antisséptico\n\n\n\nWikipedia\n\n\n\n\nPropano presente em alguns combustíveis utilizados nos automóveis, como a gasolina e o álcool.\n\n\n\nWikipedia\n\n\n\n\nButano pode ser utilizado como combustível de isqueiros, como matéria-prima na produção de borracha sintética, para o aquecimento das piscinas e saunas e como solvente nos aerossóis.\n\n\n\nWikipedia\n\n\n\n\nHexadecano um composto de alta pureza amplamente utilizado em diversas aplicações laboratoriais e industriais\n\n\n\nWikipedia"
+  },
+  {
+    "objectID": "Portfolio/JmolBook/organica (copy 1).html#alceno",
+    "href": "Portfolio/JmolBook/organica (copy 1).html#alceno",
+    "title": "Moléculas orgânicas",
+    "section": "",
+    "text": "Etileno é produzido durante o amadurecimento das frutas. Por isso que ao embrulhar alguma fruta em jornal, o seu amadurecimento é acelerado\n\n\n\nWikipedia\n\n\n\n\nPropileno utilizado como fixador de perfumes, veículo de alguns ingredientes em medicamentos tópicos e também hidratante umectante em cosméticos diversos\n\n\n\nWikipedia\n\n\n\n\nPenteno uma molécula utilizada como solvente, aditivo de combustíveis, e na produção de polímeros\n\n\n\nWikipedia\n\n\n\n\nBenzeno é empregado na produção de lubrificantes, borrachas, corantes, solventes e pesticidas\n\n\n\nWikipedia\n\n\n\n\nHexeno é muito comum verificar seu uso na indústria química, petroquímica e postos de gasolina, bem como na geração de energia, extração de óleo vegetal e polimerização da borracha\n\n\n\nWikipedia\n\n      Links:\n\nAlcanos e alcenos"
+  },
+  {
+    "objectID": "Portfolio/JmolBook/organica (copy 1).html#alcino",
+    "href": "Portfolio/JmolBook/organica (copy 1).html#alcino",
+    "title": "Moléculas orgânicas",
+    "section": "",
+    "text": "Acetileno utilizado na fabricação de explosivos, solventes e plásticos. Além disso, ele é utilizado em processos de corte de metais, de síntese orgânica e em equipamentos de absorção atômica\n\n\n\nWikipedia\n\n\n\n\nPropino é utilizado em soldadura.\n\n\n\nWikipedia\n\n\n\n\n2-butino,o principal uso é a síntese do butadieno para a borracha artificial. Além disso é produto de partida na síntese do 2-butanol por adição de água em presença de ácido.\n\n\n\nWikipedia"
+  },
+  {
+    "objectID": "Portfolio/JmolBook/organica (copy 1).html#haletos-orgânicos",
+    "href": "Portfolio/JmolBook/organica (copy 1).html#haletos-orgânicos",
+    "title": "Moléculas orgânicas",
+    "section": "Haletos orgânicos",
+    "text": "Haletos orgânicos"
   },
   {
     "objectID": "Portfolio/JmolBook/biomol.html",
@@ -1032,7 +1119,7 @@
     "href": "Portfolio/JmolBook/nutri.html",
     "title": "Moléculas de interesse nutricional",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "text": "Curcumina corante amarelo derivado da cúrcuma\n\n\n\nWikipedia\n\n\n\n\nBetacaroteno corante laranja derivado da cenoura\n\n\n\nWikipedia\n\n\n\n\nLicopeno corante vermelho presente no tomate\n\n\n\nWikipedia\n\n\n\n\nClorofila corante verde presente nas folha\n\n\n\nWikipedia\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Portfolio/ODR/ODR.html",
@@ -1109,75 +1196,5 @@
       "Ensino Reprodutível & Objetos Didáticos",
       "Saudações"
     ]
-  },
-  {
-    "objectID": "Portfolio/JmolBook/industrial.html",
-    "href": "Portfolio/JmolBook/industrial.html",
-    "title": "Moléculas de interesse industrial",
-    "section": "",
-    "text": "Amoníaco; utilizado na produção de fertilizantes\n\n\n\nWikipedia\n\n\n\n\nMetanol; utilizado como solvente e na produção de formaldeído\n\n\n\nWikipedia\n\n\n\n\nPolietileno; plástico mais comum do mundo\n\n\n\nWikipedia\n\n\n\n\nCloreto de Vinila; utilizado na produção de PVC\n\n\n\nWikipedia\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/plantasToxicas.html",
-    "href": "Portfolio/JmolBook/plantasToxicas.html",
-    "title": "Moléculas de plantas tóxicas",
-    "section": "",
-    "text": "Atropina; alcaloide presente em plantas como a beladona (Atropabelladonna.\n\n\n\nWikipedia\n\n\n\n\nTetrodotoxina;presente em certas plantas marinhas, como algas tóxica.\n\n\n\nWikipedia\n\n\n\n\nOleandrina;toxina presente no oleandro (Nerium oleander), extremamente perigosa.\n\n\n\nWikipedia\n\n\n\n\nAconitina;presente em plantas do gênero Aconitum, extremamente tóxica.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/sabores.html",
-    "href": "Portfolio/JmolBook/sabores.html",
-    "title": "Moléculas de interesse para sabores",
-    "section": "",
-    "text": "Glutamato monossódico;realça o sabor umami.\n\n\n\nWikipedia\n\n\n\n\nCafeína;presente em café e dá sabor amargo.\n\n\n\nWikipedia\n\n\n\n\nCapsaicina;responsável pelo sabor picante em pimentas.\n\n\n\nWikipedia\n\n\n\n\nÁcido cítrico;dá o sabor ácido presente nos cítrico.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/antiinflamatorias.html",
-    "href": "Portfolio/JmolBook/antiinflamatorias.html",
-    "title": "Moléculas antiinflamatórias",
-    "section": "",
-    "text": "Ibuprofeno; inibidor da COX (ciclo-oxigenase), amplamente usado para dor e inflamação.\n\n\n\nWikipedia\n\n\n\n\nDiclofenaco;antiinflamatório não esteroidal(AINE)que inibe a COX-1 e COX-2.\n\n\n\nWikipedia\n\n\n\n\nPrednisona;corticosteroide usado em inflamações mais graves.\n\n\n\nWikipedia\n\n\n\n\nPiroxicam AINE com longa meia-vida, utilizado para inflamações crônicas.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/aromas.html",
-    "href": "Portfolio/JmolBook/aromas.html",
-    "title": "Moléculas de interesse para aromas",
-    "section": "",
-    "text": "Limoneno:aromas citrícos presentes nas cascas de laranja.\n\n\n\nWikipedia\n\n\n\n\nVanilina;aroma de baunilha.\n\n\n\nWikipedia\n\n\n\n\nGeraniol;aroma de rosas.\n\n\n\nWikipedia\n\n\n\n\nEugenol;aroma de cravos.\n\n\n\nWikipedia\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/organica (copy 1).html",
-    "href": "Portfolio/JmolBook/organica (copy 1).html",
-    "title": "Moléculas orgânicas",
-    "section": "",
-    "text": "Metano pode ser utilizado na fabricação de resinas acrílicas e fibras de poliéster e na indústria farmacêutica\n\n\n\nWikipedia\n\n\n\n\nEtano pode ser usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos. Fabricação de bebidas (vodca, gin, licores), vinagre, vacinas, antibióticos e antisséptico\n\n\n\nWikipedia\n\n\n\n\nPropano presente em alguns combustíveis utilizados nos automóveis, como a gasolina e o álcool.\n\n\n\nWikipedia\n\n\n\n\nButano pode ser utilizado como combustível de isqueiros, como matéria-prima na produção de borracha sintética, para o aquecimento das piscinas e saunas e como solvente nos aerossóis.\n\n\n\nWikipedia\n\n\n\n\nHexadecano um composto de alta pureza amplamente utilizado em diversas aplicações laboratoriais e industriais\n\n\n\nWikipedia\n\n\n\n\n\n\n\nEtileno é produzido durante o amadurecimento das frutas. Por isso que ao embrulhar alguma fruta em jornal, o seu amadurecimento é acelerado\n\n\n\nWikipedia\n\n\n\n\nPropileno utilizado como fixador de perfumes, veículo de alguns ingredientes em medicamentos tópicos e também hidratante umectante em cosméticos diversos\n\n\n\nWikipedia\n\n\n\n\nPenteno uma molécula utilizada como solvente, aditivo de combustíveis, e na produção de polímeros\n\n\n\nWikipedia\n\n\n\n\nBenzeno é empregado na produção de lubrificantes, borrachas, corantes, solventes e pesticidas\n\n\n\nWikipedia\n\n\n\n\nHexeno é muito comum verificar seu uso na indústria química, petroquímica e postos de gasolina, bem como na geração de energia, extração de óleo vegetal e polimerização da borracha\n\n\n\nWikipedia\n\n      Links:\n\nAlcanos e alcenos\n\n\n\n\n\n\n\nAcetileno utilizado na fabricação de explosivos, solventes e plásticos. Além disso, ele é utilizado em processos de corte de metais, de síntese orgânica e em equipamentos de absorção atômica\n\n\n\nWikipedia\n\n\n\n\nPropino é utilizado em soldadura.\n\n\n\nWikipedia\n\n\n\n\n2-butino,o principal uso é a síntese do butadieno para a borracha artificial. Além disso é produto de partida na síntese do 2-butanol por adição de água em presença de ácido.\n\n\n\nWikipedia"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/organica (copy 1).html#alcano",
-    "href": "Portfolio/JmolBook/organica (copy 1).html#alcano",
-    "title": "Moléculas orgânicas",
-    "section": "",
-    "text": "Metano pode ser utilizado na fabricação de resinas acrílicas e fibras de poliéster e na indústria farmacêutica\n\n\n\nWikipedia\n\n\n\n\nEtano pode ser usado como biocombustível, fonte de energia elétrica ou como matéria-prima para gerar subprodutos. Fabricação de bebidas (vodca, gin, licores), vinagre, vacinas, antibióticos e antisséptico\n\n\n\nWikipedia\n\n\n\n\nPropano presente em alguns combustíveis utilizados nos automóveis, como a gasolina e o álcool.\n\n\n\nWikipedia\n\n\n\n\nButano pode ser utilizado como combustível de isqueiros, como matéria-prima na produção de borracha sintética, para o aquecimento das piscinas e saunas e como solvente nos aerossóis.\n\n\n\nWikipedia\n\n\n\n\nHexadecano um composto de alta pureza amplamente utilizado em diversas aplicações laboratoriais e industriais\n\n\n\nWikipedia"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/organica (copy 1).html#alceno",
-    "href": "Portfolio/JmolBook/organica (copy 1).html#alceno",
-    "title": "Moléculas orgânicas",
-    "section": "",
-    "text": "Etileno é produzido durante o amadurecimento das frutas. Por isso que ao embrulhar alguma fruta em jornal, o seu amadurecimento é acelerado\n\n\n\nWikipedia\n\n\n\n\nPropileno utilizado como fixador de perfumes, veículo de alguns ingredientes em medicamentos tópicos e também hidratante umectante em cosméticos diversos\n\n\n\nWikipedia\n\n\n\n\nPenteno uma molécula utilizada como solvente, aditivo de combustíveis, e na produção de polímeros\n\n\n\nWikipedia\n\n\n\n\nBenzeno é empregado na produção de lubrificantes, borrachas, corantes, solventes e pesticidas\n\n\n\nWikipedia\n\n\n\n\nHexeno é muito comum verificar seu uso na indústria química, petroquímica e postos de gasolina, bem como na geração de energia, extração de óleo vegetal e polimerização da borracha\n\n\n\nWikipedia\n\n      Links:\n\nAlcanos e alcenos"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/organica (copy 1).html#alcino",
-    "href": "Portfolio/JmolBook/organica (copy 1).html#alcino",
-    "title": "Moléculas orgânicas",
-    "section": "",
-    "text": "Acetileno utilizado na fabricação de explosivos, solventes e plásticos. Além disso, ele é utilizado em processos de corte de metais, de síntese orgânica e em equipamentos de absorção atômica\n\n\n\nWikipedia\n\n\n\n\nPropino é utilizado em soldadura.\n\n\n\nWikipedia\n\n\n\n\n2-butino,o principal uso é a síntese do butadieno para a borracha artificial. Além disso é produto de partida na síntese do 2-butanol por adição de água em presença de ácido.\n\n\n\nWikipedia"
-  },
-  {
-    "objectID": "Portfolio/JmolBook/organica (copy 1).html#haletos-orgânicos",
-    "href": "Portfolio/JmolBook/organica (copy 1).html#haletos-orgânicos",
-    "title": "Moléculas orgânicas",
-    "section": "Haletos orgânicos",
-    "text": "Haletos orgânicos"
   }
 ]

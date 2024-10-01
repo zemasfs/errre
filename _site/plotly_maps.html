@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ERRE - Ensino Reprodutível – Mapas interativos com `plotly</title>
+<title>ERRE - Ensino Reprodutível - Mapas interativos (plotly e leaflet)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -463,14 +463,24 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mapas-interativos-com-plotly" id="toc-mapas-interativos-com-plotly" class="nav-link active" data-scroll-target="#mapas-interativos-com-plotly">Mapas interativos com <code>plotly</code></a></li>
+  <li><a href="#mapas-interativos-com-leaflet" id="toc-mapas-interativos-com-leaflet" class="nav-link" data-scroll-target="#mapas-interativos-com-leaflet">Mapas interativos com <code>leaflet</code></a>
+  <ul class="collapse">
+  <li><a href="#bancos-de-dados-e-mapas-informativos-com-leaflet" id="toc-bancos-de-dados-e-mapas-informativos-com-leaflet" class="nav-link" data-scroll-target="#bancos-de-dados-e-mapas-informativos-com-leaflet">Bancos de Dados e mapas informativos com <code>leaflet</code></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudioCloud.html">Gráficos Interativos com R</a></li><li class="breadcrumb-item"><a href="./plotly_maps.html">9 - Mapas interativos (<code>plotly</code> e <code>leaflet</code>)</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Mapas interativos com `plotly</h1>
+<h1 class="title">Mapas interativos (<code>plotly</code> e <code>leaflet</code>)</h1>
 </div>
 
 
@@ -489,6 +499,8 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por fim, deixamos esta última parte de nosso curso para lhe apresentar outro potencial <em>“gigantesco”</em> do <code>plotly</code> ensino e aprendizagem: a construção de mapas interativos.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mapas interativos permitem que se observe informações por <em>mouse hover</em> (passagem do <em>mouse</em> sobre os dados) ou por clique de <em>mouse</em> sobre um mapa contendo esses dados. Por se tratar de um mapa, as informações são obtidas em coordenadas geográficas específicas. Essa característica torna indispensável, portanto, as <em>coordenadas de longitude e de latitude</em> relacionadas aos pontos geográficos que se deseja apresentar.</div>
+<section id="mapas-interativos-com-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="mapas-interativos-com-plotly">Mapas interativos com <code>plotly</code></h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Segue um exemplo simples, localizando o município de Alfenas, e onde fica o campus sede Universidade Federal de Alfenas (UNIFAL-MG).</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -543,12 +555,15 @@ Attaching package: 'plotly'</code></pre>
 <span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Exibir o mapa</span></span>
 <span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-971eb65c3f000cef6734" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-971eb65c3f000cef6734">{"x":{"visdat":{"2c1c48e973c8":["function () ","plotlyVisDat"]},"cur_data":"2c1c48e973c8","attrs":{"2c1c48e973c8":{"lat":{},"lon":{},"mode":"markers+text","text":{},"marker":{"size":10,"color":"blue","opacity":0.69999999999999996},"textposition":"top center","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scattergeo"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Municípios dos campi da UNIFAL-MG","geo":{"scope":"south america","showland":true},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"lat":[-21.429435300000002,-21.539957000000001,-21.783731],"lon":[-45.959482119999997,-45.433959999999999,-46.564177999999998],"mode":"markers+text","text":["Alfenas","Varginha","Poços de Caldas"],"marker":{"color":"blue","size":10,"opacity":0.69999999999999996,"line":{"color":"rgba(31,119,180,1)"}},"textposition":["top center","top center","top center"],"type":"scattergeo","line":{"color":"rgba(31,119,180,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-1bfc790c007dc9a4d4a7" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1bfc790c007dc9a4d4a7">{"x":{"visdat":{"3af1510c6a8f":["function () ","plotlyVisDat"]},"cur_data":"3af1510c6a8f","attrs":{"3af1510c6a8f":{"lat":{},"lon":{},"mode":"markers+text","text":{},"marker":{"size":10,"color":"blue","opacity":0.69999999999999996},"textposition":"top center","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scattergeo"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Municípios dos campi da UNIFAL-MG","geo":{"scope":"south america","showland":true},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"lat":[-21.429435300000002,-21.539957000000001,-21.783731],"lon":[-45.959482119999997,-45.433959999999999,-46.564177999999998],"mode":"markers+text","text":["Alfenas","Varginha","Poços de Caldas"],"marker":{"color":"blue","size":10,"opacity":0.69999999999999996,"line":{"color":"rgba(31,119,180,1)"}},"textposition":["top center","top center","top center"],"type":"scattergeo","line":{"color":"rgba(31,119,180,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para observar os municípios, vá ampliando a imagem com o <em>mouse</em>. Veja que o mapa inicia na América do Sul, uma condição inserida no código para facilitar a busca das cidades. Experimente colocar um comentário (<em>#</em>) à esquerda do trecho “<em>scope = …“</em>, e a informação partirá do mapa mundi.</div>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Observe também que o mapa que se apresenta não possui o detalhamento de satélite encontrado, por exemplo, no <em>Google Maps</em>. De fato, o <code>plot_ly</code> constitui uma excelente biblioteca para gráficos interativos, mas nem tanto assim para mapas interativos. Para uma visão de satélite com as coordenada do exemplo acima, tem mais efeito o uso de outro pacote do <code>R</code>, denominado <code>leaflet</code>.</div>
+</section>
+<section id="mapas-interativos-com-leaflet" class="level2">
+<h2 class="anchored" data-anchor-id="mapas-interativos-com-leaflet">Mapas interativos com <code>leaflet</code></h2>
 <div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instale o pacote <code>leaflet</code> no <em>RStudio</em>, cole o código abaixo, e veja a difereça de saída (<em>output</em>):</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
@@ -562,12 +577,18 @@ Attaching package: 'plotly'</code></pre>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">lat =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">21.42943530</span>, <span class="sc">-</span><span class="fl">21.539957</span>, <span class="sc">-</span><span class="fl">21.783731</span>),</span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="fu">c</span>(<span class="st">"Alfenas"</span>, <span class="st">"Varginha"</span>, <span class="st">"Poços de Caldas"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-a605da38f91a74262fa5" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-a605da38f91a74262fa5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[-21.4294353,-21.539957,-21.783731],[-45.95948212,-45.43396,-46.564178],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Alfenas","Varginha","Poços de Caldas"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[-15.7801,-47.9292],4,[]],"limits":{"lat":[-21.783731,-21.4294353],"lng":[-46.564178,-45.43396]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-9b6af01d824e2a5ed3e1" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-9b6af01d824e2a5ed3e1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[-21.4294353,-21.539957,-21.783731],[-45.95948212,-45.43396,-46.564178],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Alfenas","Varginha","Poços de Caldas"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[-15.7801,-47.9292],4,[]],"limits":{"lat":[-21.783731,-21.4294353],"lng":[-46.564178,-45.43396]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bem mais legal, é ?!</div>
+<section id="bancos-de-dados-e-mapas-informativos-com-leaflet" class="level3">
+<h3 class="anchored" data-anchor-id="bancos-de-dados-e-mapas-informativos-com-leaflet">Bancos de Dados e mapas informativos com <code>leaflet</code></h3>
+<div class="line-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assim como o <code>plotly</code> está para <em>gráficos interativos</em>, arrisca-se afirmar que o pacote <code>leaflet</code> está para <em>mapas interativos</em>. Claro que existem outras bibliotecas para mapas interativos, tais como <a href="https://bhaskarvk.github.io/user2017.geodataviz/notebooks/03-Interactive-Maps.nb.html"><code>ggiraph</code>, <code>highchart</code> e <code>rbokeh</code></a>, mas focaremos aqui no <code>leaflet</code>.</div>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

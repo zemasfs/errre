@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -426,7 +392,7 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../plotly_maps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">9 - Mapas interativos com <code>plotly</code></span></a>
+ <span class="menu-text">9 - Mapas interativos (<code>plotly</code> e <code>leaflet</code>)</span></a>
   </div>
 </li>
       </ul>
@@ -467,14 +433,42 @@ gtag('config', 'G-S1L73VGCG5', { 'anonymize_ip': true});
 </header>
 
 
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O"><img src="curcumina.png" class="img-fluid figure-img" style="width:40.0%" alt="Curcumina corante amarelo derivado da cúrcuma"></a></p>
+<figcaption>Curcumina corante amarelo derivado da cúrcuma</figcaption>
+</figure>
 </div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Curcumina">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(CCCC2(C)C)C)\C)\C)/C)/C"><img src="betacaroteno.png" class="img-fluid figure-img" style="width:40.0%" alt="Betacaroteno corante laranja derivado da cenoura"></a></p>
+<figcaption>Betacaroteno corante laranja derivado da cenoura</figcaption>
+</figure>
 </div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Betacaroteno">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CC(=CCC/C(=C/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C=C(/CCC=C(C)C)\C)\C)\C)/C)/C)/C)C"><img src="licopeno.png" class="img-fluid figure-img" style="width:40.0%" alt="Licopeno corante vermelho presente no tomate"></a></p>
+<figcaption>Licopeno corante vermelho presente no tomate</figcaption>
+</figure>
+</div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Licopeno">Wikipedia</a>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://chemapps.stolaf.edu/jmol/jmol.php?model=CCC1=C(C2=NC1=CC3=C(C4=C(C(C(=C4%5BN-%5D3)C5=NC(=CC6=NC(=C2)C(=C6C)C=C)C(C5CCC(=O)OCC=C(C)CCCC(C)CCCC(C)CCCC(C)C)C)C(=O)OC)%5BO-%5D)C)C.%5BMg+2%5D"><img src="clorofila.png" class="img-fluid figure-img" style="width:40.0%" alt="Clorofila corante verde presente nas folha"></a></p>
+<figcaption>Clorofila corante verde presente nas folha</figcaption>
+</figure>
+</div>
+<p style="text-align:right;">
+<a href="https://pt.wikipedia.org/wiki/Clorofila">Wikipedia</a>
+</p>
 
 
 

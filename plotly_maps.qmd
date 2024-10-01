@@ -1,10 +1,13 @@
 ---
-title: "Mapas interativos com `plotly"
+title: "Mapas interativos (`plotly` e `leaflet`)"
 ---
 
 |       Por fim, deixamos esta última parte de nosso curso para lhe apresentar outro potencial *"gigantesco"* do `plotly` ensino e aprendizagem: a construção de mapas interativos. 
 
 |       Mapas interativos permitem que se observe informações por *mouse hover* (passagem do *mouse* sobre os dados) ou por clique de *mouse* sobre um mapa contendo esses dados. Por se tratar de um mapa, as informações são obtidas em coordenadas geográficas específicas. Essa característica torna indispensável, portanto, as *coordenadas de longitude e de latitude* relacionadas aos pontos geográficos que se deseja apresentar.
+
+
+## Mapas interativos com `plotly`
 
 |       Segue um exemplo simples, localizando o município de Alfenas, e onde fica o campus sede Universidade Federal de Alfenas (UNIFAL-MG).
 
@@ -46,6 +49,8 @@ map
 
 |       Observe também que o mapa que se apresenta não possui o detalhamento de satélite encontrado, por exemplo, no *Google Maps*. De fato, o `plot_ly` constitui uma excelente biblioteca para gráficos interativos, mas nem tanto assim para mapas interativos. Para uma visão de satélite com as coordenada do exemplo acima, tem mais efeito o uso de outro pacote do `R`,  denominado `leaflet`. 
 
+## Mapas interativos com `leaflet`
+
 |       Instale o pacote `leaflet` no *RStudio*, cole o código abaixo, e veja a difereça de saída (*output*):
 
 ```{r}
@@ -60,4 +65,12 @@ leaflet() %>%
              lat = c(-21.42943530, -21.539957, -21.783731),
              popup = c("Alfenas", "Varginha", "Poços de Caldas"))
 ```
+
+|       Bem mais legal, é ?!
+
+
+### Bancos de Dados e mapas informativos com `leaflet`
+
+|       Assim como o `plotly` está para *gráficos interativos*, arrisca-se afirmar que o pacote `leaflet` está para *mapas interativos*. Claro que existem outras bibliotecas para mapas interativos, tais como [`ggiraph`, `highchart` e `rbokeh`](https://bhaskarvk.github.io/user2017.geodataviz/notebooks/03-Interactive-Maps.nb.html), mas focaremos aqui no `leaflet`.
+
 
